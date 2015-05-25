@@ -4,7 +4,8 @@ $main_classes = array();
 
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);
-$tplPath = "/bitrix/templates/main/";?>
+$tplPath = "/bitrix/templates/main/";
+global $tplPath;?>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
