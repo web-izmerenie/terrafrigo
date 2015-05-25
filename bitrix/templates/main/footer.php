@@ -2,17 +2,12 @@
         <div class="wrapper">
             <button class="additional-text__button btn-link" type="button">Доп. информация</button>
             <div class="additional-text__container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aspernatur, assumenda, consequuntur
-                    deserunt dolorum earum eum iure natus odit quae quam quod sunt tenetur voluptate! Distinctio illo
-                    tempore voluptate.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aspernatur, assumenda, consequuntur
-                    deserunt dolorum earum eum iure natus odit quae quam quod sunt tenetur voluptate! Distinctio illo
-                    tempore voluptate.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aspernatur, assumenda, consequuntur
-                    deserunt dolorum earum eum iure natus odit quae quam quod sunt tenetur voluptate! Distinctio illo
-                    tempore voluptate.</p>
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                    )
+                );?>
             </div>
         </div>
     </div>
