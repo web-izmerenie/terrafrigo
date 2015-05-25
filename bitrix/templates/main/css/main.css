@@ -643,7 +643,8 @@ textarea {
     text-align: center;
     font-size: 22px;
     font-weight: 700;
-    margin-top: 20px;
+    width: 215px;
+    margin: 20px auto 0;
 }
 
 .main-news {
