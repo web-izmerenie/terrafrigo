@@ -55,19 +55,22 @@ $tplPath = "/bitrix/templates/main/";?>
         <div class="header-main">
             <div class="header-main__wrapper wrapper">
                 <a href="/" class="header-logo"><h1 class="hide-text">Terra Frigo</h1></a>
-                <nav class="main-nav">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__list-item">
-                            <a class="main-nav__list-link" href="#">Завод</a>
-                        </li>
-                        <li class="main-nav__list-item">
-                            <a class="main-nav__list-link" href="#">Продукция</a>
-                        </li>
-                        <li class="main-nav__list-item">
-                            <a class="main-nav__list-link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:menu",
+					"main_menu",
+					Array(
+						"ROOT_MENU_TYPE" => "top",
+						"MENU_CACHE_TYPE" => "N",
+						"MENU_CACHE_TIME" => "3600",
+						"MENU_CACHE_USE_GROUPS" => "Y",
+						"MENU_CACHE_GET_VARS" => array(0=>"",),
+						"MAX_LEVEL" => "1",
+						"CHILD_MENU_TYPE" => "left",
+						"USE_EXT" => "N",
+						"DELAY" => "Y",
+						"ALLOW_MULTI_SELECT" => "N"
+					)
+				);?>
             </div>
         </div>
     </header> 
