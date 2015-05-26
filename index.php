@@ -101,9 +101,9 @@ $APPLICATION->SetTitle("Холодильное оборудование: про�
 		"AJAX_OPTION_ADDITIONAL" => ""
 	)
 );?><?$APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	"module_news", 
-	array(
+	"bitrix:news.list",
+	"module_news",
+	Array(
 		"IBLOCK_TYPE" => "content",
 		"IBLOCK_ID" => "11",
 		"NEWS_COUNT" => "6",
@@ -112,16 +112,8 @@ $APPLICATION->SetTitle("Холодильное оборудование: про�
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER2" => "ASC",
 		"FILTER_NAME" => "",
-		"FIELD_CODE" => array(
-			0 => "",
-			1 => "undefined",
-			2 => "",
-		),
-		"PROPERTY_CODE" => array(
-			0 => "",
-			1 => "undefined",
-			2 => "",
-		),
+		"FIELD_CODE" => array(0=>"",1=>"undefined",2=>"",),
+		"PROPERTY_CODE" => array(0=>"",1=>"undefined",2=>"",),
 		"CHECK_DATES" => "Y",
 		"DETAIL_URL" => "",
 		"AJAX_MODE" => "N",
@@ -158,6 +150,5 @@ $APPLICATION->SetTitle("Холодильное оборудование: про�
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N",
 		"AJAX_OPTION_ADDITIONAL" => ""
-	),
-	false
+	)
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
