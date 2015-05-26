@@ -57,8 +57,8 @@ global $tplPath;?>
             <div class="header-main__wrapper wrapper">
                 <a href="/" class="header-logo"><h1 class="hide-text">Terra Frigo</h1></a>
 				<?$APPLICATION->IncludeComponent(
-                    "bitrix:menu", 
-                    "main_menu", 
+                    "bitrix:menu",
+                    "main_menu",
                     array(
                         "ROOT_MENU_TYPE" => "main",
                         "MENU_CACHE_TYPE" => "N",
@@ -94,4 +94,17 @@ global $tplPath;?>
                 "ALLOW_MULTI_SELECT" => "N"
             )
         );?>
-    <?}?> 
+    <?}?>
+    <?if(defined('BANER')){?>
+       <?$APPLICATION->IncludeComponent(
+            "bitrix:main.include",
+            "",
+            Array(
+                "AREA_FILE_SHOW" => "page",
+                "AREA_FILE_SUFFIX" => "banner_inc",
+                "EDIT_TEMPLATE" => ""
+            )
+        );?>
+    <?}else{?>
+        <h1><?$APPLICATION->ShowTitle()?></h1>
+    <?}?>
