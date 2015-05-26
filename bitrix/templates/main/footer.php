@@ -1,3 +1,4 @@
+    <?if($APPLICATION->GetCurPage(false) !== '/'){?></div><?}?>
     <div class="additional-text">
         <div class="wrapper">
             <button class="additional-text__button btn-link" type="button">Доп. информация</button>

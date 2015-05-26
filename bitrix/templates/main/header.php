@@ -2,6 +2,9 @@
 $html_classes = array();
 $main_classes = array();
 
+if(defined('ABOUT'))
+    $main_classes = array('about-page');
+
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);
 $tplPath = "/bitrix/templates/main/";
@@ -94,17 +97,18 @@ global $tplPath;?>
                 "ALLOW_MULTI_SELECT" => "N"
             )
         );?>
-    <?}?>
-    <?if(defined('BANER')){?>
-       <?$APPLICATION->IncludeComponent(
-            "bitrix:main.include",
-            "",
-            Array(
-                "AREA_FILE_SHOW" => "page",
-                "AREA_FILE_SUFFIX" => "banner_inc",
-                "EDIT_TEMPLATE" => ""
-            )
-        );?>
-    <?}else{?>
-        <h1><?$APPLICATION->ShowTitle()?></h1>
+        <?if(defined('BANER')){?>
+           <?$APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                Array(
+                    "AREA_FILE_SHOW" => "page",
+                    "AREA_FILE_SUFFIX" => "banner_inc",
+                    "EDIT_TEMPLATE" => ""
+                )
+            );?>
+        <?}else{?>
+            <h1><?$APPLICATION->ShowTitle()?></h1>
+        <?}?>
+        <div class="inside-conent <?=$main_classes;?>">
     <?}?>
