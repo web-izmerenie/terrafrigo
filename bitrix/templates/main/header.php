@@ -57,23 +57,41 @@ global $tplPath;?>
             <div class="header-main__wrapper wrapper">
                 <a href="/" class="header-logo"><h1 class="hide-text">Terra Frigo</h1></a>
 				<?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"main_menu", 
-	array(
-		"ROOT_MENU_TYPE" => "main",
-		"MENU_CACHE_TYPE" => "N",
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MAX_LEVEL" => "1",
-		"CHILD_MENU_TYPE" => "left",
-		"USE_EXT" => "N",
-		"DELAY" => "Y",
-		"ALLOW_MULTI_SELECT" => "N"
-	),
-	false
-);?>
+                    "bitrix:menu", 
+                    "main_menu", 
+                    array(
+                        "ROOT_MENU_TYPE" => "main",
+                        "MENU_CACHE_TYPE" => "N",
+                        "MENU_CACHE_TIME" => "3600",
+                        "MENU_CACHE_USE_GROUPS" => "Y",
+                        "MENU_CACHE_GET_VARS" => array(
+                        ),
+                        "MAX_LEVEL" => "1",
+                        "CHILD_MENU_TYPE" => "left",
+                        "USE_EXT" => "N",
+                        "DELAY" => "Y",
+                        "ALLOW_MULTI_SELECT" => "N"
+                    ),
+                    false
+                );?>
             </div>
         </div>
-    </header> 
+    </header>
+    <?if($APPLICATION->GetCurPage(false) !== '/'){?>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:menu",
+            "left_inside_menu",
+            Array(
+                "ROOT_MENU_TYPE" => "main",
+                "MENU_CACHE_TYPE" => "N",
+                "MENU_CACHE_TIME" => "3600",
+                "MENU_CACHE_USE_GROUPS" => "Y",
+                "MENU_CACHE_GET_VARS" => array(),
+                "MAX_LEVEL" => "2",
+                "CHILD_MENU_TYPE" => "inner",
+                "USE_EXT" => "N",
+                "DELAY" => "N",
+                "ALLOW_MULTI_SELECT" => "N"
+            )
+        );?>
+    <?}?> 

@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Завод", 
-		"/#", 
+		"/o-zavode/", 
 		Array(), 
 		Array(), 
 		"" 
