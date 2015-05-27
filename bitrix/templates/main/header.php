@@ -5,6 +5,9 @@ $main_classes = array();
 if(defined('ABOUT'))
     $main_classes = array('about-page');
 
+if(defined('PRODUCTION'))
+    $main_classes = array('production-page');
+
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);
 $tplPath = "/bitrix/templates/main/";
@@ -56,29 +59,31 @@ global $tplPath;?>
                 </div>
             </div>
         </div>
-        <div class="header-main">
-            <div class="header-main__wrapper wrapper">
-                <a href="/" class="header-logo"><h1 class="hide-text">Terra Frigo</h1></a>
-				<?$APPLICATION->IncludeComponent(
-                    "bitrix:menu",
-                    "main_menu",
-                    array(
-                        "ROOT_MENU_TYPE" => "main",
-                        "MENU_CACHE_TYPE" => "N",
-                        "MENU_CACHE_TIME" => "3600",
-                        "MENU_CACHE_USE_GROUPS" => "Y",
-                        "MENU_CACHE_GET_VARS" => array(
+        <?if($APPLICATION->GetCurPage(false) == '/'){?>
+            <div class="header-main">
+                <div class="header-main__wrapper wrapper">
+                    <a href="/" class="header-logo"><h1 class="hide-text">Terra Frigo</h1></a>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:menu",
+                        "main_menu",
+                        array(
+                            "ROOT_MENU_TYPE" => "main",
+                            "MENU_CACHE_TYPE" => "N",
+                            "MENU_CACHE_TIME" => "3600",
+                            "MENU_CACHE_USE_GROUPS" => "Y",
+                            "MENU_CACHE_GET_VARS" => array(
+                            ),
+                            "MAX_LEVEL" => "1",
+                            "CHILD_MENU_TYPE" => "left",
+                            "USE_EXT" => "N",
+                            "DELAY" => "Y",
+                            "ALLOW_MULTI_SELECT" => "N"
                         ),
-                        "MAX_LEVEL" => "1",
-                        "CHILD_MENU_TYPE" => "left",
-                        "USE_EXT" => "N",
-                        "DELAY" => "Y",
-                        "ALLOW_MULTI_SELECT" => "N"
-                    ),
-                    false
-                );?>
+                        false
+                    );?>
+                </div>
             </div>
-        </div>
+        <?}?>
     </header>
     <?if($APPLICATION->GetCurPage(false) !== '/'){?>
         <?$APPLICATION->IncludeComponent(
@@ -108,7 +113,7 @@ global $tplPath;?>
                 )
             );?>
         <?}else{?>
-            <h1><?$APPLICATION->ShowTitle()?></h1>
+            <div class="inside-conent <?=$main_classes;?>">
+                <div class="inside-title wrapper"><h1><?$APPLICATION->ShowTitle()?></h1></div>
         <?}?>
-        <div class="inside-conent <?=$main_classes;?>">
     <?}?>

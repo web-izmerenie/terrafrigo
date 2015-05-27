@@ -53,5 +53,6 @@
 
     <script src="<?=$tplPath;?>js/plugins.min.js"></script>
     <script src="<?=$tplPath;?>js/main.js"></script>
+    <script src="<?=$tplPath;?>js/video.js"></script>
 </body>
 </html>

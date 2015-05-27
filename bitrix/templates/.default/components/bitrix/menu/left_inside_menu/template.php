@@ -2,7 +2,7 @@
 
 <?if (!empty($arResult)):?>
     <div class="fixed-left-menu close">
-        <div class="logo"></div>
+        <a href="/"><div class="logo"></div></a>
         <nav>
             <ul>
                 <?foreach($arResult as $arItem){?>

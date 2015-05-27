@@ -6,6 +6,13 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Производство", 
+		"/proizvodstvo/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>
