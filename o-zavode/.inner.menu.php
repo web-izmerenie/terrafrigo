@@ -13,6 +13,13 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Сертификаты", 
+		"/o-zavode/sertifikaty/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>

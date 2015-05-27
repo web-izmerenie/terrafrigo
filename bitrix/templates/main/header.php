@@ -8,6 +8,9 @@ if(defined('ABOUT'))
 if(defined('PRODUCTION'))
     $main_classes = array('production-page');
 
+if(defined('CERTIFICATE'))
+    $main_classes = array('certificares-page');
+
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);
 $tplPath = "/bitrix/templates/main/";
