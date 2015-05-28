@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Рефрижераторы";
+$arDirProperties = Array(
+
+);
+?>

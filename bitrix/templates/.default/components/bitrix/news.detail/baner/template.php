@@ -12,7 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);?>
 <?if(!empty($arResult)){
-$photo = CFile::ResizeImageGet($arResult['PREVIEW_PICTURE'], array('width'=>1850, 'height'=>845), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
+$photo = CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], array('width'=>1850, 'height'=>845), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
     <div class="main-slider-wrapper">
         <div class="about-page-top">
             <div class="main-slider__item js-imgLiquidFill">

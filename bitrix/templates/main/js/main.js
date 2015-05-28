@@ -95,10 +95,21 @@ $(function () {
 		}
 		event.preventDefault();
 	})
-	$('.production-map .marker .bubl .close').click(function(event){
-		$('.production-map .marker a.span').removeClass('active');
-		$(this).parent().fadeOut();
-		event.preventDefault();
+
+    $('.production-map .marker .bubl .close').click(function(event){
+        $('.production-map .marker .bubl').hide();
+        $('.production-map .marker a.span').removeClass('active');
+        event.preventDefault();
+    });
+	$(document).click(function(event){
+
+
+        if ($(event.target).closest("div.production-map .marker").length) return;
+
+        $('.production-map .marker .bubl').hide();
+        $('.production-map .marker a.span').removeClass('active');
+
+        event.stopPropagation();
 	})
     
     /*Placeholder*/
@@ -111,6 +122,18 @@ $(function () {
 	
 	$('.placeholder-3').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'E-mail *'){ $(this).val(''); } });
 	$('.placeholder-3').focusout(function(e) { if($(this).val() == ''){ $(this).val('E-mail *'); } });
+	
+	$('.placeholder-4').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'Наименование'){ $(this).val(''); } });
+	$('.placeholder-4').focusout(function(e) { if($(this).val() == ''){ $(this).val('Наименование'); } });
+	
+	$('.placeholder-5').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'Здесь вы можете указать информацию об ограничении габаритов, уровня шума и пр.'){ $(this).val(''); } });
+	$('.placeholder-5').focusout(function(e) { if($(this).val() == ''){ $(this).val('Здесь вы можете указать информацию об ограничении габаритов, уровня шума и пр.'); } });
+	
+	$('.placeholder-6').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'Контактное лицо *'){ $(this).val(''); } });
+	$('.placeholder-6').focusout(function(e) { if($(this).val() == ''){ $(this).val('Контактное лицо *'); } });
+	
+	$('.placeholder-7').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'Название организации *'){ $(this).val(''); } });
+	$('.placeholder-7').focusout(function(e) { if($(this).val() == ''){ $(this).val('Название организации *'); } });
 	
 	/*Style select*/
 	if($(".style-select").length) {
@@ -131,6 +154,10 @@ $(function () {
 		$('body').removeClass('overflow-none');
 		event.preventDefault();
 	})
+	
+	if($('.radio-btn').length) {
+		$( ".radio-btn" ).buttonset();
+	}
 	
 });
 

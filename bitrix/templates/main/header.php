@@ -11,6 +11,12 @@ if(defined('PRODUCTION'))
 if(defined('CERTIFICATE'))
     $main_classes = array('certificares-page');
 
+if(defined('CAREER'))
+    $main_classes = array('career-page');
+
+if(defined('COLD-TRANSPORT'))
+    $main_classes = array('cold-transport-page');
+
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);
 $tplPath = "/bitrix/templates/main/";
@@ -90,21 +96,23 @@ global $tplPath;?>
     </header>
     <?if($APPLICATION->GetCurPage(false) !== '/'){?>
         <?$APPLICATION->IncludeComponent(
-            "bitrix:menu",
-            "left_inside_menu",
-            Array(
-                "ROOT_MENU_TYPE" => "main",
-                "MENU_CACHE_TYPE" => "N",
-                "MENU_CACHE_TIME" => "3600",
-                "MENU_CACHE_USE_GROUPS" => "Y",
-                "MENU_CACHE_GET_VARS" => array(),
-                "MAX_LEVEL" => "2",
-                "CHILD_MENU_TYPE" => "inner",
-                "USE_EXT" => "N",
-                "DELAY" => "N",
-                "ALLOW_MULTI_SELECT" => "N"
-            )
-        );?>
+	"bitrix:menu", 
+	"left_inside_menu", 
+	array(
+		"ROOT_MENU_TYPE" => "main",
+		"MENU_CACHE_TYPE" => "N",
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MAX_LEVEL" => "3",
+		"CHILD_MENU_TYPE" => "inner",
+		"USE_EXT" => "N",
+		"DELAY" => "N",
+		"ALLOW_MULTI_SELECT" => "N"
+	),
+	false
+);?>
         <?if(defined('BANER')){?>
            <?$APPLICATION->IncludeComponent(
                 "bitrix:main.include",
@@ -115,6 +123,7 @@ global $tplPath;?>
                     "EDIT_TEMPLATE" => ""
                 )
             );?>
+            <div class="inside-conent <?=$main_classes;?>">
         <?}else{?>
             <div class="inside-conent <?=$main_classes;?>">
                 <div class="inside-title wrapper"><h1><?$APPLICATION->ShowTitle()?></h1></div>

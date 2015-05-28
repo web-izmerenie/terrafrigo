@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Рефрижераторы", 
+		"/transportnyj-holod/refrizheratory/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Кондиционеры для коммерческого транспорта", 
+		"/#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Кондиционеры для спецтехники", 
+		"/#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Комплектующие", 
+		"/#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Дилеры", 
+		"/#", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
