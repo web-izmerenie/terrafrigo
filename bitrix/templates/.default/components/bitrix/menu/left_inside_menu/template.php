@@ -7,7 +7,7 @@
             <ul>
                 <?foreach($arResult as $arItem){?>
                 <li><a href="<?=$arItem['LINK']?>"><?=$arItem['TEXT'];?></a>
-                    <?if(isset($arItem['CHILDREN'])){?>
+                    <?if(isset($arItem['CHILDREN']) && $arItem['SELECTED'] == 1){?>
                         <?foreach($arItem['CHILDREN'] as $arChildren){?>
                             <ul>
                                 <li <?if($arChildren['SELECTED'] == 1){?>
