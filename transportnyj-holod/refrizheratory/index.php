@@ -21,19 +21,19 @@ $APPLICATION->SetTitle("Рефрижераторы");
             <ul>
                 <li class="element">
                     <a href="#">
-                        <div class="element-img"><img src="<?=$tplPath;?>img/model-s10.png" alt=""></div>
+                        <div class="element-img"><img src="img/model-s10.png" alt=""></div>
                         <div class="element-name">Модель S10</div>
                     </a>
                 </li>
                 <li class="element">
                     <a href="#">
-                        <div class="element-img"><img src="<?=$tplPath;?>img/model-s10.png" alt=""></div>
+                        <div class="element-img"><img src="img/model-s10.png" alt=""></div>
                         <div class="element-name">Модель S10</div>
                     </a>
                 </li>
                 <li class="element">
                     <a href="#">
-                        <div class="element-img"><img src="<?=$tplPath;?>img/model-s10.png" alt=""></div>
+                        <div class="element-img"><img src="img/model-s10.png" alt=""></div>
                         <div class="element-name">Модель S10</div>
                     </a>
                 </li>
@@ -55,16 +55,16 @@ $APPLICATION->SetTitle("Рефрижераторы");
             <div class="group-title ieb icon-f4">Внутренний объем фургона</div>
             <div class="line">
                 <div class="radio-btn border">
-                    <div><input type="checkbox" name="gr1" id="gr1-1" /><label for="gr1-1"><span class="image"><img src="<?=$tplPath;?>img/icon-tr-1.png" alt="" /></span>до 6 м³</label></div>
-                    <div><input type="checkbox" name="gr1" id="gr1-2" /><label for="gr1-2"><span class="image"><img src="<?=$tplPath;?>img/icon-tr-2.png" alt="" /></span>от 6 м³ до 12 м³</label></div>
-                    <div><input type="checkbox" name="gr1" id="gr1-3" /><label for="gr1-3"><span class="image"><img src="<?=$tplPath;?>img/icon-tr-3.png" alt="" /></span>от 10 м³ до 20 м³</label></div>
+                    <div><input type="checkbox" name="gr1" id="gr1-1" /><label for="gr1-1"><span class="image"><img src="img/icon-tr-1.png" alt="" /></span>до 6 м³</label></div>
+                    <div><input type="checkbox" name="gr1" id="gr1-2" /><label for="gr1-2"><span class="image"><img src="img/icon-tr-2.png" alt="" /></span>от 6 м³ до 12 м³</label></div>
+                    <div><input type="checkbox" name="gr1" id="gr1-3" /><label for="gr1-3"><span class="image"><img src="img/icon-tr-3.png" alt="" /></span>от 10 м³ до 20 м³</label></div>
                 </div>
             </div>
             <div class="line">
                 <div class="radio-btn border">
-                    <div><input type="checkbox" name="gr1" id="gr1-4" /><label for="gr1-4"><span class="image"><img src="<?=$tplPath;?>img/icon-tr-4.png" alt="" /></span>от 20 м³ до 26 м³</label></div>
-                    <div><input type="checkbox" name="gr1" id="gr1-5" /><label for="gr1-5"><span class="image"><img src="<?=$tplPath;?>img/icon-tr-5.png" alt="" /></span>от 26 м³ до 36 м³</label></div>
-                    <div><input type="checkbox" name="gr1" id="gr1-6" /><label for="gr1-6"><span class="image"><img src="<?=$tplPath;?>img/icon-tr-6.png" alt="" /></span>от 36 м³ до 50 м³</label></div>
+                    <div><input type="checkbox" name="gr1" id="gr1-4" /><label for="gr1-4"><span class="image"><img src="img/icon-tr-4.png" alt="" /></span>от 20 м³ до 26 м³</label></div>
+                    <div><input type="checkbox" name="gr1" id="gr1-5" /><label for="gr1-5"><span class="image"><img src="img/icon-tr-5.png" alt="" /></span>от 26 м³ до 36 м³</label></div>
+                    <div><input type="checkbox" name="gr1" id="gr1-6" /><label for="gr1-6"><span class="image"><img src="img/icon-tr-6.png" alt="" /></span>от 36 м³ до 50 м³</label></div>
                 </div>
             </div>
         </div>
@@ -92,9 +92,9 @@ $APPLICATION->SetTitle("Рефрижераторы");
             <div class="group-title ieb icon-f6">Режим работы</div>
             <div class="line">
                 <div class="radio-btn border">
-                    <div><input type="checkbox" name="gr3" id="gr3-1" /><label for="gr3-1"><span class="image"><img src="<?=$tplPath;?>img/icon-temp-1.png" alt="" /></span>Охлаждение <br />до +4 С°</label></div>
-                    <div><input type="checkbox" name="gr3" id="gr3-2" /><label for="gr3-2"><span class="image"><img src="<?=$tplPath;?>img/icon-temp-2.png" alt="" /></span>Холод <br />от 0 С° до –20 С°</label></div>
-                    <div><input type="checkbox" name="gr3" id="gr3-3" /><label for="gr3-3"><span class="image"><img src="<?=$tplPath;?>img/icon-temp-3.png" alt="" /></span>Холод-Тепло <br />от –20 С° до +12 С°</label></div>
+                    <div><input type="checkbox" name="gr3" id="gr3-1" /><label for="gr3-1"><span class="image"><img src="img/icon-temp-1.png" alt="" /></span>Охлаждение <br />до +4 С°</label></div>
+                    <div><input type="checkbox" name="gr3" id="gr3-2" /><label for="gr3-2"><span class="image"><img src="img/icon-temp-2.png" alt="" /></span>Холод <br />от 0 С° до –20 С°</label></div>
+                    <div><input type="checkbox" name="gr3" id="gr3-3" /><label for="gr3-3"><span class="image"><img src="img/icon-temp-3.png" alt="" /></span>Холод-Тепло <br />от –20 С° до +12 С°</label></div>
                 </div>
             </div>
             <div class="line">
@@ -108,9 +108,9 @@ $APPLICATION->SetTitle("Рефрижераторы");
             <div class="group-title ieb icon-f7">Тип перевозимой продукции</div>
             <div class="line">
                 <div class="radio-btn border">
-                    <div><input type="checkbox" name="gr4" id="gr4-1" /><label for="gr4-1"><span class="image"><img src="<?=$tplPath;?>img/icon-prod-1.png" alt="" /></span><span class="text">Любые охлажденные продукты, <br />в том числе фрукты и овощи</span></label></div>
-                    <div><input type="checkbox" name="gr4" id="gr4-2" /><label for="gr4-2"><span class="image"><img src="<?=$tplPath;?>img/icon-prod-2.png" alt="" /></span><span class="text">Любые замороженные продукты</span></label></div>
-                    <div><input type="checkbox" name="gr4" id="gr4-3" /><label for="gr4-3"><span class="image"><img src="<?=$tplPath;?>img/icon-prod-3.png" alt="" /></span><span class="text">Охлажденные продукты, замороженные продукты, <br />в том числе фрукты, кондитерские изделия, цветы, лекарства</span></label></div>
+                    <div><input type="checkbox" name="gr4" id="gr4-1" /><label for="gr4-1"><span class="image"><img src="img/icon-prod-1.png" alt="" /></span><span class="text">Любые охлажденные продукты, <br />в том числе фрукты и овощи</span></label></div>
+                    <div><input type="checkbox" name="gr4" id="gr4-2" /><label for="gr4-2"><span class="image"><img src="img/icon-prod-2.png" alt="" /></span><span class="text">Любые замороженные продукты</span></label></div>
+                    <div><input type="checkbox" name="gr4" id="gr4-3" /><label for="gr4-3"><span class="image"><img src="img/icon-prod-3.png" alt="" /></span><span class="text">Охлажденные продукты, замороженные продукты, <br />в том числе фрукты, кондитерские изделия, цветы, лекарства</span></label></div>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);?>
 <?if(!empty($arResult['ITEMS'])){?>
-	<div class="main-category">
+	<div id="main-category" class="main-category">
 			<div class="main-category__wrapper wrapper clearfix">
 				<?foreach($arResult['ITEMS'] as $arItem){?>
 					<a href="<?=$arItem['PROPERTIES']['ATT_LINK']['VALUE'];?>" class="main-category__item">

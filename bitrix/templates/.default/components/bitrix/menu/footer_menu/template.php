@@ -18,21 +18,23 @@
                                     </a>
                                 </li>
                                 <?$APPLICATION->IncludeComponent(
-                                    "bitrix:menu",
-                                    "inside_catalog_manu",
-                                    Array(
-                                        "ROOT_MENU_TYPE" => "inner",
-                                        "MENU_CACHE_TYPE" => "N",
-                                        "MENU_CACHE_TIME" => "3600",
-                                        "MENU_CACHE_USE_GROUPS" => "Y",
-                                        "MENU_CACHE_GET_VARS" => array(""),
-                                        "MAX_LEVEL" => "2",
-                                        "CHILD_MENU_TYPE" => "inner_catalog",
-                                        "USE_EXT" => "N",
-                                        "DELAY" => "N",
-                                        "ALLOW_MULTI_SELECT" => "N"
-                                    )
-                                );?>
+	"bitrix:menu", 
+	"inside_catalog_menu", 
+	array(
+		"ROOT_MENU_TYPE" => "inner",
+		"MENU_CACHE_TYPE" => "N",
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MAX_LEVEL" => "2",
+		"CHILD_MENU_TYPE" => "inner_catalog",
+		"USE_EXT" => "N",
+		"DELAY" => "N",
+		"ALLOW_MULTI_SELECT" => "N"
+	),
+	false
+);?>
                             </ul>
                         <?}?>
                         <?}else{?>
