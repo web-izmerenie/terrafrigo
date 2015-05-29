@@ -52,7 +52,9 @@
 
 
     <script src="<?=$tplPath;?>js/plugins.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="<?=$tplPath;?>js/main.js"></script>
+    <script src="<?=$tplPath;?>js/jquery.selectBoxIt.js"></script>
     <script src="<?=$tplPath;?>js/video.js"></script>
 </body>
 </html>

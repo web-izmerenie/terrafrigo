@@ -155,9 +155,32 @@ $(function () {
 		event.preventDefault();
 	})
 	
+	/*UI radiobutton*/
 	if($('.radio-btn').length) {
 		$( ".radio-btn" ).buttonset();
 	}
+	
+	/*Reviews page*/
+	if($('.reviews-innr').length){
+		$('.reviews-innr .block').each(function(){
+			var $each = $(this).find('.wrapper').height();
+			if($each < 210 ) {
+				$(this).addClass('non');
+			}
+		})
+		$('.reviews-innr .block').click(function(event){
+			if(!$(this).hasClass('non')) {
+				$(this).toggleClass('open');
+			}
+		})
+	}
+	
+	
+	/*career list*/
+	$('.career-list ul li').click(function(){
+		$(this).find('.hid-text').slideToggle();
+		$(this).toggleClass('open');
+	})
 	
 });
 
