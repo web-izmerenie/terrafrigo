@@ -1,4 +1,4 @@
-    <?if($APPLICATION->GetCurPage(false) !== '/'){?></div><?}?>
+    <?if($APPLICATION->GetCurPage(false) !== '/' || !defined('MODEL')){?></div><?}?>
     <div class="additional-text">
         <div class="wrapper">
             <button class="additional-text__button btn-link" type="button">Доп. информация</button>
@@ -22,23 +22,23 @@
             </div>
         </div>
         <?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"footer_menu", 
-	array(
-		"ROOT_MENU_TYPE" => "main",
-		"MENU_CACHE_TYPE" => "N",
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MAX_LEVEL" => "2",
-		"CHILD_MENU_TYPE" => "inner",
-		"USE_EXT" => "N",
-		"DELAY" => "N",
-		"ALLOW_MULTI_SELECT" => "N"
-	),
-	false
-);?>
+            "bitrix:menu",
+            "footer_menu",
+            array(
+                "ROOT_MENU_TYPE" => "main",
+                "MENU_CACHE_TYPE" => "N",
+                "MENU_CACHE_TIME" => "3600",
+                "MENU_CACHE_USE_GROUPS" => "Y",
+                "MENU_CACHE_GET_VARS" => array(
+                ),
+                "MAX_LEVEL" => "2",
+                "CHILD_MENU_TYPE" => "inner",
+                "USE_EXT" => "N",
+                "DELAY" => "N",
+                "ALLOW_MULTI_SELECT" => "N"
+            ),
+            false
+        );?>
         <div class="footer-bottom">
             <div class="footer-bottom__wrapper wrapper clearfix">
                 <div class="footer-bottom__copy">© 2006-2015 ООО «Завод ТерраФриго». Все права защищены.</div>
