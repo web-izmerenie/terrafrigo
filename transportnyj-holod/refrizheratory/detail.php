@@ -1,10 +1,11 @@
-<?define('MODEL', 'Y');
+<?$GLOBALS['iblock_id'] = '17';
+define('MODEL', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("detail");
 ?><div class="inside-conent model-page">
 	 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.element",
-	"element_detail",
+	"refrizheratory",
 	Array(
 		"IBLOCK_TYPE" => "transport_cold",
 		"IBLOCK_ID" => "17",
@@ -123,7 +124,7 @@ $APPLICATION->SetTitle("detail");
 	),
 	false
 );?>
-<div class="benefit-block">
+	<div class="benefit-block">
         <ul>
             <li class="transport-icon-1" style="background-color: #4ea4e4;"><span>Отечественное оборудование по ценам ниже европейских аналогов</span></li>
             <li class="benefit-icon-3" style="background-color: #edcf85;"><span>Проверка ОТК на каждом этапе производства оборудования</span></li>

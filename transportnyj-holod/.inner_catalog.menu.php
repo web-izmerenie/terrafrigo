@@ -9,7 +9,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Кондиционеры для коммерческого транспорта", 
-		"/#", 
+		"/transportnyj-holod/konditcionery/", 
 		Array(), 
 		Array(), 
 		"" 

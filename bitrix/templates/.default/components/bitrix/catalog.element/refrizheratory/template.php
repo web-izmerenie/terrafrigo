@@ -44,11 +44,11 @@ $this->setFrameMode(true);?>
             <ul class="table table-model">
     			<li class="table-head">
     				<div class="wrapper">
-    					<span class="td1"><?=$arResult['PROPERTIES']['MAIN_NAME']['NAME'];?></span>
-    					<span class="td2"><?=$arResult['PROPERTIES']['MAIN_MODEL']['NAME'];?></span>
-    					<span class="td3"><?=$arResult['PROPERTIES']['MAIN_WIDTH']['NAME'];?></span>
-    					<span class="td4"><?=$arResult['PROPERTIES']['MAIN_WEIGHT']['NAME'];?></span>
-    					<span class="td5"><?=$arResult['PROPERTIES']['MAIN_DOP']['NAME'];?></span>
+    					<span class="td1">Наименование</span>
+    					<span class="td2">Модель</span>
+    					<span class="td3">Габаритные размеры, <br />не более, мм</span>
+    					<span class="td4">Масса <br />не более, кг</span>
+    					<span class="td5">Дополнительные <br />характеристики</span>
     				</div>
     			</li>
                 <?$countCharset = count($arResult['PROPERTIES']['MAIN_NAME']['VALUE']) - 1;

@@ -1,4 +1,5 @@
-<?define('BANER', 'Y');
+<?$GLOBALS['iblock_id'] = '17';
+define('BANER', 'Y');
 define('COLD-TRANSPORT', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Рефрижераторы");
@@ -16,7 +17,7 @@ $APPLICATION->SetTitle("Рефрижераторы");
         <div class="title">Вам подойдут модели:</div>
     </div>
 
-    <div class="wrapper">	
+    <div class="wrapper">
         <div class="search_result clearfix">
             <ul>
                 <li class="element">
@@ -50,7 +51,7 @@ $APPLICATION->SetTitle("Рефрижераторы");
             <div class="text-3">Подробнее об услуге можно узнать по телефону: 8 800 2345-188</div>
         </div>
 
-    <div class="wrapper">	
+    <div class="wrapper">
         <div class="group group-search-1 clearfix">
             <div class="group-title ieb icon-f4">Внутренний объем фургона</div>
             <div class="line">
@@ -74,14 +75,14 @@ $APPLICATION->SetTitle("Рефрижераторы");
             <div class="line">
                 <div class="radio-btn">
                     <div><input type="checkbox" name="gr2" id="gr2-1" /><label for="gr2-1">Пенопласт</label></div>
-                    <div><input type="checkbox" name="gr2" id="gr2-2" /><label for="gr2-2">Пенополистирол <br />экструдированный (ППС)</label></div>    							
+                    <div><input type="checkbox" name="gr2" id="gr2-2" /><label for="gr2-2">Пенополистирол <br />экструдированный (ППС)</label></div>
                     <div><input type="checkbox" name="gr2" id="gr2-3" /><label for="gr2-3">Пенополиуретан (ППУ)</label></div>
                 </div>
             </div>
             <div class="line">
                 <div class="radio-btn">
                     <div><input type="checkbox" name="gr2" id="gr2-4" /><label for="gr2-4">70 мм</label></div>
-                    <div><input type="checkbox" name="gr2" id="gr2-5" /><label for="gr2-5">60 мм</label></div>    							
+                    <div><input type="checkbox" name="gr2" id="gr2-5" /><label for="gr2-5">60 мм</label></div>
                     <div><input type="checkbox" name="gr2" id="gr2-6" /><label for="gr2-6">50 мм</label></div>
                     <div><input type="checkbox" name="gr2" id="gr2-7" /><label for="gr2-7">40 мм</label></div>
                 </div>

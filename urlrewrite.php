@@ -12,6 +12,12 @@ $arUrlRewrite = array(
 		"ID" => "",
 		"PATH" => "/transportnyj-holod/refrizheratory/sections.php",
 	),
+	array(
+		"CONDITION" => "#^/transportnyj-holod/konditcionery/(.*?)/(\\?.*\$|\$)#",
+		"RULE" => "&ELEMENT_CODE=\$1",
+		"ID" => "",
+		"PATH" => "/transportnyj-holod/konditcionery/detail.php",
+	),
 );
 
 ?>

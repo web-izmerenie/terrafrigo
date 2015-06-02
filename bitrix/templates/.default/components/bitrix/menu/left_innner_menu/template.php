@@ -1,5 +1,4 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-
 <?if (!empty($arResult)):?>
     <ul>
         <?foreach($arResult as $arItem){?>
@@ -11,7 +10,7 @@
                     "",
                     Array(
                         "IBLOCK_TYPE" => "transport_cold",
-                        "IBLOCK_ID" => "17",
+                        "IBLOCK_ID" => $GLOBALS['iblock_id'],
                         "SECTION_ID" => "",
                         "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
                         "COUNT_ELEMENTS" => "Y",
@@ -32,7 +31,7 @@
                     "",
                     Array(
                         "IBLOCK_TYPE" => "transport_cold",
-                        "IBLOCK_ID" => "17",
+                        "IBLOCK_ID" => $GLOBALS['iblock_id'],
                         "SECTION_ID" => "",
                         "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
                         "SECTION_USER_FIELDS" => array("", "undefined", ""),
