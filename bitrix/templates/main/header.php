@@ -65,8 +65,8 @@ global $tplPath;?>
                     </li>
                 </ul>
                 <div class="header-line__right-block clearfix">
-                    <a href="#" class="header-line__right-link header-line__right-link_blue1">Заказать звонок</a>
-                    <a href="#" class="header-line__right-link header-line__right-link_blue2">Написать нам</a>
+                    <a href="#popup-call" class="header-line__right-link header-line__right-link_blue1 popup-open">Заказать звонок</a>
+                    <a href="#popup-form2" class="header-line__right-link header-line__right-link_blue2 popup-open">Написать нам</a>
                 </div>
             </div>
         </div>

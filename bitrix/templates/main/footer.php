@@ -50,6 +50,99 @@
         </div>
     </footer>
 
+    <div class="popup-inner" id="popup-call">
+        <div class="popup-form">
+            <a href="#" class="close"></a>
+            <div class="title">Заказать звонок</div>
+            <div class="form">
+                <form>
+                    <div class="line"><input type="text" value="Телефон *" class="placeholder-1"/></div>
+                    <div class="line"><input type="text" value="Фио*" class="placeholder-2"/></div>
+                    <div class="line line-t2">
+                        <select class="style-select">
+                            <option value="default">Округ *</option>
+                            <option value="1">Округ 1</option>
+                            <option value="2">Округ 2</option>
+                            <option value="3">Округ 3</option>
+                        </select>
+                        <input type="text" value="Время звонка" class="placeholder-8"/>
+                    </div>
+                    <div class="line-send"><input type="submit" value="Отправить" class="btn-type-1" /></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-inner" id="popup-form2">
+        <div class="popup-form">
+            <a href="#" class="close"></a>
+            <div class="title">Написать нам</div>
+            <div class="form">
+                <form>
+                    <div class="line"><input type="text" value="Фио*" class="placeholder-2"/></div>
+                    <div class="line"><input type="text" value="Компания*" class="placeholder-9"/></div>
+                    <div class="line line-t2">
+                        <input type="text" value="Телефон *" class="placeholder-1"/>
+                        <input type="text" value="E-mail *" class="placeholder-3"/>
+                    </div>
+                    <div class="line line-t2">
+                        <select class="style-select">
+                            <option value="default">Округ *</option>
+                            <option value="1">Округ 1</option>
+                            <option value="2">Округ 2</option>
+                            <option value="3">Округ 3</option>
+                        </select>
+                        <select class="style-select">
+                            <option value="default">Отдел *</option>
+                            <option value="1">Отдел 1</option>
+                            <option value="2">Отдел 2</option>
+                            <option value="3">Отдел 3</option>
+                        </select>
+                    </div>
+                    <div class="line line-textarea">
+                        <textarea class="placeholder-10">Сообщение *</textarea>
+                    </div>
+                    <div class="line-send"><input type="submit" value="Отправить" class="btn-type-1" /></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-inner" id="popup-form3">
+        <div class="popup-form">
+            <a href="#" class="close"></a>
+            <div class="title">Узнать стоимость</div>
+            <div class="form">
+                <form>
+                    <div class="line"><input type="text" value="Фио*" class="placeholder-2"/></div>
+                    <div class="line"><input type="text" value="Компания*" class="placeholder-9"/></div>
+                    <div class="line line-t2">
+                        <input type="text" value="Телефон *" class="placeholder-1"/>
+                        <input type="text" value="E-mail *" class="placeholder-3"/>
+                    </div>
+                    <div class="line line-t2">
+                        <select class="style-select">
+                            <option value="default">Округ *</option>
+                            <option value="1">Округ 1</option>
+                            <option value="2">Округ 2</option>
+                            <option value="3">Округ 3</option>
+                        </select>
+                        <select class="style-select">
+                            <option value="default">Отдел *</option>
+                            <option value="1">Отдел 1</option>
+                            <option value="2">Отдел 2</option>
+                            <option value="3">Отдел 3</option>
+                        </select>
+                    </div>
+                    <div class="line line-textarea">
+                        <textarea class="placeholder-10">Сообщение *</textarea>
+                    </div>
+                    <div class="line-send"><input type="submit" value="Отправить" class="btn-type-1" /></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
     <script src="<?=$tplPath;?>js/plugins.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

@@ -23,7 +23,7 @@ $this->setFrameMode(true);?>
                 <div class="wrapper">
                     <div class="main-slider__slider-description"><?=$arResult['DETAIL_TEXT'];?></div>
                     <div class="double-button">
-                        <a href="#" class="btn-1">Узнать стоимость</a>
+                        <a href="#popup-form3" class="btn-1 popup-open">Узнать стоимость</a>
                         <a href="#" class="btn-2">Найти дилера</a>
                     </div>
                 </div>
