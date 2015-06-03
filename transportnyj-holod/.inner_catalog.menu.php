@@ -16,7 +16,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Кондиционеры для спецтехники", 
-		"/#", 
+		"/transportnyj-holod/dlya-spetctekhniki/", 
 		Array(), 
 		Array(), 
 		"" 

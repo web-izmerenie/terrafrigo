@@ -25,7 +25,7 @@
                                             "MENU_CACHE_USE_GROUPS" => "Y",
                                             "MENU_CACHE_GET_VARS" => array(""),
                                             "MAX_LEVEL" => "1",
-                                            "CHILD_MENU_TYPE" => "left",
+                                            "CHILD_MENU_TYPE" => "inner_catalog",
                                             "USE_EXT" => "N",
                                             "DELAY" => "N",
                                             "ALLOW_MULTI_SELECT" => "N"

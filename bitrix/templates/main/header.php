@@ -38,7 +38,8 @@ global $tplPath;?>
     <meta name="format-detection" content="telephone=no">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?=$tplPath;?>css/main.css">
-    <link rel="stylesheet" href="<?=$tplPath;?>/jquery.selectBoxIt.css">
+    <link rel="stylesheet" href="<?=$tplPath;?>css/jquery.selectBoxIt.css">
+    <link rel="stylesheet" href="<?=$tplPath;?>css/backend.css">
 </head>
 <body>
 	<?$APPLICATION->ShowPanel();?>

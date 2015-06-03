@@ -1,0 +1,32 @@
+.text-block{
+    padding: 30px;
+    color: #000;
+}
+
+.text-block h1{
+    font: 400 16px "Ubuntu";
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.text-block ul li:before{
+    content: '– ';
+    color: #8fc2e2;
+}
+
+.text-block ul li{
+    margin-bottom: 26px;
+    margin-left: 19px;
+    line-height: 1.6;
+}
+
+.text-block p{
+    margin-bottom: 32px;
+}
+
+.footer-middle__col_col3{
+    width: 19.35%;
+    position: relative;
+    left: 26px;
+    padding-top: 0;
+}

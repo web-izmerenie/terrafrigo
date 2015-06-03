@@ -9,7 +9,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Производство", 
-		"/proizvodstvo/", 
+		"/o-zavode/proizvodstvo/", 
 		Array(), 
 		Array(), 
 		"" 
