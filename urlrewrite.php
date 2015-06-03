@@ -1,6 +1,12 @@
 <?
 $arUrlRewrite = array(
 	array(
+		"CONDITION" => "#^/transportnyj-holod/dlya-spetctekhniki/(.*?)/(\\?.*\$|\$)#",
+		"RULE" => "&ELEMENT_CODE=\$1",
+		"ID" => "",
+		"PATH" => "/transportnyj-holod/dlya-spetctekhniki/detail.php",
+	),
+	array(
 		"CONDITION" => "#^/transportnyj-holod/refrizheratory/(.+?)/(.+?)/(\\?|\$)#",
 		"RULE" => "ELEMENT_CODE=\$2&",
 		"ID" => "",

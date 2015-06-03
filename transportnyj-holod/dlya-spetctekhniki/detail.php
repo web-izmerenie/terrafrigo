@@ -1,21 +1,25 @@
-<?$GLOBALS['iblock_id'] = '19';
+<?$GLOBALS['iblock_id'] = '21';
 define('MODEL', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.element",
-	"konditcionery",
-	Array(
+	"bitrix:catalog.element", 
+	"kondition_for_spectech", 
+	array(
 		"IBLOCK_TYPE" => "transport_cold",
-		"IBLOCK_ID" => "19",
+		"IBLOCK_ID" => "21",
 		"ELEMENT_ID" => "",
 		"ELEMENT_CODE" => $_REQUEST["ELEMENT_CODE"],
 		"SECTION_ID" => "",
 		"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-		"PROPERTY_CODE" => array(0=>"",1=>"undefined",2=>"",),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "undefined",
+			2 => "",
+		),
 		"OFFERS_LIMIT" => "0",
 		"TEMPLATE_THEME" => "blue",
-		"DISPLAY_NAME" => "N",
+		"DISPLAY_NAME" => "Y",
 		"DETAIL_PICTURE_MODE" => "IMG",
 		"ADD_DETAIL_TO_SLIDER" => "N",
 		"DISPLAY_PREVIEW_TEXT_MODE" => "E",
@@ -33,8 +37,8 @@ $APPLICATION->SetTitle("detail");
 		"CACHE_TYPE" => "A",
 		"CACHE_TIME" => "36000000",
 		"CACHE_GROUPS" => "Y",
-		"SET_TITLE" => "Y",
-		"SET_BROWSER_TITLE" => "N",
+		"SET_TITLE" => "N",
+		"SET_BROWSER_TITLE" => "Y",
 		"BROWSER_TITLE" => "NAME",
 		"SET_META_KEYWORDS" => "N",
 		"META_KEYWORDS" => "-",
@@ -42,12 +46,13 @@ $APPLICATION->SetTitle("detail");
 		"META_DESCRIPTION" => "-",
 		"SET_STATUS_404" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
-		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "Y",
 		"USE_ELEMENT_COUNTER" => "N",
 		"ACTION_VARIABLE" => "action",
 		"PRODUCT_ID_VARIABLE" => "id",
 		"DISPLAY_COMPARE" => "N",
-		"PRICE_CODE" => array(),
+		"PRICE_CODE" => array(
+		),
 		"USE_PRICE_COUNT" => "N",
 		"SHOW_PRICE_COUNT" => "1",
 		"PRICE_VAT_INCLUDE" => "Y",
@@ -57,7 +62,8 @@ $APPLICATION->SetTitle("detail");
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRODUCT_PROPERTIES" => array(),
+		"PRODUCT_PROPERTIES" => array(
+		),
 		"LINK_IBLOCK_TYPE" => "undefined",
 		"LINK_IBLOCK_ID" => "undefined",
 		"LINK_PROPERTY_SID" => "undefined",
@@ -66,7 +72,8 @@ $APPLICATION->SetTitle("detail");
 		"ADD_PICT_PROP" => "-",
 		"LABEL_PROP" => "-",
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity"
-	)
+	),
+	false
 );?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/inc/th_reviews.php");?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

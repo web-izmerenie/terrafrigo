@@ -24,14 +24,16 @@ $this->setFrameMode(true);?>
                 </div>
                 <div class="series-model-element_text">
                     <h4><a href="<?=$arItem['DETAIL_PAGE_URL'];?>"><?=$arItem['NAME'];?></a></h4>
-                    <div class = "model-element_text-list model-element_text-list_head">
-                        <span class="text-list_left"><?=$arItem['PROPERTIES']['ATT_TEMP']['NAME'];?></span>
-                        <span class="text-list_right"><?=$arItem['PROPERTIES']['ATT_WEIGHT']['NAME'];?></span>
-                    </div>
-                    <div class = "model-element_text-list">
-                        <span class="text-list_left"><?=$temp;?>°C</span>
-						<span class="text-list_right"><?=$weight;?>м³</span>
-                    </div>
+                    <?if(!empty($temp) || !empty($weight)){?>
+                        <div class = "model-element_text-list model-element_text-list_head">
+                            <span class="text-list_left"><?=$arItem['PROPERTIES']['ATT_TEMP']['NAME'];?></span>
+                            <span class="text-list_right"><?=$arItem['PROPERTIES']['ATT_WEIGHT']['NAME'];?></span>
+                        </div>
+                        <div class = "model-element_text-list">
+                            <span class="text-list_left"><?=$temp;?>°C</span>
+                            <span class="text-list_right"><?=$weight;?>м³</span>
+                        </div>
+                    <?}?>
                 </div>
             </div>
          <?}?>
