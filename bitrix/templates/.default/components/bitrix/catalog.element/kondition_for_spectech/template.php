@@ -11,28 +11,32 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);?>
-<div class="main-slider-wrapper">
-    <div class="about-page-top heaters-page-top">
-        <div class="main-slider__item js-imgLiquidFill">
-            <?foreach($arResult['SLIDE'] as $arSlide){
-            $slide = CFile::ResizeImageGet($arSlide, array('width'=>1850, 'height'=>845), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
-                <img class="main-slider__image" src="<?=$slide['src'];?>" alt=""/>
-            <?}?>
-            <div class="inside-title wrapper">
-                <span>Кондиционеры для коммерческого транспорта</span><br/>
-                <h1><?=$arResult['NAME'];?></h1>
-            </div>
-            <div class="main-slider__overlay">
-                <div class="wrapper">
-                    <div class="main-slider__slider-description"><?=$arResult['PREVIEW_TEXT'];?></div>
-                    <div class="btn-find-dealer">
-                        <a href="#popup-form3" class = "find-dealer_link2 btn-price popup-open"><span>Узнать стоимость</span></a>
-                        <a href="#" class = "find-dealer_link1">Найти дилера</a>
+<div class="main-slider-wrapper no-controls">
+    <ul class="js-main-slider about-page-top heaters-page-top">
+        <?foreach($arResult['SLIDE'] as $arSlide){
+        $slide = CFile::ResizeImageGet($arSlide, array('width'=>1850, 'height'=>845), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
+            <li class="js-imgLiquidFill">
+                <div class="about-page-top heaters-page-top">
+                    <div class="main-slider__item js-imgLiquidFill">
+                        <img class="main-slider__image" src="<?=$slide['src'];?>" alt=""/>
+                        <div class="inside-title wrapper">
+                            <span>Кондиционеры для коммерческого транспорта</span><br/>
+                            <h1><?=$arResult['NAME'];?></h1>
+                        </div>
+                        <div class="main-slider__overlay">
+                            <div class="wrapper">
+                                <div class="main-slider__slider-description"><?=$arResult['PREVIEW_TEXT'];?></div>
+                                <div class="btn-find-dealer">
+                                    <a href="#popup-form3" class = "find-dealer_link2 btn-price popup-open"><span>Узнать стоимость</span></a>
+                                    <a href="#" class = "find-dealer_link1">Найти дилера</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </li>
+        <?}?>
+    </ul>
 </div>
 <div class="inside-conent heaters-page">
     <div class="benefit-block">
