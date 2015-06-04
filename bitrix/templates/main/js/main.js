@@ -387,9 +387,9 @@ $(function () {
     
     
     /*Production map*/
-    if($('body').width()>1499) { $('.production-map > img').attr('src','img/map-big.png'); }
+    if($('body').width()>1499) { $('.production-map > img').attr('src','/bitrix/templates/main/img/map-big.png'); }
     $(window).resize(function(){
-    	if($('body').width()>1499) { $('.production-map > img').attr('src','img/map-big.png'); }
+    	if($('body').width()>1499) { $('.production-map > img').attr('src','/bitrix/templates/main/img/map-big.png'); }
 	    else { $('.production-map > img').attr('src','img/map.png'); }
     })
     

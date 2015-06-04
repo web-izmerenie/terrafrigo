@@ -23,7 +23,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Комплектующие", 
-		"/#", 
+		"/transportnyj-holod/komplektuiushchie/", 
 		Array(), 
 		Array(), 
 		"" 
