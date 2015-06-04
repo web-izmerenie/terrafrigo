@@ -11,6 +11,8 @@
 *.rar
 *.sql
 
+Thumbs.db
+
 node_modules
 front-end-gulp
 bitrix/templates/main/styles/build
