@@ -30,15 +30,21 @@ $(function () {
 		$button.on('click', function () {
 			if ($button.hasClass('active')) {
 				$button.removeClass('active');
-				$container.stop(true).slideUp();
+				$('.additional-text__container').animate({'height':'120px'}, 500);
 			} else {
-				$button.addClass('active');
-				$container.stop(true).slideDown();
+				$button.addClass('active'); 
+				$('.additional-text__container').animate({'height':'240px'}, 500);
 			}
 		});
 	}());
     var widthWin = $(document).width();
+	if(widthWin >=1240){
+       var $newsItem = $('.main-news__item').width();
+        $('.main-news__link').height($newsItem * 1.19);
+    }
+    else{
 
+    }
     if(widthWin >=1600){
        var $newsItem = $('.main-news__item').width();
         $('.main-news__link').height($newsItem * 1.19);
@@ -55,15 +61,6 @@ $(function () {
 
         }
     });
-    /*---------------------------*/
-    var $square = $('.certificares-block li, .benefit-block ul li, .benefit-block ul li span').width();
-    $('.certificares-block li, .benefit-block ul li, .benefit-block ul li span').height($square);
-
-    $(window).resize(function(){
-        var $square = $('.certificares-block li, .benefit-block ul li, .benefit-block ul li span').width();
-        $('.certificares-block li, .benefit-block ul li, .benefit-block ul li span').height($square);
-    });
-    /*--------------------------*/
     if(widthWin <= 1600){
         var $newsItem = $('.main-news__item').width();
         $('.main-news__link').height($newsItem * 1.145);
@@ -154,11 +151,21 @@ $(function () {
 	$('.placeholder-10').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'Сообщение *'){ $(this).val(''); } });
 	$('.placeholder-10').focusout(function(e) { if($(this).val() == ''){ $(this).val('Сообщение *'); } });
 	
+	$('.placeholder-11').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'ДРУГОЙ'){ $(this).val(''); } });
+	$('.placeholder-11').focusout(function(e) { if($(this).val() == ''){ $(this).val('ДРУГОЙ'); } });
+	
+	$('.placeholder-12').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'ВХОД'){ $(this).val(''); } });
+	$('.placeholder-12').focusout(function(e) { if($(this).val() == ''){ $(this).val('ВХОД'); } });
+	
+	$('.placeholder-13').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'ВЫХОД'){ $(this).val(''); } });
+	$('.placeholder-13').focusout(function(e) { if($(this).val() == ''){ $(this).val('ВЫХОД'); } });
+	
 	/*Style select*/
+	var $select;
 	if($(".style-select").length) {
 		$(function(){
 			/*$('select.style-select').customSelect();*/
-			$("select.style-select").selectBoxIt();
+		   	$select = $("select.style-select").selectBoxIt().data("selectBox-selectBoxIt");;
 		});
 	}
 	
@@ -171,6 +178,10 @@ $(function () {
 	$('.popup-form .close').click(function(event){
 		$(this).parent().parent().fadeOut();		
 		$('body').removeClass('overflow-none');
+		$(this).parent().find('form').trigger( 'reset' );
+		$(this).parent().find('.text-error').remove();
+		$(this).parent().find('.error').removeClass('error');
+		$select.refresh();
 		event.preventDefault();
 	})
 	
@@ -318,5 +329,69 @@ $(function () {
             calcPosition(header);
         }
     }
+    
+    
+    /*Valid form*/
+    $("form").submit(function() {
+    	var $noValid = false;
+    	$(this).find('input.valid, textarea.valid, select.valid').each(function(){
+    		if($(this).val() == $(this).attr('data-default')) {
+    			$noValid = true;
+    			$(this).addClass('error');
+    			if($(this).hasClass('style-select')) {
+    				$(this).next().addClass('error');
+    			}
+    			if(!$(this).next().hasClass('text-error')) {
+    				$(this).after('<label class="text-error">ПОЛЕ ОБЯЗАТЕЛЬНО ДЛЯ ЗАПОЛНЕНИЯ</label>')
+    			}
+    		}
+    		else {
+    			$(this).removeClass('error');$(this).after()
+    			if($(this).next().hasClass('text-error')) {
+    				$(this).next().remove();
+    			}
+    		}
+    	})
+    	if($noValid) {
+    		return false;
+    	}
+    	else { 
+    		
+    		//Validate is OK;
+    		//Some next actions;
+    		
+    		if($('.popup-inner').is(":visible")) {
+	    		$(this).parent().parent().parent().hide();
+	    		$('#popup-successful').show();
+	    		$(this).trigger( 'reset' );
+				$(this).find('.text-error').remove();
+				$(this).find('.error').removeClass('error');
+				$select.refresh();
+				return false;
+			}
+    	}
+    });
+    $('.valid').focus(function(){
+    	if($(this).hasClass('error')) {
+    		$(this).removeClass('error');
+    		$(this).next().remove();
+    	}
+    })
+    $('.style-select').click(function() {    	
+    	if($(this).hasClass('error')) {
+    		$(this).removeClass('error');
+    		$(this).next().remove();
+    		$(this).next().removeClass('error');
+    	}
+    });
+    
+    
+    /*Production map*/
+    if($('body').width()>1499) { $('.production-map > img').attr('src','img/map-big.png'); }
+    $(window).resize(function(){
+    	if($('body').width()>1499) { $('.production-map > img').attr('src','img/map-big.png'); }
+	    else { $('.production-map > img').attr('src','img/map.png'); }
+    })
+    
 });
 

@@ -674,31 +674,6 @@ textarea {
         width:20%!important;
         display:block!important;
     }
-
-}
-@media (min-width: 1280px){
-    .series-model-element{
-        width:23.3%!important;
-    }
-    .translators-element{
-        width:23.3%!important;
-    }
-    .search_result ul li{
-        float:left;
-    }
-    .filter_selection.search .group {
-        padding-left: 27%!important;
-    }
-    .filter_selection .group{
-        margin-left: 18%!important;
-    }
-    .about-terra-block ul li{
-        width:25%!important;
-    }
-    .sub-menu ul {
-        width: 50%!important;
-        float: left!important;
-    }
 }
 @media (min-width: 1280px) and (max-width: 1440px) {
     .main-news__item:nth-child(n+7) {
@@ -788,9 +763,23 @@ textarea {
 }
 
 .additional-text__container {
-    padding: 10px 30px 50px;
-    display: none;
-}
+		padding: 10px 30px 50px;
+		display: block;
+	    overflow: hidden;
+	    height: 120px;  		
+		position:relative;
+	}
+	.additional-text__container:after{
+		content:'';
+		width:100%;
+		height:60px;
+		position:absolute;
+		bottom:0;
+		left:0;
+		-moz-box-shadow:inset 0px -42px 54px #fff;
+		-webkit-box-shadow:inset 0px -42px 54px #fff;
+		box-shadow:inset 0px -42px 54px #fff;
+	}
 
 .additional-text__container p + p {
     margin-top: 30px;
@@ -830,7 +819,9 @@ textarea {
     margin-top: -8px;
     left: -31px;
 }
-
+.wrap-colum ul li.active a{
+    color:#fff;
+}
 .footer-middle {
     background: #57a9d7;
     color: #fff;
@@ -1030,9 +1021,9 @@ textarea {
 	left: 0; top: 0;
 	z-index: 999;
 	-webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+  	-moz-transition: all 0.2s ease-in-out;
+  	-o-transition: all 0.2s ease-in-out;
+  	transition: all 0.2s ease-in-out;
 }
 .fixed-left-menu:hover {
 	background-color: #31759b;
@@ -1052,7 +1043,7 @@ textarea {
 	top: 50%;
 	left: 25px;
 	text-transform: uppercase;
-	margin: -270px 0 0;
+	margin: -250px 0 0;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -1063,9 +1054,6 @@ textarea {
 	color: #fff;
 	font-weight: 700;
 	letter-spacing: 0.03em;
-}
-.fixed-left-menu nav ul li a{
-    display:block;
 }
 .fixed-left-menu nav>ul>li>ul{
     margin-left:0;
@@ -1194,7 +1182,7 @@ body.fixed-l .header-line .wrapper {
 	min-height: 465px;
 }
 .benefit-block {
-	height: auto;
+	height: 232px;
 }
 .benefit-block ul {
 	display: table;
@@ -1546,6 +1534,7 @@ img.width-all {
 }
 .popup-form .line {
 	margin: 0 0 9px;
+	position: relative;
 }
 .popup-form input[type='text'], .popup-form select, .popup-form textarea {
 	width: 100%;
@@ -1558,6 +1547,12 @@ img.width-all {
 	text-transform: uppercase;
 	resize: none;
 	max-width: 100%;
+}
+.popup-form input[type='text'].error, .popup-form select.error, .popup-form textarea.error {
+	border: 3px solid #da5353;
+}
+.popup-form input[type='text'].error:after {
+	
 }
 .popup-form textarea {
 	padding: 16px 16px;
@@ -1595,6 +1590,9 @@ img.width-all {
 	background: url(../img/icon-close-black.png) no-repeat;
 	top: 10px;
 	right: -52px;
+}
+.popup-form .close:hover {
+	background: url(../img/icon-close-blue.png) no-repeat;
 }
 .overflow-none { 
 	overflow: hidden;
@@ -1673,6 +1671,9 @@ img.width-all {
 	max-width: 100%;
 	resize: none;
 }
+.inputBox.error {
+	border: 3px solid #da5353;
+}
 textarea.inputBox {
 	height: 132px;
 	text-transform: none;
@@ -1703,6 +1704,7 @@ span.inputBox input {
 }
 .inside-form .line {
 	margin: 0 0 9px;
+	position: relative;
 }
 .inside-form .title {
 	font-size: 16px;
@@ -2962,7 +2964,7 @@ span.inputBox input {
 	margin-bottom: 20px;
 }
 .search_result ul {
-	text-align: justify;
+	/*text-align: justify;*/
 }
 .search_result ul:after {
 	content: '';
@@ -2971,9 +2973,10 @@ span.inputBox input {
 }
 .search_result ul li {	
 	display: inline-block;
-	padding: 0 30px;
+	padding: 0 28px;
 	text-align: center;
 	margin-bottom: 55px;
+	vertical-align: top;
 }
 .search_result ul li a {
 	text-decoration: none;
@@ -2986,6 +2989,7 @@ span.inputBox input {
 }
 .search_result ul li .element-name {
 	margin-top: 30px;
+	max-width: 241px;
 }
 .search_result .new-search {
 	text-align: center;
@@ -3364,4 +3368,293 @@ span.inputBox input {
 .no-controls .js-main-slider li { max-width: 100%; }
 .table-model-trailers{
     display: none;
+}
+
+
+.text-error {
+	position: absolute;
+	display: inline-block;
+	width: 295px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	background-color: #da5353;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	bottom: -26px;
+	left: 0;
+	z-index: 1;
+}
+.error .selectboxit-btn {
+	border: 3px solid #da5353;
+}
+.rel-container { position: relative; height: 44px; float: right; display: inline-block; }
+.rel-container:first-child { float: none; }
+.text-successful {
+	padding: 70px 0;
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+#popup-successful .popup-form {
+	margin-top: -94px;
+}
+
+.inputBox.s-2 {
+	width: 233px;
+}
+.inside-form .radio-btn {
+	padding-top: 10px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.inside-form .ui-button {
+	line-height: 28px;
+}
+.inside-form .radio-btn > div {
+	margin-bottom: 2px;
+}
+.inside-form .line-label label.w3 {
+	width: 380px;
+}
+.inside-form .line-label label.middle {
+	line-height: 40px;
+}
+span.inputBox.n2 {
+	width: 80px;
+	text-transform: none;
+}
+span.inputBox.n2 input {
+	width: 40px;
+	padding: 0;
+	text-align: center;
+}
+.inside-form .radio-btn.colum:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.inside-form .radio-btn.colum > div {
+	float: left;
+	width: 50%;
+}
+.inside-form .line-image img {
+	width: auto;
+	max-width: 1000px;
+}
+.inside-form .line-colum {
+	height: auto;
+	margin: 40px 0 0;
+}
+.inside-form .line-colum > div {
+	display: inline-block;
+	width: 165px;
+	text-align: justify;
+	height: 46px;
+	overflow: hidden;
+	margin-bottom: 3px;
+}
+.inside-form .line-colum > div:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 0px;
+}
+.inside-form .line-colum > div label { width: auto; }
+.inside-form .questionnaire_notific {
+	margin-right: -170px;
+}
+.inputBox.noTr {
+	text-transform: none;
+}
+.inside-form .line-label label.wAu {
+	width: auto;	
+}
+.inside-form .line-label .dubl {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -1px;
+}
+.inside-form .line-label .dubl .inputBox {
+	margin-left: 5px;
+}
+.inputBox.s-3 {
+	width: 172px!important;
+}
+.hardware-text {
+	padding: 38px 0 0;
+	max-width: 870px;
+}
+.hardware-text p {
+	line-height: 24px;
+	margin-bottom: 24px;
+}
+
+@media (min-width: 1240px) {
+	.benefit-block ul li, .benefit-block {
+		height: 307px;
+	}
+	.filter_selection .group {
+		padding-left: 260px;
+	}
+	.series-model-element_text .btn-price {
+		width: 202px;
+		padding: 12px 14px;
+	}
+	.additional-text__container {
+		padding: 10px 30px 50px;
+		display: block;
+	    overflow: hidden;
+	    height: 120px;  		
+		position:relative;
+	}
+	.additional-text__container:after{
+		content:'';
+		width:100%;
+		height:60px;
+		position:absolute;
+		bottom:0;
+		left:0;
+		-moz-box-shadow:inset 0px -42px 54px #fff;
+		-webkit-box-shadow:inset 0px -42px 54px #fff;
+		box-shadow:inset 0px -42px 54px #fff;
+	}
+	.translators-element {
+		width: 23.5%;
+	}
+	.sub-menu {
+		max-width: 1280px;
+  		padding: 0 26px;
+		margin: 0 auto;
+	}
+	.about-terra-block ul li{
+		width:25%;
+	}
+	.career-page .benefit-block:nth-of-type(even) {
+	  background: url(../img/benefit-bg.png) center bottom;
+	}
+	.news_images img {
+		  width: 48.8%;
+		  float: left;
+		  padding-bottom: 2.4%;
+	}
+	.news_images {
+		  padding: 19px 0;
+	}
+	.benefit-career {
+		height: auto;
+	}
+	.benefit-block ul li span {
+		height: 307px;
+	}
+	.filter_selection.search .group {
+		padding-left: 300px;
+	}
+	.search_result ul li {
+		padding: 0 22px;
+	}
+	.series-model-element {
+		width: 23.3%;
+	}
+}
+@media (min-width: 1500px) {
+	.benefit-block, .certificares-block {
+		background: url(../img/benefit-bg.png) center top; 
+	}
+	.benefit-block ul, .reviews-block ul, .sub-menu, .certificares-block ul {
+		width: 1227px;
+		margin: 0 auto;
+		display: block;
+	}
+	.sub-menu {
+		padding: 0;
+	}	
+	.btn-down {
+		min-width: 930px;
+	  	max-width: 1280px;
+	  	margin: 0 auto;
+	  	width: 100%;
+	  	position: relative;
+	  	text-align: right;
+	}
+	.btn-down a {
+	  	margin: 0 0 10px;
+	  	width: 270px!important;
+	 	display: block!important;
+	 	float: right;
+		clear: both;
+		text-align: left;
+	}
+	.title-fix {
+		height: 0px;
+	}
+	.questionnaire-page .inside-title, .questionnaire-page .inside-title-2, .questionnaire-page .questionnaire_notific {
+		padding-left: 45px;
+	}
+	.certificares-page .main-new {
+		width: 1227px;
+		margin: 0 auto;
+	}
+	.news-page-wrap > .wrapper {
+		padding: 32px 29px 56px 45px;
+	}
+	.additional-text > .wrapper {
+		padding: 0px 45px;
+	}
+	.reviews-page > .wrapper, .reviews-page .reviews-innr .wrapper {
+		padding-left: 48px;
+		padding-right: 48px;
+	}
+	.certificares-block ul li {
+		height: 409px;
+	}
+	.certificares-block li span.image {
+		height: 300px;
+	}
+	.production-video {
+		padding: 50px 0;
+		background-color: #172730;
+		text-align: center;
+	}
+	.production-video > * {
+		width: 1227px!important;
+		margin: 0 auto;
+	}
+	.inside-title {
+		position: relative;
+		z-index: 1;
+	}
+	.production-map-inr {
+		width: 50%;
+		height: 90%;
+		position: absolute;
+		top: 10%;
+		left: 25%;
+	}
+	.benefit-career {
+		background-position: center -103px;	
+	}
+	.filter_selection.search .group {
+		padding-left: 330px;
+	}
+	.search_result ul li {
+		padding: 0 30px;
+	}
+}
+@media (max-height: 580px) {
+	.fixed-left-menu{
+		  overflow-y: scroll;
+		  overflow-x: hidden;
+	}
+	.fixed-left-menu nav {
+	  position: absolute;
+	  top: 100px;
+	  left: 25px;
+	  margin:0;
+	  }
 }

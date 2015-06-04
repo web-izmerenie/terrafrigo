@@ -17,6 +17,9 @@ if(defined('CAREER'))
 if(defined('COLD-TRANSPORT'))
     $main_classes = array('cold-transport-page');
 
+if(defined('HARDWARE'))
+    $main_classes = array('hardware-page');
+
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);
 $tplPath = "/bitrix/templates/main/";
@@ -129,7 +132,10 @@ global $tplPath;?>
         <?}else{?>
                 <?if(!defined('MODEL')){?>
                     <div class="inside-conent <?=$main_classes;?>">
-                        <div class="inside-title wrapper"><h1><?$APPLICATION->ShowTitle()?></h1></div>
+                        <div class="inside-title wrapper">
+                            <?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?>
+                            <h1><?$APPLICATION->ShowTitle()?></h1>
+                        </div>
                 <?}?>
         <?}?>
     <?}?>
