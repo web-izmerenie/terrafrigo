@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Комплектующие";
+$arDirProperties = Array(
+
+);
+?>

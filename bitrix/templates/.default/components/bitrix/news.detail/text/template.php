@@ -11,6 +11,6 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);?>
-<div class="text-block">
+<div class="text-block hardware-text">
     <?=$arResult['PREVIEW_TEXT']?>
 </div>
