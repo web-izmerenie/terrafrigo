@@ -1,5 +1,4 @@
 <?$GLOBALS['iblock_id'] = '17';
-define('PATHWAY', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("sections");
 ?><?$APPLICATION->IncludeComponent(
