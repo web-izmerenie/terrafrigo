@@ -17,7 +17,9 @@ $photo = CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], array('width'=>1850,
         <div class="about-page-top">
             <div class="main-slider__item js-imgLiquidFill">
                 <img class="main-slider__image" src="<?=$photo['src'];?>" alt=""/>
-                <div class="title-fix"><h1><?$APPLICATION->ShowTitle()?></h1></div>
+                <div class="title-fix">
+                    <h1><?$APPLICATION->ShowTitle()?></h1>
+                </div>
                 <div class="main-slider__overlay">
                     <div class="wrapper">
                         <div class="main-slider__slider-description"><?=$arResult['PREVIEW_TEXT'];?></div>

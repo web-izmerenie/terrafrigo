@@ -1,5 +1,6 @@
 <?$GLOBALS['iblock_id'] = '22';
 define('CERTIFICATE', 'Y');
+define('PATHWAY', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(

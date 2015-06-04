@@ -20,7 +20,7 @@ $this->setFrameMode(true);?>
                     <div class="main-slider__item js-imgLiquidFill">
                         <img class="main-slider__image" src="<?=$slide['src'];?>" alt=""/>
                         <div class="inside-title wrapper">
-                            <span>Кондиционеры для коммерческого транспорта</span><br/>
+                            <?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?>
                             <h1><?=$arResult['NAME'];?></h1>
                         </div>
                         <div class="main-slider__overlay">
