@@ -133,7 +133,7 @@ global $tplPath;?>
                 <?if(!defined('MODEL')){?>
                     <div class="inside-conent <?=$main_classes;?>">
                         <div class="inside-title wrapper">
-                                <?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?>
+                            <?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?>
                             <h1><?$APPLICATION->ShowTitle()?></h1>
                         </div>
                 <?}?>

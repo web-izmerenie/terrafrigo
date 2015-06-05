@@ -819,9 +819,7 @@ textarea {
     margin-top: -8px;
     left: -31px;
 }
-.wrap-colum ul li.active a{
-    color:#fff;
-}
+
 .footer-middle {
     background: #57a9d7;
     color: #fff;
@@ -1109,6 +1107,7 @@ textarea {
 	color: #fff;
 }
 .fixed-left-menu.close { 
+	overflow: hidden;
 	left: -215px;
     /*left:0;*/
 	background: url(../img/icon-menu.png) no-repeat 222px center #054d77;
@@ -1233,6 +1232,13 @@ body.fixed-l .header-line .wrapper {
 	background-image: url(../img/benefit-icon-4.png);
 	background-color: #21c097;
 }
+.benefit-block ul li.benefit-icon-5 {
+	background-image: url(../img/benefit-icon-5.png);
+	background-color: #21c097;
+}
+.benefit-block ul li.benefit-icon-6 {
+	background-image: url(../img/benefit-icon-6.png);
+}
 .benefit-block ul li:hover {
 	background-image: none;
 }
@@ -1315,6 +1321,7 @@ img.width-all {
 	background: linear-gradient(to bottom,  #fefefe 0%,#e7e7e7 50%,#d2d2d2 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d2d2d2',GradientType=0 );
 	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	color: #286a89;
 }
 .production-map .marker a.span:hover, .production-map .marker a.span.active {
 	color: #fff;
@@ -1512,6 +1519,12 @@ img.width-all {
 	background-color: #fff;
 	z-index: 99999999; 
 	display: none;
+	overflow: auto;
+}
+.popup-inner.popupAuto .popup-form {
+	margin-top: 10px!important;
+	margin-bottom: 10px!important;
+	top: 0!important;
 }
 .popup-form {
 	position: absolute;
@@ -1621,7 +1634,7 @@ img.width-all {
 }
 .cold-transport-page{
 	border-bottom:1px solid #ccc;
-	padding-bottom:40px;
+	/*padding-bottom:40px;*/
 }
 .questionnaire-page{
 	border-bottom:1px solid #ccc;
@@ -1854,6 +1867,9 @@ span.inputBox input {
 	position: absolute;
 	right: 26px;
 	bottom: 0;
+	
+	position: fixed;
+	bottom: 100px;
 }
 .table-characteristics {
 	background-color: #57a9d7;
@@ -2517,7 +2533,7 @@ span.inputBox input {
 	margin-top: 12px;
 }
 .ymaps-copyrights-pane { display: none!important; }
-.dealers-map-title {
+.dealers-map-title, #gomap>div:first-child>div:first-child:after {
 	left: 0;
 	position: absolute;
 	font-size: 50px;
@@ -2535,7 +2551,11 @@ span.inputBox input {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#00000000',GradientType=0 );
 	padding: 50px 80px 25px;
 }
-.dealers-map:hover .dealers-map-title {
+#gomap>div:first-child>div:first-child:after {
+	content: 'Дилеры TerraFrigo';
+	display: block;
+}
+.dealers-map .dealers-map-title {
 	display: none;
 }
 .com-icon-1 { background-image: url(../img/com-icon-1.png); }
@@ -2757,6 +2777,15 @@ span.inputBox input {
 }
 .reviews-innr .block:hover {
 	background-color: #fff;
+}
+.reviews-innr .block.non {
+	cursor: inherit;
+}
+.reviews-innr .block.non:hover {
+	background-color: #b6d8e9;
+}
+.reviews-innr .block.non:nth-child(even):hover {
+	background-color: #c6e0ee;
 }
 .reviews-innr .block.non:before, .reviews-innr .block.non:after {
 	display: none!important;
@@ -3025,12 +3054,14 @@ span.inputBox input {
 .double-button {
 	position: absolute;
 	right: 26px;
-	bottom: 0;
-	height: 43px;
+	bottom: -18px;
+	height: 86px;
+	position: fixed;
+	bottom: 100px;
+	z-index: 1;
 }
 .double-button a {
 	display: block;
-	float: left;	
 	height: 43px!important;
 	line-height: 43px!important;
 	overflow: hidden;
@@ -3040,32 +3071,23 @@ span.inputBox input {
 	text-transform: uppercase;
 }
 .double-button a.btn-1 {
-	width: 45px!important;
+	width: 220px!important;
 	background-color: #21c097;
-	padding-left: 45px;
-	text-align: left;
-	background-image: url(../img/icon-r.png);
-	background-repeat: no-repeat;
-	background-position: 13px 11px;
-	-webkit-transition: all 0.3s ease-in-out;
-  	-moz-transition: all 0.3s ease-in-out;
-  	-o-transition: all 0.3s ease-in-out;
-  	transition: all 0.3s ease-in-out;
   	white-space: nowrap;
+  	text-align: center;
+	font-weight:700;
 }
 .double-button a:hover {
 	text-decoration: none;
+	background-color: #00a67f;
 }
 .double-button a.btn-2 {
-	width: 175px;
+	width: 220px;
 	background-color: #57a9d7;
 	font-weight: 700;
 }
 .double-button a.btn-2:hover {
 	background-color: #448fb9;
-}
-.double-button a.btn-1:hover {
-	width: 250px!important;
 }
 .table-characteristics .title .button {
 	width: 100%;
@@ -3164,15 +3186,12 @@ span.inputBox input {
 	position: relative;
 }
 .production-video iframe{
-    position: absolute;
-    width: 100%;
-    height: 87%;
-    left: 0px;
-    top: 0px;
-    z-index: 0;
-    margin: auto;
-    bottom: 0px;
-    right: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
 }
 .production-video img{
 	z-index: 1;
@@ -3497,6 +3516,56 @@ span.inputBox.n2 input {
 	line-height: 24px;
 	margin-bottom: 24px;
 }
+.paginations {
+	text-align: center;
+	padding: 31px 0;
+	border-bottom: 1px solid #c4c0c0;
+}
+.paginations .year-list {
+	overflow: auto;
+	position: static;
+	margin: 0;
+}
+.paginations .year-list li {
+	float: none;
+	display: inline-block;
+	margin: 0 15px;
+}
+.paginations .year-list li a {
+	padding: 3px 8px;
+}
+.filter_selection {
+	padding-bottom: 62px;
+}
+.dealers-page {
+	border-bottom: 1px solid #c4c0c0;
+}
+.model-car_list_v2 .model-car_info {
+	line-height: 22px;
+}
+.model-car_list_v2 .model-car_list-element {
+	display: inline-block;
+	width: auto;
+	float: none;
+	vertical-align: top;
+	margin: 0 25px 20px;
+	height: auto;
+}
+.model-car_list_v2 {
+	padding: 30px 0 0;
+}
+.model-car_list_v2 .model-car_img span img {
+	max-height: 50px;
+}
+.model-car_list_v2 .model-car_img span {
+	height: 60px;
+}
+.reviews-page, .hardware-page {
+	border-bottom: 1px solid #c4c0c0;
+}
+.maps-big {
+	display: none;
+}
 
 @media (min-width: 1240px) {
 	.benefit-block ul li, .benefit-block {
@@ -3648,8 +3717,14 @@ span.inputBox.n2 input {
 	.search_result ul li {
 		padding: 0 30px;
 	}
+	.maps-big {
+		display: block;
+	}
+	.maps-small {
+		display: none;
+	}
 }
-@media (max-height: 580px) {
+@media (max-height: 610px) {
 	.fixed-left-menu{
 		  overflow-y: scroll;
 		  overflow-x: hidden;

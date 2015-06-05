@@ -18,6 +18,9 @@ $photo = CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], array('width'=>1850,
             <div class="main-slider__item js-imgLiquidFill">
                 <img class="main-slider__image" src="<?=$photo['src'];?>" alt=""/>
                 <div class="title-fix">
+                    <div class="inside-title">
+                        <?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?>
+                    </div>
                     <h1><?$APPLICATION->ShowTitle()?></h1>
                 </div>
                 <div class="main-slider__overlay">

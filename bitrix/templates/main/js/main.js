@@ -169,12 +169,25 @@ $(function () {
 		});
 	}
 	
+	/*Popup form*/
 	$('.popup-open').click(function(event){
 		var $popup = $(this).attr('href');
 		$($popup).fadeIn();
+		if($($popup).find('.popup-form').height()>$(window).height()) {
+			$($popup).addClass('popupAuto');
+		}
 		event.preventDefault();
 		$('body').addClass('overflow-none');
 	})
+	$(window).resize(function(){
+		$('.popup-form').each(function(){
+			if($(this).height()>$(window).height()) {
+				$(this).parent().addClass('popupAuto');
+			}
+			else { $(this).parent().removeClass('popupAuto'); }
+		})
+	})
+	
 	$('.popup-form .close').click(function(event){
 		$(this).parent().parent().fadeOut();		
 		$('body').removeClass('overflow-none');
@@ -385,13 +398,11 @@ $(function () {
     	}
     });
     
-    
-    /*Production map*/
-    if($('body').width()>1499) { $('.production-map > img').attr('src','/bitrix/templates/main/img/map-big.png'); }
-    $(window).resize(function(){
-    	if($('body').width()>1499) { $('.production-map > img').attr('src','/bitrix/templates/main/img/map-big.png'); }
-	    else { $('.production-map > img').attr('src','img/map.png'); }
-    })
+    /*Questionnaire_2*/
+   	$('.click_unckeck').focus(function(){
+   		$(this).parent().prev().find('input[type="radio"]').prop('checked', false);
+   		$(".radio-btn").buttonset("refresh");
+   	})
     
 });
 

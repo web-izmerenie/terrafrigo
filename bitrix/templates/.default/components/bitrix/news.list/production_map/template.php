@@ -13,7 +13,7 @@
 $this->setFrameMode(true);?>
 <?if(!empty($arResult['ITEMS'])){?>
     <div class="production-map">
-        <img src="/bitrix/templates/main/img/map.png" alt="" class="width-all" />
+        <img src="/bitrix/templates/main/img/map-big.png" alt="" class="width-all" />
         <div class="production-map-inr">
             <?foreach($arResult['ITEMS'] as $arItem){
             $photo = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>565, 'height'=>133), BX_RESIZE_IMAGE_PROPORTIONAL, true);   
