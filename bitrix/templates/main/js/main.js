@@ -241,14 +241,7 @@ $(function () {
 	})
         
      $('.dealers-page .wrap-colum ul li a').click(function () {
-      	var id = $(this).attr('data-id');
-        google.maps.event.trigger(markers[id], 'click');
-        if(!$(this).parent().hasClass('active')){
-        	$('.dealers-page .wrap-colum ul li.active').removeClass('active');
-        	$(this).parent().addClass('active');
-        }
 		$('html, body').animate({ scrollTop: 0 }, 'slow');
-		return false;
 	  });
 	
 	$('.button .trailers-tab1').click(function(event){
