@@ -143,11 +143,13 @@
         </div>
     </div>
 
-
     <script src="<?=$tplPath;?>js/plugins.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="<?=$tplPath;?>js/jquery-ui.js"></script>
     <script src="<?=$tplPath;?>js/main.js"></script>
     <script src="<?=$tplPath;?>js/jquery.selectBoxIt.js"></script>
-    <script src="<?=$tplPath;?>js/video.js"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script type="text/javascript" src="<?=$tplPath;?>js/gmaps.js"></script>
+    <script src="<?=$tplPath;?>js/backend.js"></script>
 </body>
 </html>

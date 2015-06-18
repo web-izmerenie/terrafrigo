@@ -1,5 +1,5 @@
 $(function () {
-	'use strict';
+	banner: "'use strict';\n"
 
 	$('.js-imgLiquidFill').imgLiquid({
 		fill: true,
@@ -239,71 +239,14 @@ $(function () {
 		$(this).find('.hid-text').slideToggle();
 		$(this).toggleClass('open');
 	})
-	
-	/*Google Maps*/
-	if($('#gomap').length) {
-		
-	$("#gomap").gmap3({
-          marker:{
-          	values:[
-		      { latLng: [55.02480160288231, 82.92944544445794], 
-		      	data:'<div class="baloon-innr"><h3>Москва</h3><p>ООО «Автовариант» и ООО «Автохолод»</p><p>ООО «Горизонт»</p><p>«Холодильные Технологии»</p><p>ООО «СпеЦ-Авто»</p><p>ООО «Висма»</p><a href="#">Контактная информация</a></div>'
-		      },
-		      { latLng: [55.75399400, 37.62209300], 
-		      	data:'<div class="baloon-innr"><h3>Москва</h3><p>ООО «Автовариант» и ООО «Автохолод»</p><p>ООО «Горизонт»</p><p>«Холодильные Технологии»</p><p>ООО «СпеЦ-Авто»</p><p>ООО «Висма»</p><a href="#">Контактная информация</a></div>'
-		      },
-		      { latLng: [56.97048954, 35.72145823], 
-		      	data:'<div class="baloon-innr"><h3>Москва</h3><p>ООО «Автовариант» и ООО «Автохолод»</p><p>ООО «Горизонт»</p><p>«Холодильные Технологии»</p><p>ООО «СпеЦ-Авто»</p><p>ООО «Висма»</p><a href="#">Контактная информация</a></div>'
-		      },
-		      { latLng: [54.79760329, 37.65505198], 
-		      	data:'<div class="baloon-innr"><h3>Москва</h3><p>ООО «Автовариант» и ООО «Автохолод»</p><p>ООО «Горизонт»</p><p>«Холодильные Технологии»</p><p>ООО «СпеЦ-Авто»</p><p>ООО «Висма»</p><a href="#">Контактная информация</a></div>'
-		      },
-		    ],
-          	
-          	options:{
-              draggable:false,
-              icon: new google.maps.MarkerImage("img/icon-marker.png", new google.maps.Size(12, 13, "px", "px")),
-            },
-            events:{
-            	click: function(marker, event, context){
-		        var map = $(this).gmap3("get"),
-		          infowindow = $(this).gmap3({get:{name:"infowindow"}});
-		        if (infowindow){
-		          infowindow.open(map, marker);
-		          infowindow.setContent(context.data);
-		        } else {
-		          $(this).gmap3({
-		            infowindow:{
-		              anchor:marker, 
-		              options:{content: context.data}
-		            }
-		          });
-		        }
-		      },
-      
-            },
-            
-          },
-          map:{
-            options:{
-              center:[55.02480160288231, 82.92944544445794],
-              zoom: 4,
-              scrollwheel: false,
-              mapTypeControl: false,
-              panControl: false,
-              streetViewControl: false,
-              zoomControl: true,
-			  zoomControlOptions: {
-			  	style: google.maps.ZoomControlStyle.SMALL,
-			   	position: google.maps.ControlPosition.RIGHT_BOTTOM
-			 },
-            }
-          }
-        });
         
-      }
-      
-      $('.dealers-page .wrap-colum ul li a').click(function () {
+     $('.dealers-page .wrap-colum ul li a').click(function () {
+      	var id = $(this).attr('data-id');
+        google.maps.event.trigger(markers[id], 'click');
+        if(!$(this).parent().hasClass('active')){
+        	$('.dealers-page .wrap-colum ul li.active').removeClass('active');
+        	$(this).parent().addClass('active');
+        }
 		$('html, body').animate({ scrollTop: 0 }, 'slow');
 		return false;
 	  });
@@ -403,6 +346,25 @@ $(function () {
    		$(this).parent().prev().find('input[type="radio"]').prop('checked', false);
    		$(".radio-btn").buttonset("refresh");
    	})
+   	
+   	/*Fixed buttom*/
+	var heightBottom = $(window).scrollTop() + $(window).height();
+   	if($('.double-button').length || $('.btn-blue').length) {
+   		 $(window).scroll(function() {   
+		   if($(window).scrollTop() + $(window).height() > $(document).height() - 100) { 
+		       $('.double-button').fadeOut();
+		       $('.btn-blue').fadeOut();
+			    $(this).queue();
+				$('.double-button, .btn-blue').stop(true, true);
+		   }
+		   else {
+		   	   $('.double-button').fadeIn();
+		       $('.btn-blue').fadeIn();
+			    $(this).queue();
+				$('.double-button, .btn-blue').stop(true, true);
+		   }
+		});
+   	}
     
 });
 

@@ -39,7 +39,6 @@ global $tplPath;?>
 	<?$APPLICATION->ShowMeta("description");?>
 	<?$APPLICATION->ShowHead();?>
     <meta name="format-detection" content="telephone=no">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?=$tplPath;?>css/main.css">
     <link rel="stylesheet" href="<?=$tplPath;?>css/jquery.selectBoxIt.css">
     <link rel="stylesheet" href="<?=$tplPath;?>css/backend.css">
@@ -130,7 +129,7 @@ global $tplPath;?>
             );?>
             <div class="inside-conent <?=$main_classes;?>">
         <?}else{?>
-                <?if(!defined('MODEL')){?>
+                <?if(!defined('MODEL') && !defined('DEALERS')){?>
                     <div class="inside-conent <?=$main_classes;?>">
                         <div class="inside-title wrapper">
                             <?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?>

@@ -36,7 +36,7 @@
     padding: 0;
 }
 
-.title-fix > .inside-title > span > a{
+.title-fix > .inside-title span > a{
     display: inline !important;
 }
 
@@ -52,4 +52,7 @@
     bottom: 0;
     height: 87%;
 }
+
+.dealers-map .point{
+    display: none;
 }

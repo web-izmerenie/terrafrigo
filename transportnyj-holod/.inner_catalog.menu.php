@@ -30,7 +30,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Дилеры", 
-		"/#", 
+		"/dilery/", 
 		Array(), 
 		Array(), 
 		"" 

@@ -30,6 +30,12 @@ $arUrlRewrite = array(
 		"ID" => "",
 		"PATH" => "/transportnyj-holod/konditcionery/detail.php",
 	),
+	array(
+		"CONDITION" => "#^/dilery/(.+?)/(\\\\?|\\\$)#",
+		"RULE" => "SECTION_CODE=\$1&",
+		"ID" => "",
+		"PATH" => "/dilery/detail.php",
+	),
 );
 
 ?>

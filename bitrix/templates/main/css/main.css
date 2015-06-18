@@ -413,6 +413,7 @@ textarea {
     font-size: 12px;
     margin-bottom: 2px;
     letter-spacing: 0.3px;
+	color:#c7dff0; 
 }
 
 .header-line__phone-number {
@@ -549,7 +550,10 @@ textarea {
 .bx-pager-item + .bx-pager-item {
     margin-left: 12px;
 }
-
+.table{
+  max-width: 1280px;
+  margin: 0 auto;
+}
 .bx-pager-link {
     transition: .2s;
     height: 9px;
@@ -592,7 +596,10 @@ textarea {
     background: -ms-linear-gradient(left, #57a9d7 0%, #57a9d7 50%, #4b9ecc 50%, #4b9ecc 100%);
     background: linear-gradient(to right, #57a9d7 0%, #57a9d7 50%, #4b9ecc 50%, #4b9ecc 100%);
 }
-
+.reviews-innr .block p {
+    margin-bottom: 22px;
+    margin-right: 20%;
+}
 .main-category__item {
     float: left;
     width: 50%;
@@ -658,7 +665,11 @@ textarea {
 
 .main-news {
     font-size: 0;
-    display: flex;
+    display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
 }
 
 .main-news__item {
@@ -685,6 +696,13 @@ textarea {
 	}
 	
 }
+@media (max-width: 1340px) {
+	.dealers-map-title, #gomap>div:first-child>div:first-child:after {
+		left: 0;
+		position: absolute;
+		padding: 50px 24px 25px!important;
+	}
+}
 @media (max-width: 1100px) {
     html, body{
         min-width: 930px;
@@ -698,6 +716,11 @@ textarea {
 	.main-new .main-news__item{
 		width:33%!important;
 		display:block!important;
+	}
+	.dealers-map-title, #gomap>div:first-child>div:first-child:after {
+		left: 0;
+		position: absolute;
+		padding: 50px 24px 25px!important;
 	}
 }
 .main-news__link {
@@ -761,7 +784,7 @@ textarea {
 .additional-text__button.active:before {
     background: url("../img/arrow-up-gray.png") no-repeat;
 }
-
+.fixed-left-menu nav ul li a{display:block;line-height: 18px;}
 .additional-text__container {
 		padding: 10px 30px 50px;
 		display: block;
@@ -992,23 +1015,7 @@ textarea {
         padding-right: 10px;
     }
 }
-@media screen and (min-width: 1600px) and (max-width: 3000px){
-    .main-news__item:nth-child(n+4){
-        display: block;
-    }
-    .main-news__item:nth-child(n+5){
-        display: block;
-    }
-    .main-news__item:nth-child(n+6){
-        display: block;
-    }
-    .bx-wrapper .bx-viewport{
-        height: 841px;
-    }
-    .main-slider__item{
-        height:841px;
-    }
-}
+
 
 .fixed-left-menu { 
 	height: 100%;
@@ -1239,8 +1246,18 @@ body.fixed-l .header-line .wrapper {
 .benefit-block ul li.benefit-icon-6 {
 	background-image: url(../img/benefit-icon-6.png);
 }
+.benefit-block ul li.benefit-icon-7 {
+    background-image: url(../img/trailers-icon-11.png);
+    background-color: #21c097;
+}
 .benefit-block ul li:hover {
 	background-image: none;
+}
+.fixed-left-menu nav ul li.active>a{
+	cursor: default;
+}
+.fixed-left-menu nav ul li a{
+	cursor:pointer;
 }
 .benefit-block ul li:hover span {
 	visibility: visible;
@@ -1522,8 +1539,8 @@ img.width-all {
 	overflow: auto;
 }
 .popup-inner.popupAuto .popup-form {
-	margin-top: 10px!important;
-	margin-bottom: 10px!important;
+	margin-top: 25px!important;
+	margin-bottom: 0px!important;
 	top: 0!important;
 }
 .popup-form {
@@ -1645,7 +1662,7 @@ img.width-all {
 }
 .cold-transport-page .about-text h3 {
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
 	color: #000;
 	line-height: 20px;
 	margin: 0 0 10px;
@@ -1656,11 +1673,12 @@ img.width-all {
 .transport-icon-1 { background-image: url(../img/transport-icon-1.png); }
 .transport-icon-2 { background-image: url(../img/transport-icon-2.png); }
 .inside-title-2 { 
-	font-weight: 500; 
+	font-weight: 600; 
 	font-size: 16px;
 	line-height: 22px;
 	text-transform: uppercase;
 	margin-bottom: 45px;
+	  margin-top: -30px;
 }
 .questionnaire_notific { 
 	font-size: 15px;
@@ -1863,13 +1881,15 @@ span.inputBox input {
 .btn-blue:hover {
 	background-color: #448fb9;
 }
-.heaters-page-top .btn-blue {
+.btn-blue {
 	position: absolute;
 	right: 26px;
 	bottom: 0;
 	
 	position: fixed;
-	bottom: 100px;
+	z-index:5555;
+	bottom: 26px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 .table-characteristics {
 	background-color: #57a9d7;
@@ -2184,6 +2204,7 @@ span.inputBox input {
 .model-element_text-list .text-list_right{
 	float:right;
 	width:70px;
+	color:#666666;
 }
 .series-btn{
 	width:850px;
@@ -2206,7 +2227,7 @@ span.inputBox input {
 	color:#39362e;
 	font-weight:bold;
     padding-top: 28px;
-    letter-spacing: 1.1px;
+    letter-spacing: 0.3px;
 	font-style:normal;
 	text-transform:uppercase;
 }
@@ -2325,7 +2346,11 @@ span.inputBox input {
 	color:#fff;
 }
 .wrap-colum ul li.active {
-	padding: 2.8px 5px;
+    padding: 2.8px 5px;
+}
+.wrap-colum ul li.active a {
+    color: #fff;
+    padding: 0;
 }
 .news{
 	  margin-top: 66px;
@@ -2426,6 +2451,7 @@ span.inputBox input {
     top: -18px;
     left: -5px;
     margin-bottom: 13px;
+	z-index:55;
 }
 .year-list li{
 	float:left;
@@ -2534,26 +2560,32 @@ span.inputBox input {
 }
 .ymaps-copyrights-pane { display: none!important; }
 .dealers-map-title, #gomap>div:first-child>div:first-child:after {
-	left: 0;
-	position: absolute;
-	font-size: 50px;
-	color: #fff;
-	font-weight: 500;
-	text-transform: uppercase;
-	z-index: 2;
-	width: 100%;
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100%,rgba(0,0,0,0)));
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
-	background: -o-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#00000000',GradientType=0 );
-	padding: 50px 80px 25px;
+    left: 0;
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 1px 1px 0 #fff;
+    text-transform: uppercase;
+    z-index: 2;
+    width: 100%;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100%,rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#00000000',GradientType=0 );
+    padding: 50px 60px 25px;
 }
 #gomap>div:first-child>div:first-child:after {
-	content: 'Дилеры TerraFrigo';
-	display: block;
+    content: 'Дилеры TerraFrigo';
+	  font-family:'Ubuntu', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    font-weight: 600!important;
+	font-style:normal;
+    display: block;
+	  text-shadow: none!important;
+	 
 }
 .dealers-map .dealers-map-title {
 	display: none;
@@ -2719,11 +2751,14 @@ span.inputBox input {
 .reviews-innr .block .title{
 	font-size:20px;
 	color:#000;
-	font-weight:500;
+	font-weight:600;
 	font-style:normal;
 	text-transform: uppercase;
 	margin-bottom:13px;
 	
+}
+.reviews-page{
+    border:none!important;
 }
 .reviews-innr .block:before {
 	content: '';
@@ -3057,8 +3092,9 @@ span.inputBox input {
 	bottom: -18px;
 	height: 86px;
 	position: fixed;
-	bottom: 100px;
-	z-index: 1;
+	bottom: 26px;
+	z-index: 555;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 .double-button a {
 	display: block;
@@ -3574,6 +3610,11 @@ span.inputBox.n2 input {
 	.filter_selection .group {
 		padding-left: 260px;
 	}
+	
+    .reviews-innr .block p {
+        margin-bottom: 22px;
+        margin-right: 27%;
+    }
 	.series-model-element_text .btn-price {
 		width: 202px;
 		padding: 12px 14px;
@@ -3639,10 +3680,11 @@ span.inputBox.n2 input {
 		background: url(../img/benefit-bg.png) center top; 
 	}
 	.benefit-block ul, .reviews-block ul, .sub-menu, .certificares-block ul {
-		width: 1227px;
+		width: auto;
 		margin: 0 auto;
 		display: block;
 	}
+	
 	.sub-menu {
 		padding: 0;
 	}	
@@ -3666,10 +3708,13 @@ span.inputBox.n2 input {
 		height: 0px;
 	}
 	.questionnaire-page .inside-title, .questionnaire-page .inside-title-2, .questionnaire-page .questionnaire_notific {
-		padding-left: 45px;
+		padding-left: 45px; 
+	}
+	.questionnaire-page .questionnaire_notific{
+		padding-left: 0; 
 	}
 	.certificares-page .main-new {
-		width: 1227px;
+		width: auto;
 		margin: 0 auto;
 	}
 	.news-page-wrap > .wrapper {
@@ -3735,4 +3780,31 @@ span.inputBox.n2 input {
 	  left: 25px;
 	  margin:0;
 	  }
+    .popup-form .line-send{
+        padding-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1600px) and (max-width: 3000px){
+	.main-news__item {
+	  width: 16.666%!important;
+	  float: left;
+	}
+    .main-news__item:nth-child(n+4){
+        display: block;
+    }
+    .main-news__item:nth-child(n+5){
+        display: block;
+    }
+    .main-news__item:nth-child(n+6){
+        display: block;
+    }
+    .bx-wrapper .bx-viewport{
+        height: 841px;
+    }
+    .main-slider__item{
+        height:841px;
+    }
+	.header-line__phone-item + .header-line__phone-item {
+	  margin-left: 55px;
+	}
 }
