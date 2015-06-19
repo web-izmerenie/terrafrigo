@@ -20,6 +20,9 @@ if(defined('COLD-TRANSPORT'))
 if(defined('HARDWARE'))
     $main_classes = array('hardware-page');
 
+if(defined('QUESTIONNAIRE'))
+    $main_classes = array('questionnaire-page');
+
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);
 $tplPath = "/bitrix/templates/main/";

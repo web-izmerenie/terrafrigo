@@ -56,3 +56,13 @@
 .dealers-map .point{
     display: none;
 }
+
+.questionnaire-page #sucsess{
+    color: rgb(0, 134, 0);
+    text-align: center;
+}
+
+.questionnaire-page #sucsess, .questionnaire-page #error{
+    margin-top: 25px;
+    display: none;
+}

@@ -159,6 +159,9 @@ $(function () {
 	
 	$('.placeholder-13').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'ВЫХОД'){ $(this).val(''); } });
 	$('.placeholder-13').focusout(function(e) { if($(this).val() == ''){ $(this).val('ВЫХОД'); } });
+    
+    $('.placeholder-14').focusin(function(e) { console.log($(this).val()); if($(this).val() == 'Город *'){ $(this).val(''); } });
+	$('.placeholder-14').focusout(function(e) { if($(this).val() == ''){ $(this).val('Город *'); } });
 	
 	/*Style select*/
 	var $select;
@@ -293,6 +296,7 @@ $(function () {
     			if(!$(this).next().hasClass('text-error')) {
     				$(this).after('<label class="text-error">ПОЛЕ ОБЯЗАТЕЛЬНО ДЛЯ ЗАПОЛНЕНИЯ</label>')
     			}
+                $('#error').slideDown();
     		}
     		else {
     			$(this).removeClass('error');$(this).after()
@@ -317,6 +321,8 @@ $(function () {
 				$(this).find('.error').removeClass('error');
 				$select.refresh();
 				return false;
+                $('#error').slideUp();
+                $('#sucsess').show();
 			}
     	}
     });

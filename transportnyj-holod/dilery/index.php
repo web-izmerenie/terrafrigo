@@ -31,5 +31,5 @@ $APPLICATION->SetTitle("Дилеры");
 	false
 );?>
 </div>
-<div id="map" style="width:100%; height:500px;"></div>
+<div id="map"></div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
