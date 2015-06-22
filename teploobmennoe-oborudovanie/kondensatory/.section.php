@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Конденсаторы";
+$arDirProperties = Array(
+
+);
+?>

@@ -6,6 +6,13 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Конденсаторы", 
+		"/teploobmennoe-oborudovanie/kondensatory/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>

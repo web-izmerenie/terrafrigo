@@ -284,8 +284,12 @@ $(function () {
     
     
     /*Valid form*/
-    $("form").submit(function() {
+    $("form").submit(function(e) {
+        e.preventDefault();
     	var $noValid = false;
+        var inputFrom = $(this).find('input[type="text"]');
+        var textAreaFrom = $(this).find('textarea');
+        
     	$(this).find('input.valid, textarea.valid, select.valid').each(function(){
     		if($(this).val() == $(this).attr('data-default')) {
     			$noValid = true;
@@ -296,34 +300,59 @@ $(function () {
     			if(!$(this).next().hasClass('text-error')) {
     				$(this).after('<label class="text-error">ПОЛЕ ОБЯЗАТЕЛЬНО ДЛЯ ЗАПОЛНЕНИЯ</label>')
     			}
+                $('#sucsess').slideUp();
                 $('#error').slideDown();
     		}
     		else {
+                $noValid = false;
     			$(this).removeClass('error');$(this).after()
     			if($(this).next().hasClass('text-error')) {
     				$(this).next().remove();
     			}
     		}
     	})
+        if($(this).hasClass('error-submit')){
+            $noValid = false;
+        }
     	if($noValid) {
-    		return false;
+                e.preventDefault();
+                $(this).addClass('error-submit');
     	}
-    	else { 
-    		
+    	else {
+            $(inputFrom).each(function(){
+                if($(this).val() == $(this).data('default')){
+                    $(this).val('');    
+                }
+            });
     		//Validate is OK;
     		//Some next actions;
-    		
-    		if($('.popup-inner').is(":visible")) {
-	    		$(this).parent().parent().parent().hide();
-	    		$('#popup-successful').show();
-	    		$(this).trigger( 'reset' );
-				$(this).find('.text-error').remove();
-				$(this).find('.error').removeClass('error');
-				$select.refresh();
-				return false;
+            $.ajax({
+                type: "POST",
+                url: $(this).attr('action'),
+                data: $(this).serialize()
+            }).success(function() {
+                if($('.popup-inner').is(":visible")) {
+                    $(this).parent().parent().parent().hide();
+                    $('#popup-successful').show();
+                    $(this).trigger( 'reset' );
+                    $(this).find('.text-error').remove();
+                    $(this).find('.error').removeClass('error');
+                    $select.refresh();
+                }
                 $('#error').slideUp();
-                $('#sucsess').show();
-			}
+                $('#sucsess').slideDown();
+                $(inputFrom).each(function(){
+                    var valDef = $(this).data('default');
+                    
+                    $(this).val(valDef);
+                });
+                $(textAreaFrom).each(function(){
+                    var valDef = $(this).data('default');
+                    
+                    $(this).val(valDef);
+                });
+            });
+            return false;
     	}
     });
     $('.valid').focus(function(){

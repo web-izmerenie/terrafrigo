@@ -1,9 +1,3 @@
 <p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aspernatur, assumenda, consequuntur deserunt dolorum earum eum iure natus odit quae quam quod sunt tenetur voluptate! Distinctio illo tempore voluptate.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aspernatur, assumenda, consequuntur deserunt dolorum earum eum iure natus odit quae quam quod sunt tenetur voluptate! Distinctio illo tempore voluptate.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aspernatur, assumenda, consequuntur deserunt dolorum earum eum iure natus odit quae quam quod sunt tenetur voluptate! Distinctio illo tempore voluptate.
+ <span style="background-color: #ffffff;">Завод TerraFrigo&nbsp;</span><span style="background-color: #ffffff;">на протяжении 10 лет&nbsp;</span><span style="background-color: #ffffff;">успешно занимается производством&nbsp;и&nbsp;продажей холодильного оборудования: холодильно-обогревательных установок, рефрижераторов (холодильных установок), кондиционеров для автомобилей и спецтехники собственной торговой марки.</span>
 </p>
