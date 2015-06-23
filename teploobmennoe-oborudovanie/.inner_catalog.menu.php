@@ -13,6 +13,20 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Компрессорно-конденсаторный блок", 
+		"/teploobmennoe-oborudovanie/kondensatbloki/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Градирни", 
+		"/teploobmennoe-oborudovanie/gradirni/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>

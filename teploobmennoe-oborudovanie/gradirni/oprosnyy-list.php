@@ -2,11 +2,11 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Опросный лист");
 ?>
-<div class="inside-title-2 wrapper">на подбор и проэктирование воздушного конденсатора</div>
+<div class="inside-title-2 wrapper">на подбор и проэктирование градирни</div>
 <div class="questionnaire_notific wrapper">ВНИМАНИЕ: Просим Вас заполнить данную форму максимально корректно для того, <br />чтобы мы смогли оперативно произвести все необходимые для Вас расчеты.</div>
 
 <div class="inside-form questionnaire-form">
-    <form action="/ajax/questionnaire_form4.php" method="post">
+    <form action="/ajax/questionnaire_form3.php" method="post">
         <div class="line">
             <input name="name_organization" type="text" class="inputBox placeholder-7 valid" value="Название организации *" data-default="Название организации *"/>
         </div>
@@ -22,29 +22,37 @@ $APPLICATION->SetTitle("Опросный лист");
         </div>
         <div class="title">Расчетные параметры агрегата</div>
         <div class="line line-label">
-            <label>Мощность <span>воздушного конденсатора</span></label>
+            <label>Требуемая мощность <span>при заданных ниже условиях</span></label>
             <span class="inputBox">
                 <input name="power" type="text" />
                 кВТ
             </span>
         </div>
          <div class="line line-label">
-            <label class="w2">Температура окружающей среды</label>
+            <label class="w2">Начальная температура теплоносителя</label>
             <span class="inputBox">
                 <input name="temp_start" type="text" />
                 °С
             </span>
         </div>
         <div class="line line-label">
-            <label class="w2">Температура конденсации хладагента</label>
+            <label class="w2">Конечная температура теплоносителя</label>
             <span class="inputBox">
                 <input name="temp_end" type="text" />
                 °С
             </span>
         </div>
         <div class="line line-label">
-            <label>Хладагент</label>
+            <label>Теплоноситель</label>
             <input name="name_agregat" type="text" class="inputBox placeholder-4" value="Наименование" />
+        </div>
+        <div class="title">Параметры окружающего воздуха</div>
+        <div class="line line-label">
+            <label class="w2">Температура воздуха <span>охлаждающая градирню</span></label>
+            <span class="inputBox">
+                <input name="temp_air" type="text" />
+                °С
+            </span>
         </div>
         <div class="title">Исполнение агрегата</div>
         <div class="line">

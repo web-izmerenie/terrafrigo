@@ -31,33 +31,33 @@ $mail_body ='<ul>
                 <li><h3>Для испарителя:</h3></li>
                 <li>Температура  кипения: '.$_POST['isparitel_temp'].'</li>
                 <li>Мощность: '.$_POST['power'].'</li>
-            </ul> 
+            </ul>
             <p>'.$_POST['other'].'</p>';
 
-/*запись данных в инфоблок*/ 
+/*запись данных в инфоблок*/
 $arLoadProductArray = Array( "MODIFIED_BY" => $USER->GetID(),
     "IBLOCK_SECTION_ID" => 144,
     "IBLOCK_ID" => 24,
-    "NAME" => $_POST['nameOrg'],
+    "NAME" => 'Организация '.$_POST['nameOrg'],
     "ACTIVE" => "N",
-    "DETAIL_TEXT" => $mail_body, 
-    ); 
-CModule::IncludeModule("iblock"); 
-$element = new CIBlockElement; 
-if($product_ID = $element->Add($arLoadProductArray)){ 
-    
-    /*отправка формы*/ 
+    "DETAIL_TEXT" => $mail_body,
+    );
+CModule::IncludeModule("iblock");
+$element = new CIBlockElement;
+if($product_ID = $element->Add($arLoadProductArray)){
+
+    /*отправка формы*/
     $mail = new PHPMailer;
     $mail->From = "no-replay@terrafrigo.ru";
     $mail->FromName = "no-replay";
     $mail->AddAddress('andrey.chechkin@web-izmerenie.ru');
 
     $mail->isHTML(true);
-    $mail->CharSet = 'UTF-8'; 
-    $mail->Subject = 'Опросный лист для проектирования и изготовления трубчато-ламельного теплообменника'; 
+    $mail->CharSet = 'UTF-8';
+    $mail->Subject = 'Опросный лист для проектирования и изготовления трубчато-ламельного теплообменника';
     $mail->Body = $mail_body;
-    
-    if($mail->Send()){ 
+
+    if($mail->Send()){
             return true;
         }
     }

@@ -6,17 +6,18 @@ $mail_body ='<ul>
                 <li>Контактное лицо: '.$_POST['contact_name'].'</li>
                 <li>Город: '.$_POST['city'].'</li>
                 <li>Телефон: '.$_POST['tel'].'</li>
-                <li>E-mail: '.$_POST['email'].'</li>
+                <li>E-mail: '.$_POST['mail'].'</li>
                 <li>Требуемая мощность: '.$_POST['power'].'</li>
-                <li>Хладогент: '.$_POST['cloudhed'].'</li>
-                <li>Температура наружного воздуха: '.$_POST['temp_air'].'</li>
-                <li>Температура конденсации хладогента: '.$_POST['temp_cloudhead'].'</li>
+                <li>Температура окружающей среды: '.$_POST['temp_start'].'</li>
+                <li>Температура конденсации хладагента: '.$_POST['temp_end'].'</li>
+                <li>Хладагент: '.$_POST['name_agregat'].'</li>
+                <li>Исполнение агрегата: '.$_POST['perfomance'].'</li>
             </ul>
             <p>'.$_POST['other'].'</p>';
 
 /*запись данных в инфоблок*/
 $arLoadProductArray = Array( "MODIFIED_BY" => $USER->GetID(),
-    "IBLOCK_SECTION_ID" => 143,
+    "IBLOCK_SECTION_ID" => 147,
     "IBLOCK_ID" => 24,
     "NAME" => 'Организация '.$_POST['name_organization'],
     "ACTIVE" => "N",
@@ -34,7 +35,7 @@ if($product_ID = $element->Add($arLoadProductArray)){
 
     $mail->isHTML(true);
     $mail->CharSet = 'UTF-8';
-    $mail->Subject = 'Опросный лист для подбора и проектирования компрессорно-конденсаторного блока';
+    $mail->Subject = 'Опросный лист на подбор и проэктирование воздушного конденсатора';
     $mail->Body = $mail_body;
 
     if($mail->Send()){
