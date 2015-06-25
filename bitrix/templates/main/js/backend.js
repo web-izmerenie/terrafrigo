@@ -17,7 +17,7 @@ $(function () {
 function GMapsInit(){
     if($('#gomap').length) {
       var mapMarkers= {}; // создаю объект, в который буду добавлять маркеры по айди
-      map = new GMaps({
+      var map = new GMaps({
         div: '#gomap',
         zoom: 4,
         lat: 55.02480160288231,

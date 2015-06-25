@@ -22,6 +22,8 @@ if(defined('HARDWARE'))
 
 if(defined('QUESTIONNAIRE'))
     $main_classes = array('questionnaire-page');
+if(defined('NEWS'))
+    $main_classes =array('news-page-wrap');
 
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);
@@ -132,7 +134,7 @@ global $tplPath;?>
             );?>
             <div class="inside-conent <?=$main_classes;?>">
         <?}else{?>
-                <?if(!defined('MODEL') && !defined('DEALERS')){?>
+                <?if(!defined('MODEL') && !defined('DEALERS') && !defined('NEWS')){?>
                     <div class="inside-conent <?=$main_classes;?>">
                         <div class="inside-title wrapper">
                             <?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?>

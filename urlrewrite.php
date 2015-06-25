@@ -19,22 +19,28 @@ $arUrlRewrite = array(
 		"PATH" => "/transportnyj-holod/komplektuiushchie/detail.php",
 	),
 	array(
-		"CONDITION" => "#^/transportnyj-holod/refrizheratory/(.+?)/(\\\\?|\\\$)#",
-		"RULE" => "SECTION_CODE=\$1&",
-		"ID" => "",
-		"PATH" => "/transportnyj-holod/refrizheratory/sections.php",
-	),
-	array(
 		"CONDITION" => "#^/transportnyj-holod/konditcionery/(.*?)/(\\?.*\$|\$)#",
 		"RULE" => "&ELEMENT_CODE=\$1",
 		"ID" => "",
 		"PATH" => "/transportnyj-holod/konditcionery/detail.php",
 	),
 	array(
-		"CONDITION" => "#^/dilery/(.+?)/(\\\\?|\\\$)#",
+		"CONDITION" => "#^/transportnyj-holod/refrizheratory/(.+?)/(\\\\?|\\\$)#",
 		"RULE" => "SECTION_CODE=\$1&",
 		"ID" => "",
-		"PATH" => "/dilery/detail.php",
+		"PATH" => "/transportnyj-holod/refrizheratory/sections.php",
+	),
+	array(
+		"CONDITION" => "#^/transportnyj-holod/dilery/(.+?)/(\\\\?|\\\$)#",
+		"RULE" => "SECTION_CODE=\$1&",
+		"ID" => "",
+		"PATH" => "/transportnyj-holod/dilery/detail.php",
+	),
+	array(
+		"CONDITION" => "#^/o-zavode/news/(.*?).html(\\?.*\$|\$)#",
+		"RULE" => "&ELEMENT_CODE=\$1&",
+		"ID" => "",
+		"PATH" => "/o-zavode/news/detail.php",
 	),
 );
 
