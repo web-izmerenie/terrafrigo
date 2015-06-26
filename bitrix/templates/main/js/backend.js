@@ -14,71 +14,90 @@ $(function () {
 	}
 	
 	/*Google Maps*/
-function GMapsInit(){
-    if($('#gomap').length) {
-      var mapMarkers= {}; // создаю объект, в который буду добавлять маркеры по айди
-      var map = new GMaps({
-        div: '#gomap',
-        zoom: 4,
-        lat: 55.02480160288231,
-        lng: 82.92944544445794,
-        scrollwheel: false,
-        mapTypeControl: false,
-        panControl: false,
-        streetViewControl: false,
-        zoomControl: true,
-        zoomControlOptions: {
-        style: google.maps.ZoomControlStyle.SMALL,
-        position: google.maps.ControlPosition.RIGHT_BOTTOM
-        },
-      });
-      
-      $('.dealers-map .point li').each(function(){
-        var coordinat = $(this).data('coordinat');
-        var urlPath = $(this).data('url');
-        var name = $(this).data('name');
-        var idItem = $(this).data('id');
-        var arrCoordinat = coordinat.split(',');
-        var itemArr = [];
-        
-        $(this).find('p').each(function(){
-          var item = $(this).text();
-          
-          itemArr.push('<p>'+item+'</p>');
-        });
-        var items = itemArr.join('');
-        
-        // создаю маркер, сохраняю ссылку в переменную
-        var marker = map.addMarker({
-          lat: arrCoordinat[0],
-          lng: arrCoordinat[1],
-          title: 'bx-id-'+idItem,
-          icon: '/bitrix/templates/main/img/icon-marker.png',
-          infoWindow: {
-            content: '<div id="bx-id-'+idItem+'" class="baloon-innr"><h3>'+name+'</h3>'+items+'<a href="'+urlPath+'">Контактная информация</a></div>'
-          }
-        });
+	function GMapsInit(){
+		if($('#gomap').length) {
+		  var mapMarkers= {}; // создаю объект, в который буду добавлять маркеры по айди
+		  var map = new GMaps({
+			div: '#gomap',
+			zoom: 4,
+			lat: 55.02480160288231,
+			lng: 82.92944544445794,
+			scrollwheel: false,
+			mapTypeControl: false,
+			panControl: false,
+			streetViewControl: false,
+			zoomControl: true,
+			zoomControlOptions: {
+			style: google.maps.ZoomControlStyle.SMALL,
+			position: google.maps.ControlPosition.RIGHT_BOTTOM
+			},
+		  });
 
-         // добавляю маркер на карту
-         map.addMarker(marker);
+		  $('.dealers-map .point li').each(function(){
+			var coordinat = $(this).data('coordinat');
+			var urlPath = $(this).data('url');
+			var name = $(this).data('name');
+			var idItem = $(this).data('id');
+			var arrCoordinat = coordinat.split(',');
+			var itemArr = [];
 
-         // добавляю ссылку на маркер в объект
-         mapMarkers[idItem ] = marker;
-      });
-      
-      $('.contact-city_wrap a').click(function(){
-          var link = $(this).data('id');
-          // беру маркер по айди
-          var marker = mapMarkers[link];
-          // если такой есть - показываю
-          if (marker) {
-               google.maps.event.trigger(marker, "click");
-          }
-      });
-      
-    }
-}
+			$(this).find('p').each(function(){
+			  var item = $(this).text();
+
+			  itemArr.push('<p>'+item+'</p>');
+			});
+			var items = itemArr.join('');
+
+			// создаю маркер, сохраняю ссылку в переменную
+			var marker = map.addMarker({
+			  lat: arrCoordinat[0],
+			  lng: arrCoordinat[1],
+			  title: 'bx-id-'+idItem,
+			  icon: '/bitrix/templates/main/img/icon-marker.png',
+			  infoWindow: {
+				content: '<div id="bx-id-'+idItem+'" class="baloon-innr"><h3>'+name+'</h3>'+items+'<a href="'+urlPath+'">Контактная информация</a></div>'
+			  }
+			});
+
+			 // добавляю маркер на карту
+			 map.addMarker(marker);
+
+			 // добавляю ссылку на маркер в объект
+			 mapMarkers[idItem ] = marker;
+		  });
+
+		  $('.contact-city_wrap a').click(function(){
+			  var link = $(this).data('id');
+			  // беру маркер по айди
+			  var marker = mapMarkers[link];
+			  // если такой есть - показываю
+			  if (marker) {
+				   google.maps.event.trigger(marker, "click");
+			  }
+		  });
+
+		}
+	}
 	
+	function toggleTable(){
+		var link = $('.button a');
+		var target = $('.table-model');
+        
+        link.click(function(e){
+            var mainLink = $(this).attr('href');
+            e.preventDefault();
+            
+            if(!$(this).hasClass('active')){
+                link.removeClass();
+                $(this).addClass('active');
+
+                target.slideUp();
+                $(mainLink).slideDown();
+            }
+        });
+	}
+	
+	toggleTable();
 	PlayVideo();
 	GMapsInit();
 });

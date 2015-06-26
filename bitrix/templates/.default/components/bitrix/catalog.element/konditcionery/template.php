@@ -26,10 +26,10 @@ $this->setFrameMode(true);?>
                         <div class="main-slider__overlay">
                             <div class="wrapper">
                                 <div class="main-slider__slider-description"><?=$arResult['PREVIEW_TEXT'];?></div>
-                                <div class="btn-find-dealer">
-                                    <a href="#popup-form3" class = "find-dealer_link2 btn-price popup-open"><span>Узнать стоимость</span></a>
-                                    <a href="#" class = "find-dealer_link1">Найти дилера</a>
-                                </div>
+                            </div>
+                            <div class="double-button">
+                                <a href="#popup-form3" class="btn-1 popup-open">Узнать стоимость</a>
+                                <a href="/transportnyj-holod/dilery/" class="btn-2">Найти дилера</a>
                             </div>
                         </div>
                     </div>
@@ -64,37 +64,35 @@ $this->setFrameMode(true);?>
             <li class="model-icon-4"><span>Фреон, заправляемый в установки, не содержит хлора и безопасен для окружающей среды и перевозимой продукции</span></li>
         </ul>
     </div>
-    <div class="table-characteristics">
+    <div class="table-options">
         <div class="title wrapper">
             <h3>Характеристики</h3>
             <a href="<?=$arResult['CHARSET_FILE']['SRC'];?>" class="btn-down-white">Скачать</a>
         </div>
 
-        <ul class="table table-colum">
+        <ul class="table-colum_options">
             <li class="table-head">
                 <div class="wrapper">
-                    <span class="td1">Типоразмер</span>
-                    <span class="td2">Диаметр <br />трубки, мм</span>
-                    <span class="td3">Толщина <br />ламели, мм</span>
-                    <span class="td4">H min, <br />мм</span>
-                    <span class="td5">H max, <br />мм</span>
-                    <span class="td6">B max, <br />мм</span>
-                    <span class="td7">L max, <br />мм</span>
+                    <span class="td1"></span>
+                    <span class="td2">Модель</span>
+                    <span class="td3">Мощность</span>
+                    <span class="td4">Напряжение</span>
+                    <span class="td2">Воздушный поток</span>
+                    <span class="td5">Габаритные размеры</span>
                 </div>
             </li>
-            <?$array_count = count($arResult['PROPERTIES']['CHARSET_TIP']['VALUE']);
+            <?$array_count = count($arResult['PROPERTIES']['CHARSET_NAME']['VALUE']);
             for($i = 0; $i < $array_count; $i++){?>
-            <li>
-                <div class="wrapper">
-                    <span class="td1"><?=$arResult['PROPERTIES']['CHARSET_TIP']['VALUE'][$i];?></span>
-                    <span class="td2"><?=$arResult['PROPERTIES']['CHARSET_DIM']['VALUE'][$i];?></span>
-                    <span class="td3"><?=$arResult['PROPERTIES']['CHARSET_LAM']['VALUE'][$i];?></span>
-                    <span class="td4"><?=$arResult['PROPERTIES']['CHARSET_H_MIN']['VALUE'][$i];?></span>
-                    <span class="td5"><?=$arResult['PROPERTIES']['CHARSET_H_MAX']['VALUE'][$i];?></span>
-                    <span class="td6"><?=$arResult['PROPERTIES']['CHARSET_B_MAX']['VALUE'][$i];?></span>
-                    <span class="td7"><?=$arResult['PROPERTIES']['CHARSET_L_MAX']['VALUE'][$i];?></span>
-                </div>
-            </li>
+                <li>
+                    <div class="wrapper">
+                        <span class="td1"><?=$arResult['PROPERTIES']['CHARSET_NAME']['VALUE'][$i]?></span>
+                        <span class="td2"><?=$arResult['PROPERTIES']['CHARSET_MODEL']['~VALUE'][$i]['TEXT']?></span>
+                        <span class="td3"><?=$arResult['PROPERTIES']['CHARSET_POWER']['VALUE'][$i]?></span>
+                        <span class="td4"><?=$arResult['PROPERTIES']['CHARSET_VOLT']['VALUE'][$i]?></span>
+                        <span class="td2"><?=$arResult['PROPERTIES']['CHARSET_AIR']['VALUE'][$i]?></span>
+                        <span class="td5"><?=$arResult['PROPERTIES']['CHARSET_WH']['VALUE'][$i]?></span>
+                    </div>
+                </li>
             <?}?>
         </ul>
     </div>

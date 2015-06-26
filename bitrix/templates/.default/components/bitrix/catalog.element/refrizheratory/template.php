@@ -44,33 +44,72 @@ $this->setFrameMode(true);?>
         <h3>Характеристики</h3>
         <a href="<?=$arResult['DOWNLOAD_CHARSET']['SRC'];?>" class="btn-down-white">Скачать</a>
         <div class="button">
-            <a href="#" class="active">Основные узлы и агрегаты</a>
-            <a href="#">Рефрижератор</a>
+            <a href="#table1" class="active">Основные узлы и агрегаты</a>
+            <a href="#table2">Рефрижератор</a>
         </div>
     </div>
-            <ul class="table table-model">
-    			<li class="table-head">
-    				<div class="wrapper">
-    					<span class="td1">Наименование</span>
-    					<span class="td2">Модель</span>
-    					<span class="td3">Габаритные размеры, <br />не более, мм</span>
-    					<span class="td4">Масса <br />не более, кг</span>
-    					<span class="td5">Дополнительные <br />характеристики</span>
-    				</div>
-    			</li>
-                <?$countCharset = count($arResult['PROPERTIES']['MAIN_NAME']['VALUE']) - 1;
-                for($i=0; $i <= $countCharset; $i++){?>
-                <li>
-    				<div class="wrapper">
-                        <span class="td1"><?=$arResult['PROPERTIES']['MAIN_NAME']['VALUE'][$i];?></span>
-                        <span class="td2"><?=$arResult['PROPERTIES']['MAIN_MODEL']['VALUE'][$i];?></span>
-                        <span class="td3"><?=$arResult['PROPERTIES']['MAIN_WIDTH']['VALUE'][$i];?></span>
-                        <span class="td4"><?=$arResult['PROPERTIES']['MAIN_WEIGHT']['VALUE'][$i];?></span>
-                        <span class="td5"><?=$arResult['PROPERTIES']['MAIN_DOP']['~VALUE'][$i]['TEXT'];?></span>
-                    </div>
-                </li>
-                <?}?>
-    		</ul>
+    <ul id="table1" class="table table-model">
+        <li class="table-head">
+            <div class="wrapper">
+                <span class="td1">Наименование</span>
+                <span class="td2">Модель</span>
+                <span class="td3">Габаритные размеры, <br />не более, мм</span>
+                <span class="td4">Масса <br />не более, кг</span>
+                <span class="td5">Дополнительные <br />характеристики</span>
+            </div>
+        </li>
+        <?$countCharset = count($arResult['PROPERTIES']['MAIN_NAME']['VALUE']) - 1;
+        for($i=0; $i <= $countCharset; $i++){?>
+        <li>
+            <div class="wrapper">
+                <span class="td1"><?=$arResult['PROPERTIES']['MAIN_NAME']['VALUE'][$i];?></span>
+                <span class="td2"><?=$arResult['PROPERTIES']['MAIN_MODEL']['VALUE'][$i];?></span>
+                <span class="td3"><?=$arResult['PROPERTIES']['MAIN_WIDTH']['VALUE'][$i];?></span>
+                <span class="td4"><?=$arResult['PROPERTIES']['MAIN_WEIGHT']['VALUE'][$i];?></span>
+                <span class="td5"><?=$arResult['PROPERTIES']['MAIN_DOP']['~VALUE'][$i]['TEXT'];?></span>
+            </div>
+        </li>
+        <?}?>
+    </ul>
+    <ul id="table2" class="table table-model">
+        <li>
+            <div class="wrapper">
+                <span>Хладоген HFC R-404а</span>
+                <span><?=$arResult['PROPERTIES']['TRANPARENT_HLADO']['~VALUE']['TEXT'];?></span>
+            </div>
+        </li>
+        <li>
+            <div class="wrapper">
+                <span>Холодопроизводительность</span>
+                <span><?=$arResult['PROPERTIES']['TRANPARENT_HOLODDEVELOP']['~VALUE']['TEXT'];?></span>
+            </div>
+        </li>
+        <li>
+            <div class="wrapper">
+                <span>Воздухопроизводительность</span>
+                <span><?=$arResult['PROPERTIES']['TRANPARENT_AIRDEVELOP']['~VALUE']['TEXT'];?></span>
+            </div>
+        </li>
+        <li>
+            <div class="wrapper">
+                <span>Электропитание от бортовой сети автомобиля</span>
+                <span><?=$arResult['PROPERTIES']['TRANPARENT_ELECTRO']['~VALUE']['TEXT'];?></span>
+            </div>
+        </li>
+        <li>
+            <div class="wrapper">
+                <span>Оттаивание горячим газом </span>
+                <span><?=$arResult['PROPERTIES']['TRANPARENT_GAZ']['~VALUE'];?></span>
+            </div>
+        </li>
+        <li>
+            <div class="wrapper">
+                <span>Рекомендации по подбору установок</span>
+                <span><?=$arResult['PROPERTIES']['TRANPARENT_RECOMEND']['~VALUE']['TEXT'];?></span>
+            </div>
+        </li>
+        
+    </ul>
 </div>
 
 <div class="guarantee-block">

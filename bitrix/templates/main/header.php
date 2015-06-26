@@ -23,7 +23,9 @@ if(defined('HARDWARE'))
 if(defined('QUESTIONNAIRE'))
     $main_classes = array('questionnaire-page');
 if(defined('NEWS'))
-    $main_classes =array('news-page-wrap');
+    $main_classes = array('news-page-wrap');
+if(defined('REVIEWS'))
+    $main_classes = array('reviews-page');
 
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);
