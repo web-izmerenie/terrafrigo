@@ -25,7 +25,7 @@ $this->setFrameMode(true);?>
                         </div>
                         <div class="main-slider__overlay">
                             <div class="wrapper">
-                                <div class="main-slider__slider-description"><?=$arResult['PREVIEW_TEXT'];?></div>
+                                <div class="main-slider__slider-description"><?=$arResult['DETAIL_TEXT'];?></div>
                                 <div class="btn-find-dealer">
                                     <a href="#popup-form3" class = "find-dealer_link2 btn-price popup-open"><span>Узнать стоимость</span></a>
                                     <a href="#" class = "find-dealer_link1">Найти дилера</a>

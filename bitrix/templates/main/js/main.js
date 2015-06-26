@@ -320,7 +320,7 @@ $(function () {
     	}
     	else {
             $(inputFrom).each(function(){
-                if($(this).val() == $(this).data('default')){
+                if($(this).val() === $(this).data('default')){
                     $(this).val('');    
                 }
             });
