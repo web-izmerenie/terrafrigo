@@ -57,7 +57,7 @@
     display: none;
 }
 
-.questionnaire-page #sucsess{
+#sucsess{
     color: rgb(0, 134, 0);
     text-align: center;
 }
@@ -68,5 +68,12 @@
 }
 
 .model-page #table2{
+    display: none;
+}
+
+.popup-form #sucsess{
+    text-align: center;
+    margin-top: 25px;
+    min-width: 100%;
     display: none;
 }

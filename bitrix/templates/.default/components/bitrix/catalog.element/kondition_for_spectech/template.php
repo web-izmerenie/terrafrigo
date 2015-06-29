@@ -70,7 +70,7 @@ $this->setFrameMode(true);?>
                     <span class="td2"><?=$arResult['PROPERTIES']['CHARSET_MODEL']['VALUE'][$i];?></span>
                     <span class="td3"><?=$arResult['PROPERTIES']['CHARSET_WIDTH']['VALUE'][$i];?></span>
                     <span class="td4"><?=$arResult['PROPERTIES']['CHARSET_WEIGHT']['VALUE'][$i];?></span>
-                    <span class="td5"><?=$arResult['PROPERTIES']['CHARSET_DOP']['VALUE'][$i]['TEXT'];?></span>
+                    <span class="td5"><?=$arResult['PROPERTIES']['CHARSET_DOP']['~VALUE'][$i]['TEXT'];?></span>
                 </div>
             </li>
             <?}?>
