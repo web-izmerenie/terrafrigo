@@ -57,7 +57,7 @@
     display: none;
 }
 
-#sucsess{
+#sucsess, #sucsess2{
     color: rgb(0, 134, 0);
     text-align: center;
 }
@@ -71,7 +71,7 @@
     display: none;
 }
 
-.popup-form #sucsess{
+.popup-form #sucsess, .popup-form #sucsess2{
     text-align: center;
     margin-top: 25px;
     min-width: 100%;

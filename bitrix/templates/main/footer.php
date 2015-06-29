@@ -50,96 +50,109 @@
         </div>
     </footer>
     <?$APPLICATION->IncludeComponent("bitrix:news.detail", "call_me", Array(
-	"COMPONENT_TEMPLATE" => ".default",
-		"IBLOCK_TYPE" => "service",	// Тип информационного блока (используется только для проверки)
-		"IBLOCK_ID" => "25",	// Код информационного блока
-		"ELEMENT_ID" => "306",	// ID новости
-		"ELEMENT_CODE" => "",	// Код новости
-		"CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
-		"FIELD_CODE" => array(	// Поля
-			0 => "",
-			1 => "",
-		),
-		"PROPERTY_CODE" => array(	// Свойства
-			0 => "ATT_OKRUG",
-			1 => "ATT_OTDEL",
-			2 => "",
-		),
-		"IBLOCK_URL" => "",	// URL страницы просмотра списка элементов (по умолчанию - из настроек инфоблока)
-		"AJAX_MODE" => "N",	// Включить режим AJAX
-		"AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
-		"AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
-		"AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
-		"AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
-		"CACHE_TYPE" => "A",	// Тип кеширования
-		"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-		"CACHE_GROUPS" => "Y",	// Учитывать права доступа
-		"SET_TITLE" => "N",	// Устанавливать заголовок страницы
-		"SET_CANONICAL_URL" => "N",	// Устанавливать канонический URL
-		"SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
-		"BROWSER_TITLE" => "-",	// Установить заголовок окна браузера из свойства
-		"SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
-		"META_KEYWORDS" => "-",	// Установить ключевые слова страницы из свойства
-		"SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
-		"META_DESCRIPTION" => "-",	// Установить описание страницы из свойства
-		"SET_STATUS_404" => "N",	// Устанавливать статус 404, если не найдены элемент или раздел
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
-		"ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
-		"ADD_ELEMENT_CHAIN" => "N",	// Включать название элемента в цепочку навигации
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
-		"USE_PERMISSIONS" => "N",	// Использовать дополнительное ограничение доступа
-		"DISPLAY_DATE" => "Y",	// Выводить дату элемента
-		"DISPLAY_NAME" => "Y",	// Выводить название элемента
-		"DISPLAY_PICTURE" => "Y",	// Выводить детальное изображение
-		"DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
-		"USE_SHARE" => "N",	// Отображать панель соц. закладок
-		"PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
-		"DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
-		"DISPLAY_BOTTOM_PAGER" => "N",	// Выводить под списком
-		"PAGER_TITLE" => "Страница",	// Название категорий
-		"PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
-	),
-	false
-);?>
-    <div class="popup-inner" id="popup-form2">
-    	<div class="popup-form">
-    		<a href="#" class="close"></a>
-    		<div class="title">Написать нам</div>
-    		<div class="form">
-    			<form>
-    				<div class="line"><input type="text" value="Фио*" class="placeholder-2 valid" data-default="Фио*"/></div>
-    				<div class="line"><input type="text" value="Компания*" class="placeholder-9 valid" data-default="Компания*"/></div>
-    				<div class="line line-t2">
-    					<span class="rel-container"><input type="text" value="Телефон *" class="placeholder-1 valid" data-default="Телефон *"/></span>
-    					<span class="rel-container"><input type="text" value="E-mail *" class="placeholder-3 valid" data-default="E-mail *"/></span>
-					</div>
-					<div class="line line-t2">
-						<span class="rel-container">
-	    					<select class="style-select valid" data-default="Округ *">
-	    						<option value="Округ *">Округ *</option>
-	    						<option value="1">Округ 1</option>
-	    						<option value="2">Округ 2</option>
-	    						<option value="3">Округ 3</option>
-	    					</select>
-    					</span>
-    					<span class="rel-container">
-	    					<select class="style-select valid" data-default="Отдел *">
-	    						<option value="Отдел *">Отдел *</option>
-	    						<option value="1">Отдел 1</option>
-	    						<option value="2">Отдел 2</option>
-	    						<option value="3">Отдел 3</option>
-	    					</select>
-    					</span>
-					</div>
-					<div class="line line-textarea">
-						<textarea class="placeholder-10 valid" data-default="Сообщение *">Сообщение *</textarea>
-					</div>
-					<div class="line-send"><input type="submit" value="Отправить" class="btn-type-1" /></div>
-    			</form>
-    		</div>
-    	</div>
-    </div>
-
+        "COMPONENT_TEMPLATE" => ".default",
+            "IBLOCK_TYPE" => "service",	// Тип информационного блока (используется только для проверки)
+            "IBLOCK_ID" => "25",	// Код информационного блока
+            "ELEMENT_ID" => "306",	// ID новости
+            "ELEMENT_CODE" => "",	// Код новости
+            "CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
+            "FIELD_CODE" => array(	// Поля
+                0 => "",
+                1 => "",
+            ),
+            "PROPERTY_CODE" => array(	// Свойства
+                0 => "ATT_OKRUG",
+                1 => "ATT_OTDEL",
+                2 => "",
+            ),
+            "IBLOCK_URL" => "",	// URL страницы просмотра списка элементов (по умолчанию - из настроек инфоблока)
+            "AJAX_MODE" => "N",	// Включить режим AJAX
+            "AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+            "AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
+            "AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+            "AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
+            "CACHE_TYPE" => "A",	// Тип кеширования
+            "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+            "CACHE_GROUPS" => "Y",	// Учитывать права доступа
+            "SET_TITLE" => "N",	// Устанавливать заголовок страницы
+            "SET_CANONICAL_URL" => "N",	// Устанавливать канонический URL
+            "SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
+            "BROWSER_TITLE" => "-",	// Установить заголовок окна браузера из свойства
+            "SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
+            "META_KEYWORDS" => "-",	// Установить ключевые слова страницы из свойства
+            "SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
+            "META_DESCRIPTION" => "-",	// Установить описание страницы из свойства
+            "SET_STATUS_404" => "N",	// Устанавливать статус 404, если не найдены элемент или раздел
+            "INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
+            "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
+            "ADD_ELEMENT_CHAIN" => "N",	// Включать название элемента в цепочку навигации
+            "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
+            "USE_PERMISSIONS" => "N",	// Использовать дополнительное ограничение доступа
+            "DISPLAY_DATE" => "Y",
+            "DISPLAY_NAME" => "Y",
+            "DISPLAY_PICTURE" => "Y",
+            "DISPLAY_PREVIEW_TEXT" => "Y",
+            "USE_SHARE" => "N",
+            "PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
+            "DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+            "DISPLAY_BOTTOM_PAGER" => "N",	// Выводить под списком
+            "PAGER_TITLE" => "Страница",	// Название категорий
+            "PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+        ),
+        false
+    );?>
+    <?$APPLICATION->IncludeComponent("bitrix:news.detail", "write_me", Array(
+        "COMPONENT_TEMPLATE" => ".default",
+            "IBLOCK_TYPE" => "service",	// Тип информационного блока (используется только для проверки)
+            "IBLOCK_ID" => "25",	// Код информационного блока
+            "ELEMENT_ID" => "306",	// ID новости
+            "ELEMENT_CODE" => "",	// Код новости
+            "CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
+            "FIELD_CODE" => array(	// Поля
+                0 => "",
+                1 => "",
+            ),
+            "PROPERTY_CODE" => array(	// Свойства
+                0 => "ATT_OKRUG",
+                1 => "ATT_OTDEL",
+                2 => "",
+            ),
+            "IBLOCK_URL" => "",	// URL страницы просмотра списка элементов (по умолчанию - из настроек инфоблока)
+            "AJAX_MODE" => "N",	// Включить режим AJAX
+            "AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+            "AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
+            "AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+            "AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
+            "CACHE_TYPE" => "A",	// Тип кеширования
+            "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+            "CACHE_GROUPS" => "Y",	// Учитывать права доступа
+            "SET_TITLE" => "N",	// Устанавливать заголовок страницы
+            "SET_CANONICAL_URL" => "N",	// Устанавливать канонический URL
+            "SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
+            "BROWSER_TITLE" => "-",	// Установить заголовок окна браузера из свойства
+            "SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
+            "META_KEYWORDS" => "-",	// Установить ключевые слова страницы из свойства
+            "SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
+            "META_DESCRIPTION" => "-",	// Установить описание страницы из свойства
+            "SET_STATUS_404" => "N",	// Устанавливать статус 404, если не найдены элемент или раздел
+            "INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
+            "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
+            "ADD_ELEMENT_CHAIN" => "N",	// Включать название элемента в цепочку навигации
+            "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
+            "USE_PERMISSIONS" => "N",	// Использовать дополнительное ограничение доступа
+            "DISPLAY_DATE" => "Y",
+            "DISPLAY_NAME" => "Y",
+            "DISPLAY_PICTURE" => "Y",
+            "DISPLAY_PREVIEW_TEXT" => "Y",
+            "USE_SHARE" => "N",
+            "PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
+            "DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+            "DISPLAY_BOTTOM_PAGER" => "N",	// Выводить под списком
+            "PAGER_TITLE" => "Страница",	// Название категорий
+            "PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+        ),
+        false
+    );?>
     <script src="<?=$tplPath;?>js/plugins.min.js"></script>
     <script src="<?=$tplPath;?>js/jquery-ui.js"></script>
     <script src="<?=$tplPath;?>js/main.js"></script>
