@@ -97,7 +97,36 @@ $(function () {
         });
 	}
 	
+	function mapsContact(){
+        var image = new google.maps.MarkerImage( '/bitrix/templates/main/img/marker.png', // иконка
+                new google.maps.Size(52,73), // размеры иконок
+                new google.maps.Point(0,0),
+                new google.maps.Point(42,56)
+        );
+        
+        $('.adress-map').each(function(){
+            var map;
+            var coordinat = $(this).data('coordinat');
+			var arrCoordinat = coordinat.split(',');
+            var mapSelect = $(this).find('.gomap').attr('id');
+            
+            map = new GMaps({
+                div: '#'+mapSelect,
+                scrollwheel: false,
+                lat: arrCoordinat[0],
+                lng: arrCoordinat[1]
+            });
+			
+            map.addMarker({
+                lat: arrCoordinat[0],
+                lng: arrCoordinat[1],
+                icon: image,
+            });
+        });
+	}
+	
 	toggleTable();
 	PlayVideo();
 	GMapsInit();
+	mapsContact();
 });

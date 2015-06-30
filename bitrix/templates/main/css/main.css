@@ -964,6 +964,103 @@ textarea {
     display: block;
     float: left;
 }
+
+.contact-page_inside{
+    width: auto;
+}
+.adress-map{
+    border-top: 1px solid #c4c0c0;
+}
+.contact-page_inside .adress-map:nth-last-child(1){
+    border-bottom: 1px solid #c4c0c0;
+}
+.adress-map_head{
+    width: auto;
+    height: 78px;
+}
+.adress-map_head h2{
+    line-height:86px;
+    font-size:22px;
+    color:#000;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    float: left;
+}
+.adress-map_head-list{
+    float: right;
+}
+.adress-map_head-list li{
+    float: right;
+    margin-left: 37px;
+    padding-top: 33px;
+}
+.adress-map_head-list li a{
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.54px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+    border-bottom: 1px dashed #c4c0c0;
+}
+.adress-map_head-list li a:hover{
+    text-decoration: none;
+    border-color: #000;
+}
+.contact-adress_wrap{
+    padding: 45px 26px;
+    padding-bottom: 16px;
+}
+.contact-adress_wrap h2{
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact-adress_wrap ul{
+    margin-bottom: 40px;
+    display: block;
+    overflow: hidden;
+}
+.contact-adress_wrap ul li{
+    float: left;
+    width: 289px;
+}
+.contact-adress_wrap ul li span{
+    font-family: 'Ubuntu';
+    font-size:14px;
+    color: #000;
+    line-height: 20px;
+    font-weight: 700;
+    display: block;
+    margin: 10px 0 10px 0;
+}
+.contact-adress_wrap ul li p.adress-text{
+    line-height: 23px;
+}
+.map-wrap{
+    width: 100%;
+    height: 465px;
+    overflow: hidden;
+    position: relative;
+}
+/*
+.map-wrap:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    cursor: pointer;
+    left: 0;
+}
+*/
+.map-wrap div{
+    float: left;
+}
 @media screen and (min-width: 990px) and (max-width: 1360px){
     .header-line__phone-item + .header-line__phone-item {
         margin-left: 50px;
@@ -2409,7 +2506,7 @@ span.inputBox input {
 .new-title_list{
     margin-bottom: 34px;
     padding-top: 5px;
-    margin-left: 2px;
+    margin-left: 25px;
 }
 .new-title_list li{
 	margin-bottom:8px;
@@ -2444,6 +2541,11 @@ span.inputBox input {
 .main-new .main-news__item{
 	width:33.3%;
 	display:block!important;
+}
+@media (min-width: 1440px){
+    .inside-conent .main-new .main-news__item{
+        width: 16.66666666%!important;
+    }
 }
 .year-list{
     overflow: hidden;
@@ -3711,7 +3813,7 @@ span.inputBox.n2 input {
 		padding-left: 45px; 
 	}
 	.questionnaire-page .questionnaire_notific{
-		padding-left: 0; 
+		/*padding-left: 0; */
 	}
 	.certificares-page .main-new {
 		width: auto;
