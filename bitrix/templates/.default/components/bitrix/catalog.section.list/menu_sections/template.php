@@ -13,6 +13,8 @@
 $this->setFrameMode(true);?>
 <ul>
     <?foreach($arResult['SECTIONS'] as $arSections){?>
-        <li><a href="<?=$arSections['SECTION_PAGE_URL'];?>"><?=$arSections['NAME'];?></a></li>
+    <li <?if($_GET['SECTION_CODE'] === $arSections['CODE']){?>class="active"<?}?>>
+            <a href="<?=$arSections['SECTION_PAGE_URL'];?>"><?=$arSections['NAME'];?></a>
+        </li>
     <?}?>
 </ul>

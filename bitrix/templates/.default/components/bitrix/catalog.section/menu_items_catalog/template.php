@@ -14,7 +14,9 @@ $this->setFrameMode(true);?>
 <?if(!empty($arResult['ITEMS'])){?>
     <ul>
         <?foreach($arResult['ITEMS'] as $arItem){?>
-            <li><a href="<?=$arItem['DETAIL_PAGE_URL'];?>"><?=$arItem['NAME']?></a></li>
+        <li <?if($_GET['ELEMENT_CODE'] === $arItem['CODE']){?>class="active"<?}?>>
+                <a href="<?=$arItem['DETAIL_PAGE_URL'];?>"><?=$arItem['NAME']?></a>
+            </li>
         <?}?>
     </ul>
 <?}?>
