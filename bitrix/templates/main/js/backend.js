@@ -124,7 +124,54 @@ $(function () {
             });
         });
 	}
+    
+    function filterTabs(){
+        var link = $('.filter_selection .tabs');
+        
+        link.click(function(){
+            var target = $(this).data('target');
+            
+            if(target != $('.tabs-target:visible').attr('id')){
+                $('.tabs-target').hide();
+                $('#'+target).fadeIn();
+            }
+        });
+    }
+    
+    function tabsBlockFilter(){
+        var mainBlock = $('.tabs-block');
+        var radio = mainBlock.find('input[type="radio"]');
+        
+        radio.click(function(){
+			
+            var inp=$(this);
+			if (inp.is(".theone")) {
+				inp.prop("checked",false).removeClass("theone");
+				inp.parent().find('label').removeClass('ui-state-active');
+			} else {
+				$("input:radio[name='"+inp.prop("name")+"'].theone").removeClass("theone");
+				inp.addClass("theone");
+			}
+            
+            if(radio.is(':checked')){
+				var currentBlock = $(this).closest('.tabs-block');
+				
+				if($(currentBlock).hasClass('active')){
+					return false;
+				}else{
+					mainBlock.hide();
+					currentBlock.fadeIn().addClass('active');
+				}
+            }else{
+                mainBlock.fadeIn().removeClass('active');
+            }
+            
+        });
+        
+    }
 	
+    tabsBlockFilter();
+    filterTabs();
 	toggleTable();
 	PlayVideo();
 	GMapsInit();

@@ -90,3 +90,12 @@
 .adress-map_head-list li{
     float: left;
 }
+
+.filter_selection .group-search-2 #tab2, .filter_selection .group-search-2 #tab3{display: none;}
+
+.filter_selection.search .group-search-3{
+    padding-right: 60px;
+}
+.filter_selection .group-search-3 .radio-btn.border > div{
+    margin-right: 5px;
+}

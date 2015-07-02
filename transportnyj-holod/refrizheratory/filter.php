@@ -1,15 +1,15 @@
-<?define('CERTIFICATE', 'Y');
-define('NO_ITEMS', 'Y');
+<?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("detail");
+$APPLICATION->SetTitle("Рефрижераторы");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section", 
-	"dilers_items", 
+	"filter_transport", 
 	array(
-		"IBLOCK_TYPE" => "content",
-		"IBLOCK_ID" => "23",
-		"SECTION_ID" => "",
-		"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
+		"COMPONENT_TEMPLATE" => "filter_transport",
+		"IBLOCK_TYPE" => "transport_cold",
+		"IBLOCK_ID" => "17",
+		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SECTION_CODE" => "",
 		"SECTION_USER_FIELDS" => array(
 			0 => "",
 			1 => "",
@@ -20,11 +20,11 @@ $APPLICATION->SetTitle("detail");
 		"ELEMENT_SORT_ORDER2" => "desc",
 		"FILTER_NAME" => "arrFilter",
 		"INCLUDE_SUBSECTIONS" => "Y",
-		"SHOW_ALL_WO_SECTION" => "N",
+		"SHOW_ALL_WO_SECTION" => "Y",
 		"PAGE_ELEMENT_COUNT" => "30",
 		"LINE_ELEMENT_COUNT" => "3",
 		"PROPERTY_CODE" => array(
-			0 => "",
+			0 => "FILTER_WEIGHT",
 			1 => "",
 		),
 		"OFFERS_LIMIT" => "5",
@@ -36,22 +36,23 @@ $APPLICATION->SetTitle("detail");
 		"MESS_NOT_AVAILABLE" => "Нет в наличии",
 		"SECTION_URL" => "",
 		"DETAIL_URL" => "",
-		"SECTION_ID_VARIABLE" => "SECTION_CODE",
+		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
 		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
 		"CACHE_TYPE" => "A",
 		"CACHE_TIME" => "36000000",
 		"CACHE_GROUPS" => "Y",
-		"SET_TITLE" => "Y",
-		"SET_BROWSER_TITLE" => "Y",
-		"BROWSER_TITLE" => "NAME",
+		"SET_TITLE" => "N",
+		"SET_BROWSER_TITLE" => "N",
+		"BROWSER_TITLE" => "-",
 		"SET_META_KEYWORDS" => "N",
 		"META_KEYWORDS" => "-",
 		"SET_META_DESCRIPTION" => "N",
 		"META_DESCRIPTION" => "-",
-		"ADD_SECTIONS_CHAIN" => "Y",
+		"ADD_SECTIONS_CHAIN" => "N",
 		"SET_STATUS_404" => "N",
 		"CACHE_FILTER" => "N",
 		"ACTION_VARIABLE" => "action",
@@ -63,6 +64,7 @@ $APPLICATION->SetTitle("detail");
 		"PRICE_VAT_INCLUDE" => "Y",
 		"BASKET_URL" => "/personal/basket.php",
 		"USE_PRODUCT_QUANTITY" => "N",
+		"PRODUCT_QUANTITY_VARIABLE" => "",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
@@ -79,10 +81,7 @@ $APPLICATION->SetTitle("detail");
 		"PAGER_SHOW_ALL" => "N",
 		"MESS_BTN_COMPARE" => "Сравнить",
 		"ADD_PICT_PROP" => "-",
-		"LABEL_PROP" => "-",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
-		"COMPONENT_TEMPLATE" => "dilers_items"
+		"LABEL_PROP" => "-"
 	),
 	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
