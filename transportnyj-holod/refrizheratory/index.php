@@ -12,143 +12,92 @@ $APPLICATION->SetTitle("Рефрижераторы");
         <li class="trailers-icon-2" style="background-color: #21c097;"><span>Фреон, заправляемый в установки, не содержит хлора и безопасен для окружающей среды и перевозимой продукции</span></li>
     </ul>
 </div>
-<div class="filter_selection">
+<form class="filter_selection search" method="post" action="./filter.php">
     <div class="wrapper">
-        <div class="title">Подбор автокондиционера</div>
-        <div class="group group-1 clearfix">
-            <div class="group-title ieb icon-f1">Модель автомобиля</div>
-            <div class="colum colum-1">
-                <div class="grop-s">
-                    <img src="img/icon-gaz.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-1" /><label for="gr1-1">Баргузин</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-2" /><label for="gr1-2">Соболь</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-3" /><label for="gr1-3">Штайер</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-4" /><label for="gr1-4">ГАЗель Next Микроавтобус</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-5" /><label for="gr1-5">ГАЗель Next Шасси (Одинарная кабина)</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-6" /><label for="gr1-6">ГАЗель Next Шасси (Двойная кабина)</label></div>
-                    </div>
-                </div>
-                <div class="grop-s">
-                    <img src="img/icon-uaz.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-7" /><label for="gr1-7">УАЗ Патриот</label></div>
-                    </div>
-                </div>
-                <div class="grop-s">
-                    <img src="img/icon-fiat.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-8" /><label for="gr1-8">FIAT Ducato Combi</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-9" /><label for="gr1-9">FIAT Ducato Фургон</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-10" /><label for="gr1-10">FIAT Ducato Шасси (Одинарная кабина)</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-11" /><label for="gr1-11">FIAT Ducato Шасси (Двойная кабина)</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-12" /><label for="gr1-12">FIAT New Ducato Combi</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-13" /><label for="gr1-13">FIAT New Ducato Фургон</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-14" /><label for="gr1-14">FIAT New Ducato Шасси (Одинарная кабина)</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-15" /><label for="gr1-15">FIAT New Ducato Шасси (Двойная кабина)</label></div>
-                    </div>
-                </div>
-                <div class="grop-s">
-                    <img src="img/icon-mercedes-benz.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-16" /><label for="gr1-16">MB Sprinter Микроавтобус</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-17" /><label for="gr1-17">MB Sprinter Фургон</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-18" /><label for="gr1-18">MB Sprinter Шасси</label></div>
-                    </div>
-                </div>
-                <div class="grop-s">
-                    <img src="img/icon-mitsubishi.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-19" /><label for="gr1-19">Mitsubishi FUSO Canter Фургон</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-20" /><label for="gr1-20">Mitsubishi FUSO Canter Шасси</label></div>
-                    </div>
+        <div class="title">Подбор рефрижератора</div>
+        <div class="group group-search-1 clearfix">
+            <div class="group-title ieb icon-f4">Внутренний объем фургона</div>
+            <div class="line">
+                <div class="radio-btn border">
+                    <div><input type="radio" name="gr1" value="до 6м" id="gr1-1" /><label for="gr1-1"><span class="image"><img src="<?=$tplPath;?>img/icon-tr-1.png" alt="" /></span>до 6 м³</label></div>
+                    <div><input type="radio" name="gr1" value="от 6м до 10м" id="gr1-2" /><label for="gr1-2"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-2.png" alt="" /></span>от 6 м³ до 10 м³</label></div>
+                    <div><input type="radio" name="gr1" value="от 10м до 20м" id="gr1-3" /><label for="gr1-3"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-3.png" alt="" /></span>от 10 м³ до 20 м³</label></div>
                 </div>
             </div>
-            <div class="colum colum-2">
-                <div class="grop-s">
-                    <img src="img/icon-ldv.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-21" /><label for="gr1-21">LDV Maxus Микроавтобус</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-22" /><label for="gr1-22">LDV Maxus Фургон</label></div>
-                    </div>
-                </div>
-                <div class="grop-s">
-                    <img src="img/icon-kamaz.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-23" /><label for="gr1-23">Камаз</label></div>
-                    </div>
-                </div>
-                <div class="grop-s">
-                    <img src="img/icon-chevrolet.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-24" /><label for="gr1-24">Niva Chevrolet</label></div>
-                    </div>
-                </div>
-                <div class="grop-s">
-                    <img src="img/icon-hyundai.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-25" /><label for="gr1-25">Hyundai Country</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-26" /><label for="gr1-26">Hyundai HD 78 Шасси</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-27" /><label for="gr1-27">Hyundai HD 120 Шасси</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-28" /><label for="gr1-28">Hyundai HD 170 Шасси</label></div>
-                    </div>
-                </div>
-                <div class="grop-s">
-                    <img src="img/icon-isuzu.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-29" /><label for="gr1-29">Isuzu Шасси</label></div>
-                    </div>
-                </div>
-                <div class="grop-s">
-                    <img src="img/icon-volkswagen.png" alt="" />
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr1" id="gr1-30" /><label for="gr1-30">VW Crafter Мироавтобус</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-31" /><label for="gr1-31">VW Crafter Фургон</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-32" /><label for="gr1-32">VW Crafter Шасси (Одинарная кабина)</label></div>
-                        <div><input type="radio" name="gr1" id="gr1-33" /><label for="gr1-33">VW Crafter Шасси (Двойная кабина)</label></div>
-                    </div>
+            <div class="line">
+                <div class="radio-btn border">
+                    <div><input type="radio" name="gr1" value="от 20м до 26м" id="gr1-4" /><label for="gr1-4"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-4.png" alt="" /></span>от 20 м³ до 26 м³</label></div>
+                    <div><input type="radio" name="gr1" value="от 26м до 36м" id="gr1-5" /><label for="gr1-5"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-5.png" alt="" /></span>от 26 м³ до 36 м³</label></div>
+                    <div><input type="radio" name="gr1" value="от 36м до 50м" id="gr1-6" /><label for="gr1-6"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-6.png" alt="" /></span>от 36 м³ до 50 м³</label></div>
                 </div>
             </div>
         </div>
 
-        <div class="group group-2 clearfix">
-            <div class="group-title ieb icon-f2">Направление воздушного потока</div>
-            <div class="colum colum-1">
-                <div class="grop-s">
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr2" id="gr2-1" /><label for="gr2-1">В кабину водителя</label></div>
-                        <div><input type="radio" name="gr2" id="gr2-2" /><label for="gr2-2">В салон (монтаж в переднюю полку)</label></div>
-                    </div>
+        <div class="group group-search-2 clearfix">
+            <div class="group-title ieb icon-f5">Материал и толщина утеплителя</div>
+            <div class="line">
+                <div class="radio-btn">
+                    <div><input class="tabs" data-target="tab2" type="radio" name="gr2" value="Пенопласт" id="gr2-1" /><label for="gr2-1">Пенопласт</label></div>
+                    <div><input class="tabs" type="radio" data-target="tab1" name="gr2" value="ППС" id="gr2-2" /><label for="gr2-2">Пенополистирол <br />экструдированный (ППС)</label></div>
+                    <div><input class="tabs" type="radio" data-target="tab3" name="gr2" value="ППУ" id="gr2-3" /><label for="gr2-3">Пенополиуретан (ППУ)</label></div>
                 </div>
             </div>
-            <div class="colum colum-2">
-                <div class="grop-s">
-                    <div class="radio-btn">
-                        <div><input type="radio" name="gr2" id="gr2-3" /><label for="gr2-3">В салон (монтаж в заднюю полку)</label></div>
-                        <div><input type="radio" name="gr2" id="gr2-4" /><label for="gr2-4">В кабину водителя и в салон</label></div>
-                    </div>
+            <div class="line tabs-target" id="tab1">
+                <div class="radio-btn">
+                    <div><input type="radio" name="gr21" value="50мм" id="gr2-4" /><label for="gr2-4">50 мм</label></div>
+                    <div><input type="radio" name="gr21" value="60мм" id="gr2-5" /><label for="gr2-5">60 мм</label></div>
+                    <div><input type="radio" name="gr21" value="70мм" id="gr2-6" /><label for="gr2-6">70 мм</label></div>
+                    <div><input type="radio" name="gr21" value="80мм" id="gr2-7" /><label for="gr2-7">80 мм</label></div>
+                </div>
+            </div>
+            <div class="line tabs-target" id="tab2">
+                <div class="radio-btn">
+                    <div><input type="radio" name="gr22" value="50мм" id="gr2-8" /><label for="gr2-8">50 мм</label></div>
+                    <div><input type="radio" name="gr22" value="60мм" id="gr2-9" /><label for="gr2-9">70 мм</label></div>
+                    <div><input type="radio" name="gr22" value="70мм" id="gr2-10" /><label for="gr2-10">80 мм</label></div>
+                </div>
+            </div>
+            <div class="line tabs-target" id="tab3">
+                <div class="radio-btn">
+                    <div><input type="radio" name="gr23" value="50мм" id="gr2-11" /><label for="gr2-11">50 мм</label></div>
+                    <div><input type="radio" name="gr23" value="60мм" id="gr2-12" /><label for="gr2-12">60 мм</label></div>
+                    <div><input type="radio" name="gr23" value="70мм" id="gr2-13" /><label for="gr2-13">70 мм</label></div>
+                    <div><input type="radio" name="gr23" value="80мм" id="gr2-14" /><label for="gr2-14">80 мм</label></div>
                 </div>
             </div>
         </div>
 
-        <div class="group group-3 clearfix">
-            <div class="group-title ieb icon-f3">Количество пассажирских мест</div>
-            <div class="radio-btn">
-                <div><input type="radio" name="gr3" id="gr3-1" /><label for="gr3-1">до 6</label></div>
-                <div><input type="radio" name="gr3" id="gr3-2" /><label for="gr3-2">до 11</label></div>
-                <div><input type="radio" name="gr3" id="gr3-3" /><label for="gr3-3">до 14</label></div>
-                <div><input type="radio" name="gr3" id="gr3-4" /><label for="gr3-4">до 20</label></div>
-                <div><input type="radio" name="gr3" id="gr3-5" /><label for="gr3-5">более 20</label></div>
+        <div class="group group-search-3 clearfix tabs-block">
+            <div class="group-title ieb icon-f6">Режим работы</div>
+            <div class="line">
+                <div class="radio-btn border">
+                    <div><input type="radio" value="до +1 в теплое время года" name="gr3" id="gr3-1" /><label for="gr3-1"><span class="image"><img  src="<?=$tplPath;?>img/icon-temp-1.png" alt="" /></span>Охлаждение до +1 С° <br />в теплое время года</label></div>
+                    <div><input type="radio" value="от 0 до -20" name="gr3" id="gr3-2" /><label for="gr3-2"><span class="image"><img  src="<?=$tplPath;?>img/icon-temp-2.png" alt="" /></span>Холод <br />от 0 С° до –20 С°</label></div>
+                    <div><input type="radio" value="от -20 до +12" name="gr3" id="gr3-3" /><label for="gr3-3"><span class="image"><img  src="<?=$tplPath;?>img/icon-temp-3.png" alt="" /></span>Холод-Тепло <br />от –20 С° до +12 С°</label></div>
+                     <div><input type="radio" value="до +1 круглый год" name="gr3" id="gr3-4" /><label for="gr3-4"><span class="image"><img  src="<?=$tplPath;?>img/icon-prod-4.png" alt="" /></span>Охлажение до +1 °С <br />круглый год</label></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="group group-search-4 clearfix tabs-block">
+            <div class="group-title ieb icon-f7">Тип перевозимой продукции</div>
+            <div class="line">
+                <div class="radio-btn border">
+                    <div><input type="radio" value="охлажденные продукты" name="gr4" id="gr4-1" /><label for="gr4-1"><span class="image"><img  src="<?=$tplPath;?>img/icon-prod-1.png" alt="" /></span><span class="text">Любые охлажденные продукты, <br />в том числе фрукты и овощи</span></label></div>
+                    <div><input type="radio" value="замороженные продукты" name="gr4" id="gr4-2" /><label for="gr4-2"><span class="image"><img  src="<?=$tplPath;?>img/icon-prod-2.png" alt="" /></span><span class="text">Любые замороженные продукты</span></label></div>
+                    <div><input type="radio" value="охлажденные продукты, замороженные продукты" name="gr4" id="gr4-3" /><label for="gr4-3"><span class="image"><img  src="<?=$tplPath;?>img/icon-prod-3.png" alt="" /></span><span class="text">Охлажденные продукты, замороженные продукты, <br />в том числе фрукты, кондитерские изделия, цветы, лекарства</span></label></div>
+                </div>
             </div>
         </div>
 
         <div class="btn-filter">
             <input type="submit" value="Подобрать" class="btn-type-1" />
         </div>
+
         <div class="btn-filter-2">
-            <a href="#" class="btn-type-3">Посмотреть все</a>
-            <a href="#" class="btn-type-2">Найти дилера</a>
+            <a href="./filter.php" class="btn-type-3">Посмотреть все</a>
+            <a href="/transportnyj-holod/dilery/" class="btn-type-2">Найти дилера</a>
         </div>
     </div>
-</div>
+</form>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

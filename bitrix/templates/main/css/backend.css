@@ -99,3 +99,7 @@
 .filter_selection .group-search-3 .radio-btn.border > div{
     margin-right: 5px;
 }
+
+.result_filter{
+    padding-bottom: 0 !important;
+}

@@ -21,13 +21,9 @@ $this->setFrameMode(true);?>
 $arFilter = Array(
     "IBLOCK_ID"=>$arResult['IBLOCK_ID'],
     "ACTIVE"=>"Y",
-    "PROPERTY_FILTER_WEIGHT_VALUE" => $_POST['gr1'],
-    "PROPERTY_FILTER_MATERIAL_VALUE" => $_POST['gr2'],
-    "PROPERTY_FILTER_WEIGHT_PENOPLAST_VALUE" => $_POST['gr22'],
-    "PROPERTY_FILTER_WEIGHT_PPS_VALUE" => $_POST['gr21'],
-    "PROPERTY_FILTER_WEIGHT_PPU_VALUE" => $_POST['gr23'],
-    "PROPERTY_FILTER_MODE_VALUE" => $_POST['gr3'],
-    "PROPERTY_FILTER_TIP_VALUE" => $_POST['gr4']
+    "PROPERTY_ATT_MODEL.ID" => $_POST['gr1'],
+    "PROPERTY_FILTER_AIR_VALUE" => $_POST['gr2'],
+    "PROPERTY_FILTER_COUNT_VALUE" => $_POST['gr3'],
 );
 $res = CIBlockElement::GetList(Array("SORT"=>"ASC"), $arFilter, false, false, $arSelect);
 while($ob = $res->GetNextElement())
@@ -59,7 +55,7 @@ foreach($arFields as $k => $arFiledsItem){
                     <?}?>
                 </ul>
                 <div class="new-search">
-                    <a href="/transportnyj-holod/refrizheratory/" class="btn-type-1">Новый поиск</a>
+                    <a href="/transportnyj-holod/konditcionery/" class="btn-type-1">Новый поиск</a>
                 </div>
             </div>
         </div>

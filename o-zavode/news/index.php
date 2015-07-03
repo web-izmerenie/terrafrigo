@@ -12,7 +12,7 @@ $arrFilter = Array(
 	array(
 		"IBLOCK_TYPE" => "content",
 		"IBLOCK_ID" => "11",
-		"NEWS_COUNT" => "10",
+		"NEWS_COUNT" => "12",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_ORDER1" => "DESC",
 		"SORT_BY2" => "SORT",

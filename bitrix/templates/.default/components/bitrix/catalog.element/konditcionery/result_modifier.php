@@ -25,4 +25,3 @@ for($i=0; $i < $arrCount; $i++){
 
 unset($arResult['PROPERTIES']['ATT_SLIDE']);
 unset($arResult['PROPERTIES']['ATT_CHARSET_FILE']);
-unset($arResult["PROPERTIES"]["ATT_MODEL"]);
