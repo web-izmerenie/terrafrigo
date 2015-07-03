@@ -16,7 +16,9 @@ $this->setFrameMode(true);?>
         <?foreach($arResult['ITEMS'] as $arItem){
         $photo = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>1850, 'height'=>920), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
             <img alt="" class="width-all" src="<?=$photo['src'];?>">
-            <div class="wrapper"><p><?=$arItem['PREVIEW_TEXT'];?></p></div>
+            <?if($arItem['PREVIEW_TEXT']){?>    
+                <div class="wrapper"><p><?=$arItem['PREVIEW_TEXT'];?></p></div>
+            <?}?>
         <?}?>
     </div>
 <?}?>

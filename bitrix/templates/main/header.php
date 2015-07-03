@@ -26,6 +26,8 @@ if(defined('NEWS'))
     $main_classes = array('news-page-wrap');
 if(defined('REVIEWS'))
     $main_classes = array('reviews-page');
+if(defined('HEATERS'))
+    $main_classes = array('heaters-page');
 
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);

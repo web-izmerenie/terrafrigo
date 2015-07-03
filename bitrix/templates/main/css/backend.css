@@ -96,6 +96,7 @@
 .filter_selection.search .group-search-3{
     padding-right: 60px;
 }
+
 .filter_selection .group-search-3 .radio-btn.border > div{
     margin-right: 5px;
 }
@@ -103,3 +104,9 @@
 .result_filter{
     padding-bottom: 0 !important;
 }
+
+.about-page-top .main-slider__item {background-position: top center!important;}
+
+.main-news__overlay{height:35%;}
+
+.table-characteristics .table-colum span{width: 12.5%;}
