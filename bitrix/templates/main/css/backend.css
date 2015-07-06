@@ -36,7 +36,7 @@
     padding: 0;
 }
 
-.inside-title span > a{
+.inside-title span > a, .title-fix span > a{
     display: inline !important;
 }
 

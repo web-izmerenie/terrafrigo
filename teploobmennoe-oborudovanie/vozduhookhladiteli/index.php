@@ -1,11 +1,11 @@
 <?define('BANER', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Конденсаторы");
+$APPLICATION->SetTitle("Воздухоохладители");
 ?><?$APPLICATION->IncludeComponent("bitrix:catalog.element", "heart_transport_element", Array(
 	"COMPONENT_TEMPLATE" => ".default",
 		"IBLOCK_TYPE" => "heat_tranport",	// Тип инфоблока
 		"IBLOCK_ID" => "28",	// Инфоблок
-		"ELEMENT_ID" => "454",	// ID элемента
+		"ELEMENT_ID" => "457",	// ID элемента
 		"ELEMENT_CODE" => "",	// Код элемента
 		"SECTION_ID" => $_REQUEST["SECTION_ID"],	// ID раздела
 		"SECTION_CODE" => "",	// Код раздела

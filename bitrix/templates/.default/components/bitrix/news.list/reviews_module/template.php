@@ -15,7 +15,7 @@ $this->setFrameMode(true);?>
     <div class="reviews-block">
         <div class="title wrapper">
             <h3>Отзывы</h3>
-            <a href="<?=$arResult['SECTION_PAGE_URL'];?>" class="btn-list-white">Все отзывы</a>
+            <a href="/o-zavode/otzyvy/" class="btn-list-white">Все отзывы</a>
         </div>
         <ul>
             <?foreach($arResult['ITEMS'] as $arItem){?>

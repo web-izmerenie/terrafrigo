@@ -27,6 +27,13 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Воздухоохладители", 
+		"/teploobmennoe-oborudovanie/vozduhookhladiteli/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>

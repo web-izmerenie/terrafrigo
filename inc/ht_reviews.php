@@ -1,7 +1,7 @@
 <?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"reviews_module",
-	Array(
+	"bitrix:news.list", 
+	"reviews_module", 
+	array(
 		"IBLOCK_TYPE" => "content",
 		"IBLOCK_ID" => "18",
 		"NEWS_COUNT" => "3",
@@ -10,8 +10,14 @@
 		"SORT_BY2" => "ID",
 		"SORT_ORDER2" => "DESC",
 		"FILTER_NAME" => "",
-		"FIELD_CODE" => array("","undefined",""),
-		"PROPERTY_CODE" => array("","undefined",""),
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"CHECK_DATES" => "Y",
 		"DETAIL_URL" => "",
 		"AJAX_MODE" => "N",
@@ -32,7 +38,7 @@
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "N",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"PARENT_SECTION" => "97",
+		"PARENT_SECTION" => "98",
 		"PARENT_SECTION_CODE" => "",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"DISPLAY_DATE" => "Y",
@@ -46,6 +52,9 @@
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-		"PAGER_SHOW_ALL" => "N"
-	)
+		"PAGER_SHOW_ALL" => "N",
+		"COMPONENT_TEMPLATE" => "reviews_module",
+		"AJAX_OPTION_ADDITIONAL" => "undefined"
+	),
+	false
 );?>
