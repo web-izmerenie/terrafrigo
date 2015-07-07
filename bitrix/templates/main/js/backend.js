@@ -1,6 +1,8 @@
 $(function () {
 	'use strict';
 	
+	$('a[data-ankor]').attr('href', '/#main');
+	
 	function PlayVideo(){
 		var play = $('.production-video > img');
 		var target = $('.production-video > iframe');
@@ -169,7 +171,39 @@ $(function () {
         });
         
     }
+    
+    function ankorAnimate(){
+		if(location.pathname === '/'){
+			var item = $('a[data-ankor]');
+			item.click(function(event) {
+				event.preventDefault();
+				var href=$(this).data('ankor');
+				var target=$(href);
+				var top=target.offset().top;
+				$('html,body').animate({
+				scrollTop: top
+				}, 1000);
+			});
+		}
+	} 
+    
+    //init plugins
+    $(".fancybox").fancybox({
+        padding : 0,
+        helpers: {
+            overlay: {
+            locked: false
+            }
+        }
+    });
 	
+    window.onload = function() {
+        if(document.location.hash == '#main'){
+			$('html, body').animate({ scrollTop: $('#main-category').offset().top }, 1000);
+        }
+			console.log(location.pathname)
+    }
+	ankorAnimate();
     tabsBlockFilter();
     filterTabs();
 	toggleTable();

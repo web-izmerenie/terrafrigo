@@ -22,7 +22,7 @@ $this->setFrameMode(true);?>
                     </div>
                     <div class="series-model-element_text">
                         <p><?=$arItem['PREVIEW_TEXT'];?></p>
-                        <a href="#popup-form3" class = "btn-price popup-open">Узнать стоимость</a>
+                        <a href="#popup-form2" class = "btn-price popup-open">Узнать стоимость</a>
                     </div>
                 </div>
             <?}?>
@@ -31,6 +31,6 @@ $this->setFrameMode(true);?>
 <?}?>
 <div class="series-btn clearfix">
     <div class="find-a-dealer find-a-dealer-m">
-        <a href="#">Найти дилера</a>
+        <a href="/transportnyj-holod/dilery/">Найти дилера</a>
     </div>
 </div>

@@ -7,6 +7,7 @@
             <li>
                 <h3><?=$arItem['NAME'];?></h3>
                 <p>Обязанности: <?=$arItem['PREVIEW_TEXT'];?></p>
+                <div class="hid-text"><?=$arItem['PREVIEW_TEXT'];?></div>
             </li>
         <?}?>
     </ul>

@@ -18,8 +18,9 @@ $this->setFrameMode(true);
     <?=$arResult['~DETAIL_TEXT'];?>
     <div class="news_images wrapper">
         <?foreach($arResult['PHOTOS'] as $arPhoto){
-        $photo = CFile::ResizeImageGet($arPhoto, array('width'=>588, 'height'=>420), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
-            <img src="<?=$photo['src'];?>" alt=""/>
+        $photo = CFile::ResizeImageGet($arPhoto, array('width'=>599, 'height'=>408), BX_RESIZE_IMAGE_PROPORTIONAL, true);
+        $photoBig = CFile::ResizeImageGet($arPhoto, array('width'=>1280, 'height'=>1024), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
+            <a class="fancybox" rel="gallery" href="<?=$photoBig['src'];?>"><img src="<?=$photo['src'];?>" alt=""/></a>
         <?}?>
     </div>
 </div>

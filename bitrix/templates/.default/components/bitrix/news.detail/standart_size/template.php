@@ -14,7 +14,7 @@ $this->setFrameMode(true);?>
 <div class="table-characteristics">
     <div class="title wrapper">
         <h3>Типоразмеры</h3>
-        <a href="<?=$arResult['DOWNLOAD_FILE'];?>" class="btn-down-white">Скачать</a>
+        <a href="<?=$arResult['DOWNLOAD_FILE'];?>" target="_blank" class="btn-down-white">Скачать</a>
     </div>
 
     <ul class="table table-colum">

@@ -50,6 +50,7 @@ global $tplPath;?>
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="<?=$tplPath;?>css/main.css">
     <link rel="stylesheet" href="<?=$tplPath;?>css/jquery.selectBoxIt.css">
+     <link rel="stylesheet" href="<?=$tplPath;?>css/jquery.fancybox.css">
     <link rel="stylesheet" href="<?=$tplPath;?>css/backend.css">
 </head>
 <body>

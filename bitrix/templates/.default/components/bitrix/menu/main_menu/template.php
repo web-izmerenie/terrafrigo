@@ -5,7 +5,14 @@
 	<ul class="main-nav__list">
 		<?foreach($arResult as $arItem){?>
 			<li class="main-nav__list-item">
-				<a class="main-nav__list-link" href="<?=$arItem['LINK']?>"><?=$arItem['TEXT']?></a>
+				<a class="main-nav__list-link" href="<?=$arItem['LINK']?>"
+                   <?if($arItem['PARAMS']){
+                        foreach($arItem['PARAMS'] as $k=>$arParam){?>
+                            <?=$k;?>="<?=$arParam;?>"
+                        <?}
+                    }?>>
+                    <?=$arItem['TEXT']?>
+                </a>
 			</li>
 		<?}?>
 	</ul>

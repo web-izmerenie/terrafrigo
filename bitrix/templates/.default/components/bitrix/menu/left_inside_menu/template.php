@@ -6,7 +6,14 @@
         <nav>
             <ul>
                 <?foreach($arResult as $arItem){?>
-                <li><a href="<?=$arItem['LINK']?>"><?=$arItem['TEXT'];?></a>
+                <li><a href="<?=$arItem['LINK']?>"
+                        <?if($arItem['PARAMS']){
+                        foreach($arItem['PARAMS'] as $k=>$arParam){?>
+                            <?=$k;?>="<?=$arParam;?>"
+                        <?}
+                    }?>>
+                        <?=$arItem['TEXT'];?>
+                    </a>
                     <?if(isset($arItem['CHILDREN']) && $arItem['SELECTED'] == 1){?>
                         <?foreach($arItem['CHILDREN'] as $arChildren){?>
                             <ul>

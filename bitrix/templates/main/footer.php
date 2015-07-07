@@ -1,26 +1,30 @@
     <?if($APPLICATION->GetCurPage(false) !== '/' || !defined('MODEL')){?></div><?}?>
-    <div class="additional-text">
-        <div class="wrapper">
-            <button class="additional-text__button btn-link" type="button">Доп. информация</button>
-            <div class="additional-text__container">
-                <?$APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "",
-                    Array(
-                    )
-                );?>
+    <?if(!defined('NOT_FOUND')){?>
+        <div class="additional-text">
+            <div class="wrapper">
+                <button class="additional-text__button btn-link" type="button">Доп. информация</button>
+                <div class="additional-text__container">
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                        )
+                    );?>
+                </div>
             </div>
         </div>
-    </div>
+    <?}?>
 
     <footer class="footer">
-        <div class="footer-top">
-            <div class="wrapper">
-                <button class="go-to-top btn-link js-to-top" type="button">
-                    <span class="go-to-top__inner">Наверх</span>
-                </button>
+        <?if(!defined('NOT_FOUND')){?>
+            <div class="footer-top">
+                <div class="wrapper">
+                    <button class="go-to-top btn-link js-to-top" type="button">
+                        <span class="go-to-top__inner">Наверх</span>
+                    </button>
+                </div>
             </div>
-        </div>
+        <?}?>
         <?$APPLICATION->IncludeComponent(
             "bitrix:menu",
             "footer_menu",
@@ -157,6 +161,7 @@
     <script src="<?=$tplPath;?>js/jquery-ui.js"></script>
     <script src="<?=$tplPath;?>js/main.js"></script>
     <script src="<?=$tplPath;?>js/jquery.selectBoxIt.js"></script>
+    <script src="<?=$tplPath;?>js/jquery.fancybox.pack.js"></script>
 
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 	<script type="text/javascript" src="<?=$tplPath;?>js/gmaps.js"></script>

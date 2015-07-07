@@ -11,7 +11,7 @@ $aMenuLinks = Array(
 		"Продукция", 
 		"/", 
 		Array(), 
-		Array(), 
+		Array("data-ankor"=>"#main-category"), 
 		"" 
 	),
 	Array(

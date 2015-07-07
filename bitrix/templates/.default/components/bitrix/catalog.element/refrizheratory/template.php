@@ -27,8 +27,8 @@ $this->setFrameMode(true);?>
                             <div class="wrapper">
                                 <div class="main-slider__slider-description"><?=$arResult['DETAIL_TEXT'];?></div>
                                 <div class="btn-find-dealer">
-                                    <a href="#popup-form3" class = "find-dealer_link2 btn-price popup-open"><span>Узнать стоимость</span></a>
-                                    <a href="#" class = "find-dealer_link1">Найти дилера</a>
+                                    <a href="#popup-form2" class="popup-open find-dealer_link2 btn-price"><span>Узнать стоимость</span></a>
+                                    <a href="/transportnyj-holod/dilery/" class = "find-dealer_link1">Найти дилера</a>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ $this->setFrameMode(true);?>
 <div class="table-characteristics">
     <div class="title wrapper">
         <h3>Характеристики</h3>
-        <a href="<?=$arResult['DOWNLOAD_CHARSET']['SRC'];?>" class="btn-down-white">Скачать</a>
+        <a href="<?=$arResult['DOWNLOAD_CHARSET']['SRC'];?>" target="_blank" class="btn-down-white">Скачать</a>
         <div class="button">
             <a href="#table1" class="active">Основные узлы и агрегаты</a>
             <a href="#table2">Рефрижератор</a>
@@ -115,7 +115,7 @@ $this->setFrameMode(true);?>
 <div class="guarantee-block">
     <div class="title wrapper clearfix">
         <h3>Гарантия</h3>
-        <a href="<?=$arResult['DOWNLOAD_GARANT']['SRC'];?>" class="btn-down-white">Скачать</a>
+        <a href="<?=$arResult['DOWNLOAD_GARANT']['SRC'];?>" target="_blank" class="btn-down-white">Скачать</a>
     </div>
     <div class="text-1 wrapper">Гарантия на холодильные установки TerraFrigo — 2 года с момента монтажа. </div>
     <div class="text-2 wrapper">

@@ -110,3 +110,50 @@
 .main-news__overlay{height:35%;}
 
 .table-characteristics .table-colum span{width: 12.5%;}
+
+.news_images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.news_images a{
+    width: 48%;
+    padding-bottom: 2.4%;
+}
+
+.news_images img{
+    width: 95%;
+}
+.heart_transport .title-fix h1{
+    color: #000;
+}
+
+.not-found{
+    height: 512px;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    font: 400 1vw/1.5 Ubuntu;
+    color: #000;
+}
+
+.not-found .wrap{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.not-found h1{
+    font: 700 4vw/2 Ubuntu;
+    text-transform: uppercase;
+    margin-top: 51px;
+}
+
+.not-found a{
+    color: #000;
+    text-decoration: underline;
+}
+
+.not-found a:hover{
+    text-decoration: none;
+}

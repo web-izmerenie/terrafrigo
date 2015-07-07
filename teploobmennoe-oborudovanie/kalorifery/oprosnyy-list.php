@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Опросный лист");
 $APPLICATION->AddChainItem($APPLICATION->GetTitle());
 ?>
-<div class="inside-title-2 wrapper">на подбор и проэктирование воздушного конденсатора</div>
+<div class="inside-title-2 wrapper">на подбор и проектирование воздушного конденсатора</div>
 <div class="questionnaire_notific wrapper">ВНИМАНИЕ: Просим Вас заполнить данную форму максимально корректно для того, <br />чтобы мы смогли оперативно произвести все необходимые для Вас расчеты.</div>
 
 <div class="inside-form questionnaire-form">

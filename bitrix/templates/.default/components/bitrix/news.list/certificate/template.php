@@ -18,7 +18,7 @@ $this->setFrameMode(true);?>
             $icon = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>129, 'height'=>129), BX_RESIZE_IMAGE_PROPORTIONAL, true);
             $photo = CFile::ResizeImageGet($arItem['DETAIL_PICTURE'], array('width'=>1024, 'height'=>768), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
                 <li style="background-color: <?=$arItem['PROPERTIES']['ATT_COLOR']['VALUE_XML_ID'];?>">
-                    <a href="<?=$photo['src'];?>">
+                    <a target="_blank" href="<?=$photo['src'];?>">
                         <span class="image"><img src="<?=$icon['src'];?>" alt="" /></span>
                         <span class="text"><?=$arItem['NAME'];?></span>
                     </a>
