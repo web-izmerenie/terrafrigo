@@ -7,16 +7,16 @@
 		"ELEMENT_ID" => "114",
 		"ELEMENT_CODE" => "",
 		"CHECK_DATES" => "Y",
-		"FIELD_CODE" => array("","undefined",""),
-		"PROPERTY_CODE" => array("","undefined",""),
+		"FIELD_CODE" => array("",""),
+		"PROPERTY_CODE" => array("",""),
 		"IBLOCK_URL" => "",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
 		"AJAX_OPTION_HISTORY" => "N",
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CACHE_TIME" => "36000000",
-		"CACHE_GROUPS" => "Y",
+		"CACHE_GROUPS" => "N",
 		"SET_TITLE" => "N",
 		"SET_BROWSER_TITLE" => "N",
 		"BROWSER_TITLE" => "-",
@@ -39,6 +39,9 @@
 		"DISPLAY_TOP_PAGER" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"PAGER_TITLE" => "Страница",
-		"PAGER_SHOW_ALL" => "N"
+		"PAGER_SHOW_ALL" => "N",
+		"COMPONENT_TEMPLATE" => "baner",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"SET_CANONICAL_URL" => "N"
 	)
 );?>

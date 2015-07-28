@@ -15,7 +15,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Компрессорно-конденсаторный блок", 
+		"Компрессорно-конденсаторные блоки", 
 		"/teploobmennoe-oborudovanie/kondensatbloki/", 
 		Array(), 
 		Array(), 

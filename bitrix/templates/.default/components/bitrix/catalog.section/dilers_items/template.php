@@ -20,7 +20,7 @@ $this->setFrameMode(true);?>
                     <span>Адрес:</span>
                     <p><?=$arItem['PROPERTIES']['ATT_ADRES']['VALUE'];?></p>
                 <?}?>
-                 <?if(!empty($arItem['PROPERTIES']['ATT_TEL']['VALUE'])){?>
+                <?if(!empty($arItem['PROPERTIES']['ATT_TEL']['VALUE'])){?>
                     <span>Телефоны:</span>
                     <?foreach($arItem['PROPERTIES']['ATT_TEL']['VALUE'] as $arTel){?>
                         <p><?=$arTel;?></p>

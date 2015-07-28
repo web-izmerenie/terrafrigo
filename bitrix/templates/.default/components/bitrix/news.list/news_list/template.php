@@ -31,11 +31,15 @@ $filter_value = array_unique($filter_value);?>
     </ul>
     <ul class="main-new clearfix">
         <?foreach($arResult['ITEMS'] as $arItem){
-        $photo = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>370, 'height'=>444), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
+        $photo = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>370, 'height'=>444), BX_RESIZE_IMAGE_PROPORTIONAL, true);
+        $dateActive = substr($arItem['DISPLAY_ACTIVE_FROM'], 0, -5); ?>
             <li class="main-news__item">
                 <a class="main-news__link js-imgLiquidFill" href="<?=$arItem['DETAIL_PAGE_URL'];?>">
                     <img class="main-news__image" src="<?=$photo['src'];?>" alt=""/>
-                    <div class="main-news__overlay"><?=$arItem['NAME'];?></div>
+                    <div class="main-news__overlay">
+                        <p><?=$dateActive;?></p>
+                        <?=$arItem['NAME'];?>
+                    </div>
                 </a>
             </li>
         <?}?>

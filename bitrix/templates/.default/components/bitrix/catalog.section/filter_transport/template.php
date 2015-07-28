@@ -13,7 +13,11 @@
 $this->setFrameMode(true);?>
 
 <!--Добавляем страницу в хлебные крошки-->
-<?=$APPLICATION->AddChainItem('Результаты поиска', “”);?>
+<?if(!empty($_POST)){?>
+    <?=$APPLICATION->AddChainItem('Результаты поиска', “”);?>
+<?}else{?>
+    <?=$APPLICATION->AddChainItem('Все модели', “”);?>
+<?}?>
 <?if(!empty($arResult['ITEMS'])){?>
 
 <!--Получаем данные с фильтра и составляем список товаров-->
@@ -29,7 +33,7 @@ $arFilter = Array(
     "PROPERTY_FILTER_MODE_VALUE" => $_POST['gr3'],
     "PROPERTY_FILTER_TIP_VALUE" => $_POST['gr4']
 );
-$res = CIBlockElement::GetList(Array("SORT"=>"ASC"), $arFilter, false, false, $arSelect);
+$res = CIBlockElement::GetList(Array("NAME"=>"DESC"), $arFilter, false, false, $arSelect);
 while($ob = $res->GetNextElement())
 {
     $arFields[] = $ob->GetFields();
@@ -41,9 +45,17 @@ foreach($arFields as $k => $arFiledsItem){
 }
 ?>
     <div class="filter_selection search result_filter">
-        <div class="wrapper">
-            <div class="title">Вам подойдут модели:</div>
-        </div>
+        <?if(!empty($_POST)){?>
+            <div class="wrapper">
+                <div class="title">
+                    <?if(!empty($arFields)){?>
+                        Вам подойдут модели:
+                    <?}else{?>
+                    по заданным параметрам</br> нет подходящего оборудования
+                    <?}?>
+                </div>
+            </div>
+        <?}?>
 
         <div class="wrapper">
             <div class="search_result clearfix">

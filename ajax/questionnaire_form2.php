@@ -51,7 +51,7 @@ if($_POST['nameOrg'] != 'Название организации *'){
         $mail = new PHPMailer;
         $mail->From = "no-replay@terrafrigo.ru";
         $mail->FromName = "no-replay";
-        $mail->AddAddress('andrey.chechkin@web-izmerenie.ru');
+        $mail->AddAddress('babalykhiyn.l@terrafrigo.ru,  marketing@terrafrigo.ru');
 
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';

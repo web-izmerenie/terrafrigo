@@ -48,7 +48,7 @@
                 <div class="footer-bottom__copy">© 2006-2015 ООО «Завод ТерраФриго». Все права защищены.</div>
                 <div class="footer-bottom__made-in">
                     <span class="made-in-span">Сделано в</span>
-                    <a class="made-in" href="#"></a>
+                    <a class="made-in" href="http://web-izmerenie.ru/"></a>
                 </div>
             </div>
         </div>
@@ -157,6 +157,7 @@
         ),
         false
     );?>
+   
     <script src="<?=$tplPath;?>js/plugins.min.js"></script>
     <script src="<?=$tplPath;?>js/jquery-ui.js"></script>
     <script src="<?=$tplPath;?>js/main.js"></script>

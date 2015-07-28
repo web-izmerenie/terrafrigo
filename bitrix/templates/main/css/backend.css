@@ -157,3 +157,14 @@
 .not-found a:hover{
     text-decoration: none;
 }
+
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor{
+  padding-right: 10px;
+}
+
+.date{margin: 20px 0 0 !important;}
+
+.download{
+    color: #000;
+    margin-top: 10px;
+}

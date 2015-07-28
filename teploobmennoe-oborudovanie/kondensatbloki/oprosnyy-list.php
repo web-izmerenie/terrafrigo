@@ -5,6 +5,7 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle());
 ?>
 <div class="inside-title-2 wrapper">для подбора и проектирования <br />компрессорно-конденсаторного блока</div>
 <div class="questionnaire_notific wrapper">ВНИМАНИЕ: Просим Вас заполнить данную форму максимально корректно для того, <br />чтобы мы смогли оперативно произвести все необходимые для Вас расчеты.</div>
+<div class="questionnaire_notific wrapper download">Или можете скачать<a href="<?=$APPLICATION->GetCurDir();?>oprosnyy-list.xls">опросной лист</a>, заполнить его и выслать на <a href="mailto:babalykhiyn.l@terrafrigo.ru">babalykhiyn.l@terrafrigo.ru</a></div>
 
 <div class="inside-form questionnaire-form">
     <form action="/ajax/questionnaire_form1.php" method="post">

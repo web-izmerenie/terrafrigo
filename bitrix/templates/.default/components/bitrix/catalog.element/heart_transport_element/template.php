@@ -14,28 +14,31 @@ $this->setFrameMode(true);?>
 <div class="heart_transport">
  <div class="main-slider-wrapper no-controls">
     <ul class="js-main-slider">
-        <li class="js-imgLiquidFill">
-            <div class="about-page-top heaters-page-top">
-                <div class="main-slider__item js-imgLiquidFill">
-                    <img class="main-slider__image" src="<?=$arResult['DETAIL_PICTURE']['SRC']?>" alt=""/>
-                    <div class="title-fix">
-                        <small><?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?></small>
-                        <h1><?=$arResult['NAME'];?></h1>
-                    </div>
-                    <div class="btn-down">
-                        <a href="<?=$arResult['DOWNLOAD_PRESENT'];?>" target="_blank" class="btn-down-white">Скачать презентацию</a>
-                        <a href="<?=$arResult['DOWNLOAD_CHARSET'];?>" target="_blank" class="btn-down-black">Тех. характеристики</a>
-                    </div>
-                    <div class="main-slider__overlay">
-                        <div class="wrapper">
-                            <div class="main-slider__slider-description"><?=$arResult['DETAIL_TEXT'];?></div>
-
+        <?foreach($arResult['BANER'] as $baner){
+        $slide = CFile::ResizeImageGet($baner, array('width'=>1850, 'height'=>845), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
+            <li class="js-imgLiquidFill">
+                <div class="about-page-top heaters-page-top">
+                    <div class="main-slider__item js-imgLiquidFill">
+                        <img class="main-slider__image" src="<?=$slide['src'];?>" alt="<?=$baner['ALT'];?>"/>
+                        <div class="title-fix">
+                            <div class="inside-title"><?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?></div>
+                            <h1><?=$arResult['NAME'];?></h1>
                         </div>
-                    </div>
+                        <div class="btn-down">
+                            <a href="<?=$arResult['DOWNLOAD_PRESENT'];?>" target="_blank" class="btn-down-white">Скачать презентацию</a>
+                            <a href="<?=$arResult['DOWNLOAD_CHARSET'];?>" target="_blank" class="btn-down-black">Тех. характеристики</a>
+                        </div>
+                        <div class="main-slider__overlay">
+                            <div class="wrapper">
+                                <div class="main-slider__slider-description"><?=$arResult['DETAIL_TEXT'];?></div>
 
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-        </li>
+            </li>
+        <?}?>
     </ul>
 </div>
 <?if($arResult['PROPERTIES']['ATT_QUSTIONARIE']['VALUE']){?>
@@ -120,7 +123,8 @@ $this->setFrameMode(true);?>
         За информацией о приобретении <?=$arResult['PROPERTIES']['ATT_SKLON']['VALUE']?> обратитесь<br />
         к менеджерам «Завода ТерраФриго» по телефону:<br />
         +7 (928) 158-04-34
-    </div>    	
+    </div>
+    
     <?if($arResult['PROPERTIES']['ATT_ADVENT']['VALUE']){?>
         <?$APPLICATION->IncludeComponent("bitrix:news.list", "adventurage", Array(
             "COMPONENT_TEMPLATE" => ".default",

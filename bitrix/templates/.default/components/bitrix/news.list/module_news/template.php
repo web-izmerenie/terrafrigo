@@ -16,7 +16,7 @@ $this->setFrameMode(true);?>
         <?foreach($arResult['ITEMS'] as $arItem){
         $photo = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>400, 'height'=>400), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
             <li class="main-news__item">
-                <a class="main-news__link js-imgLiquidFill" href="#">
+                <a class="main-news__link js-imgLiquidFill" href="<?=$arItem['DETAIL_PAGE_URL'];?>">
                     <img class="main-news__image" src="<?=$photo['src'];?>" alt=""/>
                     <div class="main-news__overlay"><?=$arItem['NAME']?></div>
                 </a>

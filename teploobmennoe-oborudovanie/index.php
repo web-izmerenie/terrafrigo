@@ -2,7 +2,7 @@
 define('HEATERS', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Теплообменное оборудование");
-?><?$APPLICATION->IncludeComponent(
+?><a href="<?=$APPLICATION->GetCurPage();?>oprosnyy-list.php" class="btn-blue">Опросный лист</a><?$APPLICATION->IncludeComponent(
 	"bitrix:menu",
 	"catalog_menu",
 	Array(

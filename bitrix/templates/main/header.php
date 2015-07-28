@@ -46,11 +46,14 @@ global $tplPath;?>
     <title><?$APPLICATION->ShowTitle();?></title>
 	<?$APPLICATION->ShowMeta("keywords");?>
 	<?$APPLICATION->ShowMeta("description");?>
-	<?$APPLICATION->ShowHead();?>
+	<?if($USER->IsAuthorized()){?>
+		<?$APPLICATION->ShowHead()?>
+	<?}?>
     <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="<?=$tplPath;?>/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="<?=$tplPath;?>css/main.css">
     <link rel="stylesheet" href="<?=$tplPath;?>css/jquery.selectBoxIt.css">
-     <link rel="stylesheet" href="<?=$tplPath;?>css/jquery.fancybox.css">
+    <link rel="stylesheet" href="<?=$tplPath;?>css/jquery.fancybox.css">
     <link rel="stylesheet" href="<?=$tplPath;?>css/backend.css">
 </head>
 <body>

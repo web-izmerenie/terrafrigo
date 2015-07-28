@@ -12,8 +12,10 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
+<?$dateActive = substr($arResult['DISPLAY_ACTIVE_FROM'], 0, -5); ?>
 <div class="news wrapper">
-    <span class="new-title"><a href="/o-zavode/news/?year=<?=$arResult['PROPERTIES']['ATT_YEAR']['VALUE'];?>">Новости <?=$arResult['PROPERTIES']['ATT_YEAR']['VALUE'];?></a></span>
+    <span class="new-title"><a href="/o-zavode/news/?year=<?=$arResult['PROPERTIES']['ATT_YEAR']['VALUE'];?>">Новости <?=$arResult['PROPERTIES']['ATT_YEAR']['VALUE'];?></a>
+    <p class="date"><?=$dateActive;?></p></span>
     <h1><?=$arResult['NAME'];?></h1>
     <?=$arResult['~DETAIL_TEXT'];?>
     <div class="news_images wrapper">

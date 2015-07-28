@@ -179,13 +179,27 @@ $(function () {
 				event.preventDefault();
 				var href=$(this).data('ankor');
 				var target=$(href);
-				var top=target.offset().top;
+				var top=target.offset().top - 65;
 				$('html,body').animate({
 				scrollTop: top
 				}, 1000);
 			});
 		}
-	} 
+	}
+	
+	function PositionMarkerProduction(){
+		var target = $('.production-map-inr .marker');
+		var className = 'right';
+		var mainBlockWidth = $('.production-map-inr').width();
+		
+		target.each(function(){
+			var position = ($(this).position().left / mainBlockWidth) * 100;
+			var bubl = $(this).find('.bubl');
+			
+			if(position > 50)
+				$(bubl).addClass('right');
+		});
+	}
     
     //init plugins
     $(".fancybox").fancybox({
@@ -199,9 +213,8 @@ $(function () {
 	
     window.onload = function() {
         if(document.location.hash == '#main'){
-			$('html, body').animate({ scrollTop: $('#main-category').offset().top }, 1000);
+			$('html, body').animate({ scrollTop: $('#main-category').offset().top - 65}, 1000);
         }
-			console.log(location.pathname)
     }
 	ankorAnimate();
     tabsBlockFilter();
@@ -210,4 +223,5 @@ $(function () {
 	PlayVideo();
 	GMapsInit();
 	mapsContact();
+	PositionMarkerProduction();
 });

@@ -31,7 +31,7 @@ if($_POST['tel'] != 'Телефон *' || $_POST['name'] != 'Фио*'){
     $mail = new PHPMailer;
     $mail->From = "no-replay@terrafrigo.ru";
     $mail->FromName = "no-replay";
-    $mail->AddAddress('andrey.chechkin@web-izmerenie.ru');
+    $mail->AddAddress('marketing@terrafrigo.ru');
 
     $mail->isHTML(true);
     $mail->CharSet = 'UTF-8';

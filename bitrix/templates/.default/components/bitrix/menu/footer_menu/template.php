@@ -6,7 +6,13 @@
             <?foreach($arResult as $k => $arItem){
             $k = $k + 1;?>
                 <div class="footer-middle__col footer-middle__col_col<?=$k;?>">
-                    <h4 class="footer-middle__heading"><a href="<?=$arItem['LINK'];?>"><?=$arItem['TEXT'];?></a></h4>
+                    <h4 class="footer-middle__heading">
+                        <a href="<?=$arItem['LINK'];?>"<?if($arItem['PARAMS']){
+                        foreach($arItem['PARAMS'] as $k=>$arParam){?>
+                            <?=$k;?>="<?=$arParam;?>"
+                        <?}
+                    }?>><?=$arItem['TEXT'];?></a>
+                    </h4>
                     <?if(isset($arItem['CHILDREN'])){
                         if($arItem['TEXT'] == 'Продукция'){?>
                             <?$APPLICATION->IncludeComponent("bitrix:main.map", "catalog_footer", Array(

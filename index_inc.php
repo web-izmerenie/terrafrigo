@@ -1,3 +1,0 @@
-<p>
- <span style="background-color: #ffffff;">Завод TerraFrigo&nbsp;</span><span style="background-color: #ffffff;">на протяжении 10 лет&nbsp;</span><span style="background-color: #ffffff;">успешно занимается производством&nbsp;и&nbsp;продажей холодильного оборудования: холодильно-обогревательных установок, рефрижераторов (холодильных установок), кондиционеров для автомобилей и спецтехники собственной торговой марки.</span>
-</p>

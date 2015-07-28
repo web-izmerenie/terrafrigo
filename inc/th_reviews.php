@@ -1,7 +1,7 @@
 <?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"reviews_module",
-	Array(
+	"bitrix:news.list", 
+	"reviews_module", 
+	array(
 		"IBLOCK_TYPE" => "content",
 		"IBLOCK_ID" => "18",
 		"NEWS_COUNT" => "3",
@@ -10,19 +10,25 @@
 		"SORT_BY2" => "ID",
 		"SORT_ORDER2" => "DESC",
 		"FILTER_NAME" => "",
-		"FIELD_CODE" => array("","undefined",""),
-		"PROPERTY_CODE" => array("","undefined",""),
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"CHECK_DATES" => "Y",
 		"DETAIL_URL" => "",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
 		"AJAX_OPTION_HISTORY" => "N",
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CACHE_TIME" => "36000000",
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
-		"PREVIEW_TRUNCATE_LEN" => "",
+		"PREVIEW_TRUNCATE_LEN" => "400",
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"SET_TITLE" => "N",
 		"SET_BROWSER_TITLE" => "N",
@@ -46,6 +52,9 @@
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-		"PAGER_SHOW_ALL" => "N"
-	)
+		"PAGER_SHOW_ALL" => "N",
+		"COMPONENT_TEMPLATE" => "reviews_module",
+		"AJAX_OPTION_ADDITIONAL" => "undefined"
+	),
+	false
 );?>

@@ -3,20 +3,16 @@ define('MODEL', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.element", 
-	"kondition_for_spectech", 
-	array(
+	"bitrix:catalog.element",
+	"kondition_for_spectech",
+	Array(
 		"IBLOCK_TYPE" => "transport_cold",
 		"IBLOCK_ID" => "21",
 		"ELEMENT_ID" => "",
 		"ELEMENT_CODE" => $_REQUEST["ELEMENT_CODE"],
 		"SECTION_ID" => "",
 		"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-		"PROPERTY_CODE" => array(
-			0 => "",
-			1 => "undefined",
-			2 => "",
-		),
+		"PROPERTY_CODE" => array("",""),
 		"OFFERS_LIMIT" => "0",
 		"TEMPLATE_THEME" => "blue",
 		"DISPLAY_NAME" => "Y",
@@ -34,7 +30,7 @@ $APPLICATION->SetTitle("detail");
 		"DETAIL_URL" => "",
 		"SECTION_ID_VARIABLE" => "SECTION_CODE",
 		"CHECK_SECTION_ID_VARIABLE" => "N",
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CACHE_TIME" => "36000000",
 		"CACHE_GROUPS" => "Y",
 		"SET_TITLE" => "N",
@@ -51,8 +47,7 @@ $APPLICATION->SetTitle("detail");
 		"ACTION_VARIABLE" => "action",
 		"PRODUCT_ID_VARIABLE" => "id",
 		"DISPLAY_COMPARE" => "N",
-		"PRICE_CODE" => array(
-		),
+		"PRICE_CODE" => array(),
 		"USE_PRICE_COUNT" => "N",
 		"SHOW_PRICE_COUNT" => "1",
 		"PRICE_VAT_INCLUDE" => "Y",
@@ -62,18 +57,18 @@ $APPLICATION->SetTitle("detail");
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRODUCT_PROPERTIES" => array(
-		),
-		"LINK_IBLOCK_TYPE" => "undefined",
-		"LINK_IBLOCK_ID" => "undefined",
-		"LINK_PROPERTY_SID" => "undefined",
+		"PRODUCT_PROPERTIES" => array(),
+		"LINK_IBLOCK_TYPE" => "",
+		"LINK_IBLOCK_ID" => "",
+		"LINK_PROPERTY_SID" => "",
 		"LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",
 		"MESS_BTN_COMPARE" => "Сравнить",
 		"ADD_PICT_PROP" => "-",
 		"LABEL_PROP" => "-",
-		"PRODUCT_QUANTITY_VARIABLE" => "quantity"
-	),
-	false
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		"COMPONENT_TEMPLATE" => "kondition_for_spectech",
+		"SET_CANONICAL_URL" => "N",
+		"SHOW_DEACTIVATED" => "N"
+	)
 );?>
-<?require($_SERVER["DOCUMENT_ROOT"]."/inc/th_reviews.php");?>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/inc/th_reviews.php");?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

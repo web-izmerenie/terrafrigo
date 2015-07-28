@@ -13,7 +13,11 @@
 $this->setFrameMode(true);?>
 
 <!--Добавляем страницу в хлебные крошки-->
-<?=$APPLICATION->AddChainItem('Результаты поиска', “”);?>
+<?if(!empty($_POST)){?>
+    <?=$APPLICATION->AddChainItem('Результаты поиска', “”);?>
+<?}else{?>
+    <?=$APPLICATION->AddChainItem('Все модели', “”);?>
+<?}?>
 <?if(!empty($arResult['ITEMS'])){?>
 
 <!--Получаем данные с фильтра и составляем список товаров-->
@@ -25,7 +29,7 @@ $arFilter = Array(
     "PROPERTY_FILTER_AIR_VALUE" => $_POST['gr2'],
     "PROPERTY_FILTER_COUNT_VALUE" => $_POST['gr3'],
 );
-$res = CIBlockElement::GetList(Array("SORT"=>"ASC"), $arFilter, false, false, $arSelect);
+$res = CIBlockElement::GetList(Array("NAME"=>"ASC"), $arFilter, false, false, $arSelect);
 while($ob = $res->GetNextElement())
 {
     $arFields[] = $ob->GetFields();
@@ -37,15 +41,23 @@ foreach($arFields as $k => $arFiledsItem){
 }
 ?>
     <div class="filter_selection search result_filter">
-        <div class="wrapper">
-            <div class="title">Вам подойдут модели:</div>
-        </div>
+        <?if(!empty($_POST)){?>
+            <div class="wrapper">
+                <div class="title">
+                    <?if(!empty($arFields)){?>
+                        Вам подойдут модели:
+                    <?}else{?>
+                    по заданным параметрам</br> нет подходящего оборудования
+                    <?}?>
+                </div>
+            </div>
+        <?}?>
 
         <div class="wrapper">
             <div class="search_result clearfix">
                 <ul>
                      <?foreach($arFields as $arItem){
-                     $photo = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>241, 'height'=>156), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
+                     $photo = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>241, 'height'=>156), BX_RESIZE_IMAGE_PROPORTIONAL, true, array());?>
                         <li class="element">
                             <a href="<?=$arItem['DETAIL_PAGE_URL']?>">
                                 <div class="element-img"><img src="<?=$photo['src']?>" alt=""></div>
@@ -61,7 +73,7 @@ foreach($arFields as $k => $arFiledsItem){
         </div>
 
         <div class="search-notific">
-            <div class="text-1">Не нашли подходящий рефрижератор? </div>
+            <div class="text-1">Не нашли подходящий кондиционер? </div>
             <div class="text-2">Закажите оборудование по индивидуальному проекту <br />с необходимыми вам функциями.</div>
             <div class="text-3">Подробнее об услуге можно узнать по телефону: 8 800 2345-188</div>
         </div>

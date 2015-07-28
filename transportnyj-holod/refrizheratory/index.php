@@ -76,8 +76,13 @@ $APPLICATION->SetTitle("Рефрижераторы");
             <div class="line">
                 <div class="radio-btn border">
                     <div><input type="radio" name="gr1" value="от 20м до 26м" id="gr1-4" /><label for="gr1-4"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-4.png" alt="" /></span>от 20 м³ до 26 м³</label></div>
-                    <div><input type="radio" name="gr1" value="от 26м до 36м" id="gr1-5" /><label for="gr1-5"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-5.png" alt="" /></span>от 26 м³ до 36 м³</label></div>
-                    <div><input type="radio" name="gr1" value="от 36м до 50м" id="gr1-6" /><label for="gr1-6"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-6.png" alt="" /></span>от 36 м³ до 50 м³</label></div>
+                    <div><input type="radio" name="gr1" value="от 26м до 32м" id="gr1-5" /><label for="gr1-5"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-5.png" alt="" /></span>от 26 м³ до 32 м³</label></div>
+                    <div><input type="radio" name="gr1" value="от 32м до 40м" id="gr1-6" /><label for="gr1-6"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-5.png" alt="" /></span>от 32 м³ до 40 м³</label></div>
+                </div>
+            </div>
+            <div class="line">
+                     <div class="radio-btn border">
+                    <div><input type="radio" name="gr1" value="от 40м до 50м" id="gr1-7" /><label for="gr1-7"><span class="image"><img  src="<?=$tplPath;?>img/icon-tr-6.png" alt="" /></span>от 40 м³ до 50 м³</label></div>
                 </div>
             </div>
         </div>

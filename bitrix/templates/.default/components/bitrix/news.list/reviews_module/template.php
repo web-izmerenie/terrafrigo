@@ -20,11 +20,13 @@ $this->setFrameMode(true);?>
         <ul>
             <?foreach($arResult['ITEMS'] as $arItem){?>
                 <li>
-                    <div class="logo-comp">
-                        <img alt="" src="<?=$arItem['PREVIEW_PICTURE']['SRC'];?>">
-                    </div>
-                    <div class="name-comp"><?=$arItem['NAME'];?></div>
-                    <div class="text-comp"><?=$arItem['PREVIEW_TEXT'];?></div>
+                    <a href="/o-zavode/otzyvy/">
+                        <div class="logo-comp">
+                            <img alt="" src="<?=$arItem['PREVIEW_PICTURE']['SRC'];?>">
+                        </div>
+                        <div class="name-comp"><?=$arItem['NAME'];?></div>
+                        <div class="text-comp"><?=$arItem['PREVIEW_TEXT'];?></div>
+                    </a>
                 </li>
             <?}?>
         </ul>
