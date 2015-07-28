@@ -694,6 +694,9 @@ textarea {
 		width:25%!important;
 		display:block!important;
 	}
+    .main-news__overlay{
+        font-size: 0.9vw !important;
+    }
 
 }
 @media (max-width: 1340px) {

@@ -51,7 +51,7 @@ $this->setFrameMode(true);?>
     <ul id="table1" class="table table-model">
         <li class="table-head">
             <div class="wrapper">
-                <span class="td1">Наименование</span>
+                <span class="td1"></span>
                 <span class="td2">Модель</span>
                 <span class="td3">Габаритные размеры, <br />не более, мм</span>
                 <span class="td4">Масса <br />не более, кг</span>

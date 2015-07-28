@@ -106,7 +106,7 @@ $this->setFrameMode(true);?>
             <ul class="table table-model">
                 <li class="table-head">
                     <div class="wrapper">
-                        <span class="td1">Название блока</span>
+                        <span class="td1"></span>
                         <span class="td2">Модель, тип</span>
                         <span class="td3">Габариты</span>
                         <span class="td4">Масса</span>

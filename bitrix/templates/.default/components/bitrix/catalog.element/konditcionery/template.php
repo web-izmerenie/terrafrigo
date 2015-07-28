@@ -114,13 +114,13 @@ $this->setFrameMode(true);?>
 	),
 	false
 );?>
-    <div class="table-options">
+    <div class="table-characteristics">
         <div class="title wrapper">
             <h3>Характеристики</h3>
             <a href="<?=$arResult['CHARSET_FILE']['SRC'];?>" target="_blank" class="btn-down-white">Скачать</a>
         </div>
 
-        <ul class="table-colum_options">
+        <ul class="table table-model">
             <li class="table-head">
                 <div class="wrapper">
                     <span class="td1"></span>
