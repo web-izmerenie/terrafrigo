@@ -33,7 +33,7 @@ $(function () {
 				$('.additional-text__container').animate({'height':'120px'}, 500);
 			} else {
 				$button.addClass('active'); 
-				$('.additional-text__container').animate({'height':'240px'}, 500);
+				$('.additional-text__container').animate({'height':'100%'}, 500);
 			}
 		});
 	}());
