@@ -1,5 +1,6 @@
 <?$GLOBALS['iblock_id'] = '21';
 define('MODEL', 'Y');
+define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(

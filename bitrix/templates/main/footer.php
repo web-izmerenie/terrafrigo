@@ -4,12 +4,16 @@
             <div class="wrapper">
                 <button class="additional-text__button btn-link" type="button">Доп. информация</button>
                 <div class="additional-text__container">
-                    <?$APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        Array(
-                        )
-                    );?>
+                    <?if(!defined('NO_SEO')){?>
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                            )
+                        );?>
+                    <?}else{
+                        print $GLOBALS['SEO_TEXT'];
+                    }?>
                 </div>
             </div>
         </div>
