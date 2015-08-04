@@ -1,4 +1,4 @@
-Options -Indexes 
+Options -Indexes
 ErrorDocument 404 /404.php
 
 <IfModule mod_php5.c>
@@ -28,7 +28,7 @@ ErrorDocument 404 /404.php
   ExpiresByType image/gif "access plus 3 day"
   ExpiresByType image/png "access plus 3 day"
   ExpiresByType text/css "access plus 3 day"
-  ExpiresByType application/javascript "access plus 3 day"  
+  ExpiresByType application/javascript "access plus 3 day"
 </IfModule>
 
-php_value auto_prepend_file "/var/www/webizm/data/www/terrafrigo.web-izmerenie.ru/bitrix/modules/security/tools/start.php" 
+php_value auto_prepend_file "/home/u442824/new.terrafrigo.ru/www/bitrix/modules/security/tools/start.php" 

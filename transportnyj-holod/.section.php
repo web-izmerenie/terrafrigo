@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Транспортный холод";
-$arDirProperties = Array(
+$arDirProperties = array(
 
 );
 ?>

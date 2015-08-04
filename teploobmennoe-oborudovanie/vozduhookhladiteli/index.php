@@ -1,5 +1,7 @@
 <?define('BANER', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "воздухоохладители, воздухоохладители цена, воздухоохладители купить");
+$APPLICATION->SetPageProperty("description", "Воздухоохладители от ТерраФриго способны охлаждать поступающий воздух, их часто используют в промышленности. Купить воздухоохладители по лучшим ценам можно в Москве, Ростове-на-Дону и Нижнем Новгороде, а также в др. регионах РФ.");
 $APPLICATION->SetTitle("Воздухоохладители");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.element",

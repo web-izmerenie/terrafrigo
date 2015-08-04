@@ -1,5 +1,7 @@
 <?define('BANER', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "градирни, сухая градирня, сухая градирня цена, градирни для охлаждения воды, монтаж градирен, купить градирни");
+$APPLICATION->SetPageProperty("description", "Градирни для охлаждения воды подойдут для вашего производства. Вы сможете купить сухие градирни по лучшим ценам завода. Осуществляем монтаж градирен по запросу клиента.");
 $APPLICATION->SetTitle("Градирни");
 ?>
 <?$APPLICATION->IncludeComponent(

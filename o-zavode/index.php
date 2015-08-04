@@ -1,6 +1,8 @@
 <?define('ABOUT', 'Y');
 define('BANER', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "TerraFrigo, Terrafrigo, производство транспортных холодильных установок, производство автокондиционеров, производство теплообменников, производство конденсаторов, завод холодильного оборудования, компании холодильное оборудование, производители холод");
+$APPLICATION->SetPageProperty("description", "Terra Frigo завод по производству теплообменного оборудования - производство транспортных холодильных установок, производство автокондиционеров, производство теплообменников, производство конденсаторов, производство градирни.");
 $APPLICATION->SetTitle("О заводе");?>
 <?$APPLICATION->IncludeComponent("bitrix:news.list", "adventurage", Array(
 	"COMPONENT_TEMPLATE" => ".default",

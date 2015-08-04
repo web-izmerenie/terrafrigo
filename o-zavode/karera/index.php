@@ -1,6 +1,8 @@
 <?define('BANER', 'Y');
 define('CAREER', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "вакансии террафриго, карьера террафриго, работать на забоде TerraFrigo");
+$APPLICATION->SetPageProperty("description", "Завод ТерраФриго постоянно в поиске специалистов различного профиля. Завод предлагает интересную работу, ДМС, карьерный рост, обучение и полный социальный пакет.");
 $APPLICATION->SetTitle("Карьера");?><?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"adventurage_career",

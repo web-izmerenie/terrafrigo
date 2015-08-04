@@ -1,6 +1,8 @@
 <?$GLOBALS['iblock_id'] = '21';
 define('MODEL', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "автокондиционеры, автокондиционеры для тракторов семейства МТЗ");
+$APPLICATION->SetPageProperty("description", "Производство автокондиционеров для тракторов семейства МТЗ осуществляется заводом TerraFrigo. Продажа автокондиционеров возможна в регионах РФ.");
 $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.element",

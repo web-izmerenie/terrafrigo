@@ -2,6 +2,8 @@
 define('MODEL', 'Y');
 define('SECTIONS', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "холодильная установка S10, рефрижераторы, холодильное оборудование для автомобиля");
+$APPLICATION->SetPageProperty("description", "Производство холодильной установки серии S10 осуществляется на заводе TerraFrigo. При покупке рефрижераторов и монтаже у официальных дилеров завода на холодильное оборудование дается гарантия два года.");
 $APPLICATION->SetTitle("detail");
 ?><div class="inside-conent model-page">
 	 <?$APPLICATION->IncludeComponent(

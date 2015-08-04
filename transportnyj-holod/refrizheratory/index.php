@@ -2,6 +2,8 @@
 define('BANER', 'Y');
 define('COLD-TRANSPORT', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "рефрижераторы, рефрижератор цена, установка рефрижераторов, холодильные рефрижераторы");
+$APPLICATION->SetPageProperty("description", "Купить рефрижератор холодильный по выгодным ценам на заводе ТерраФриго. Продажа и установка рефрижераторов на Газель, Мерседес, Форд, Ман, Хундай в Ростове-на-Дону, Краснодаре, Нижнем Новгороде, России.");
 $APPLICATION->SetTitle("Рефрижераторы");
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:news.list", "adventurage", Array(

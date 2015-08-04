@@ -1,6 +1,8 @@
 <?define('BANER', 'Y');
 define('COLD-TRANSPORT', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "холодильные установки, купить холодильные установки, компрессорные холодильные установки, холодильная установка цена");
+$APPLICATION->SetPageProperty("description", "Компрессорные холодильные установки можно купить на заводе ТерраФриго. Мы занимаемся продажей холодильного оборудования на Газель и др. автомобили по выгодным ценам.");
 $APPLICATION->SetTitle("Транспортный холод");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:menu",

@@ -1,5 +1,7 @@
 <?define('PRODUCTION', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "Производство Террафриго, завод TerraFrigo");
+$APPLICATION->SetPageProperty("description", "Завод ТерраФриго - это отлаженная система производства, главной задачей которого является изготовление транспортного холода и промышленного теплообменного оборудования. Завод TerraFrigo имеет современную производственную базу.");
 $APPLICATION->SetTitle("Производство");?>
 <?$APPLICATION->IncludeComponent("bitrix:news.list", "production_map", Array(
 	"IBLOCK_TYPE" => "content",	// Тип информационного блока (используется только для проверки)

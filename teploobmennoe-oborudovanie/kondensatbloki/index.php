@@ -1,5 +1,7 @@
 <?define('BANER', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "компрессорно конденсаторный блок, компрессорно конденсаторный блок цена, монтаж компрессорно конденсаторных блоков");
+$APPLICATION->SetPageProperty("description", "ККБ (Компрессорно конденсаторный блок) предназначены для подготовки хладагента теплообменника. Производство ККБ осуществляется на заводе ТерраФриго. Здесь вы сможете выгодно купить ККБ по лучшим ценам. Также предлагаем осуществить монтаж ККБ.");
 $APPLICATION->SetTitle("Компрессорно-конденсаторный блок");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.element",

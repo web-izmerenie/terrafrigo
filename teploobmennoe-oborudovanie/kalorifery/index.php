@@ -1,5 +1,7 @@
 <?define('BANER', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "калориферы, водяные калориферы, установка калорифера, купить калорифер");
+$APPLICATION->SetPageProperty("description", "Калориферы предназначены для передачи тепловой энергии. Производство и продажа водяных калориферов осуществляется на заводе ТерраФриго. Здесь вы сможете выгодно купить калорифер по лучшим ценам.");
 $APPLICATION->SetTitle("Калориферы");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.element",
