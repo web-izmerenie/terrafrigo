@@ -146,7 +146,7 @@ global $tplPath;?>
                     <div class="inside-conent <?=$main_classes;?>">
                         <div class="inside-title wrapper">
                             <?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?>
-                            <h1><?$APPLICATION->ShowTitle()?></h1>
+                            <h1><?$APPLICATION->ShowTitle(false)?></h1>
                         </div>
                 <?}?>
         <?}?>
