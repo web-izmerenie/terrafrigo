@@ -1,7 +1,7 @@
 <?require_once($_SERVER['DOCUMENT_ROOT'].'/PHPMailer/class.phpmailer.php');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 
-if($_POST['nameOrg'] != 'Название организации *'){
+if($_POST['nameOrg'] !== ''){
     $mail_body ='<ul>
                     <li>Название организации: '.$_POST['nameOrg'].'</li>
                     <li>Контактное лицо: '.$_POST['fio'].'</li>
