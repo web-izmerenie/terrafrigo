@@ -1,5 +1,6 @@
 <?$GLOBALS['iblock_id'] = '17';
 define('SECTIONS', 'Y');
+define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("sections");
 ?><?$APPLICATION->IncludeComponent(
@@ -10,7 +11,7 @@ $APPLICATION->SetTitle("sections");
 		"IBLOCK_ID" => "17",
 		"SECTION_ID" => "",
 		"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-		"SECTION_USER_FIELDS" => array("","undefined",""),
+		"SECTION_USER_FIELDS" => array("UF_SEO_TEXT",""),
 		"ELEMENT_SORT_FIELD" => "sort",
 		"ELEMENT_SORT_ORDER" => "asc",
 		"ELEMENT_SORT_FIELD2" => "id",
@@ -20,7 +21,7 @@ $APPLICATION->SetTitle("sections");
 		"SHOW_ALL_WO_SECTION" => "Y",
 		"PAGE_ELEMENT_COUNT" => "30",
 		"LINE_ELEMENT_COUNT" => "3",
-		"PROPERTY_CODE" => array("","undefined",""),
+		"PROPERTY_CODE" => array("",""),
 		"OFFERS_LIMIT" => "5",
 		"TEMPLATE_THEME" => "blue",
 		"MESS_BTN_BUY" => "Купить",
@@ -40,7 +41,7 @@ $APPLICATION->SetTitle("sections");
 		"CACHE_GROUPS" => "Y",
 		"SET_TITLE" => "Y",
 		"SET_BROWSER_TITLE" => "Y",
-		"BROWSER_TITLE" => "NAME",
+		"BROWSER_TITLE" => "UF_TITLE",
 		"SET_META_KEYWORDS" => "N",
 		"META_KEYWORDS" => "-",
 		"SET_META_DESCRIPTION" => "N",
@@ -71,6 +72,9 @@ $APPLICATION->SetTitle("sections");
 		"PAGER_SHOW_ALL" => "N",
 		"MESS_BTN_COMPARE" => "Сравнить",
 		"ADD_PICT_PROP" => "-",
-		"LABEL_PROP" => "-"
+		"LABEL_PROP" => "-",
+		"COMPONENT_TEMPLATE" => "elements_list",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"PRODUCT_QUANTITY_VARIABLE" => ""
 	)
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

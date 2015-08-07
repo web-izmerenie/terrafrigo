@@ -1,4 +1,5 @@
 <?define('BANER', 'Y');
+define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Воздухоохладители");
 ?><?$APPLICATION->IncludeComponent(

@@ -1,5 +1,6 @@
 <?$GLOBALS['iblock_id'] = '19';
 define('MODEL', 'Y');
+define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(
@@ -34,8 +35,8 @@ $APPLICATION->SetTitle("detail");
 		"CACHE_TIME" => "36000000",
 		"CACHE_GROUPS" => "Y",
 		"SET_TITLE" => "Y",
-		"SET_BROWSER_TITLE" => "N",
-		"BROWSER_TITLE" => "NAME",
+		"SET_BROWSER_TITLE" => "Y",
+		"BROWSER_TITLE" => "SEO__TITLE",
 		"SET_META_KEYWORDS" => "N",
 		"META_KEYWORDS" => "-",
 		"SET_META_DESCRIPTION" => "N",

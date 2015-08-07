@@ -10,7 +10,8 @@
 /** @var string $templateFolder */
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
-$this->setFrameMode(true);?>
+$this->setFrameMode(true);
+$GLOBALS['SEO_TEXT'] = $arResult['PROPERTIES']['ATT_SEO']['~VALUE']['TEXT'];?>
 <div class="main-slider-wrapper no-controls">
     <ul class="js-main-slider about-page-top heaters-page-top">
         <?foreach($arResult['SLIDE'] as $arSlide){
@@ -108,7 +109,7 @@ $this->setFrameMode(true);?>
                 <span><?=$arResult['PROPERTIES']['TRANPARENT_RECOMEND']['~VALUE']['TEXT'];?></span>
             </div>
         </li>
-        
+
     </ul>
 </div>
 

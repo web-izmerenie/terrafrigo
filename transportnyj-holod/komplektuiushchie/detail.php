@@ -1,17 +1,21 @@
 <?$GLOBALS['iblock_id'] = '22';
 define('CERTIFICATE', 'Y');
 define('NO_ITEMS', 'Y');
+define('NO_SEO', "Y");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section",
 	"hardware_items",
-	Array(
+	array(
 		"IBLOCK_TYPE" => "transport_cold",
 		"IBLOCK_ID" => "22",
 		"SECTION_ID" => "",
 		"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-		"SECTION_USER_FIELDS" => array("","undefined",""),
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
 		"ELEMENT_SORT_FIELD" => "sort",
 		"ELEMENT_SORT_ORDER" => "asc",
 		"ELEMENT_SORT_FIELD2" => "id",
@@ -21,7 +25,10 @@ $APPLICATION->SetTitle("detail");
 		"SHOW_ALL_WO_SECTION" => "N",
 		"PAGE_ELEMENT_COUNT" => "30",
 		"LINE_ELEMENT_COUNT" => "3",
-		"PROPERTY_CODE" => array("","undefined",""),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"OFFERS_LIMIT" => "5",
 		"TEMPLATE_THEME" => "blue",
 		"MESS_BTN_BUY" => "Купить",
@@ -41,7 +48,7 @@ $APPLICATION->SetTitle("detail");
 		"CACHE_GROUPS" => "Y",
 		"SET_TITLE" => "Y",
 		"SET_BROWSER_TITLE" => "Y",
-		"BROWSER_TITLE" => "NAME",
+		"BROWSER_TITLE" => "UF_TITLE",
 		"SET_META_KEYWORDS" => "N",
 		"META_KEYWORDS" => "-",
 		"SET_META_DESCRIPTION" => "N",
@@ -51,7 +58,8 @@ $APPLICATION->SetTitle("detail");
 		"CACHE_FILTER" => "N",
 		"ACTION_VARIABLE" => "action",
 		"PRODUCT_ID_VARIABLE" => "id",
-		"PRICE_CODE" => array(),
+		"PRICE_CODE" => array(
+		),
 		"USE_PRICE_COUNT" => "N",
 		"SHOW_PRICE_COUNT" => "1",
 		"PRICE_VAT_INCLUDE" => "Y",
@@ -60,7 +68,8 @@ $APPLICATION->SetTitle("detail");
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRODUCT_PROPERTIES" => array(),
+		"PRODUCT_PROPERTIES" => array(
+		),
 		"DISPLAY_COMPARE" => "N",
 		"PAGER_TEMPLATE" => ".default",
 		"DISPLAY_TOP_PAGER" => "N",
@@ -69,8 +78,12 @@ $APPLICATION->SetTitle("detail");
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-		"PAGER_SHOW_ALL" => "N"
-	)
+		"PAGER_SHOW_ALL" => "N",
+		"COMPONENT_TEMPLATE" => "hardware_items",
+		"AJAX_OPTION_ADDITIONAL" => "undefined",
+		"PRODUCT_QUANTITY_VARIABLE" => "undefined"
+	),
+	false
 );?>
 <?$APPLICATION->IncludeComponent("bitrix:news.list", "adventurage", Array(
 	"COMPONENT_TEMPLATE" => ".default",

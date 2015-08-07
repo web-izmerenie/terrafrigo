@@ -1,4 +1,5 @@
 <?define('BANER', 'Y');
+define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Калориферы");
 ?><?$APPLICATION->IncludeComponent(
@@ -36,7 +37,7 @@ $APPLICATION->SetTitle("Калориферы");
 		"SET_TITLE" => "Y",
 		"SET_CANONICAL_URL" => "N",
 		"SET_BROWSER_TITLE" => "Y",
-		"BROWSER_TITLE" => "NAME",
+		"BROWSER_TITLE" => "SEO__TITLE",
 		"SET_META_KEYWORDS" => "N",
 		"META_KEYWORDS" => "-",
 		"SET_META_DESCRIPTION" => "N",

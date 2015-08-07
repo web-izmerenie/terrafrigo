@@ -1,6 +1,7 @@
 <?$GLOBALS['iblock_id'] = '17';
 define('MODEL', 'Y');
 define('SECTIONS', 'Y');
+define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("detail");
 ?><div class="inside-conent model-page">
@@ -37,7 +38,7 @@ $APPLICATION->SetTitle("detail");
 		"CACHE_GROUPS" => "Y",
 		"SET_TITLE" => "Y",
 		"SET_BROWSER_TITLE" => "Y",
-		"BROWSER_TITLE" => "NAME",
+		"BROWSER_TITLE" => "SEO__TITLE",
 		"SET_META_KEYWORDS" => "N",
 		"META_KEYWORDS" => "-",
 		"SET_META_DESCRIPTION" => "N",

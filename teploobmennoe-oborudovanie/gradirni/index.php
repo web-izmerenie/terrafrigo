@@ -1,10 +1,11 @@
 <?define('BANER', 'Y');
+define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Градирни");
 ?>
 <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.element", 
-	"heart_transport_element", 
+	"bitrix:catalog.element",
+	"heart_transport_element",
 	array(
 		"COMPONENT_TEMPLATE" => "heart_transport_element",
 		"IBLOCK_TYPE" => "heat_tranport",

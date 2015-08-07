@@ -6,14 +6,17 @@ $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.element",
 	"kondition_for_spectech",
-	Array(
+	array(
 		"IBLOCK_TYPE" => "transport_cold",
 		"IBLOCK_ID" => "21",
 		"ELEMENT_ID" => "",
 		"ELEMENT_CODE" => $_REQUEST["ELEMENT_CODE"],
 		"SECTION_ID" => "",
 		"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-		"PROPERTY_CODE" => array("",""),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"OFFERS_LIMIT" => "0",
 		"TEMPLATE_THEME" => "blue",
 		"DISPLAY_NAME" => "Y",
@@ -36,7 +39,7 @@ $APPLICATION->SetTitle("detail");
 		"CACHE_GROUPS" => "Y",
 		"SET_TITLE" => "N",
 		"SET_BROWSER_TITLE" => "Y",
-		"BROWSER_TITLE" => "NAME",
+		"BROWSER_TITLE" => "SEO__TITLE",
 		"SET_META_KEYWORDS" => "N",
 		"META_KEYWORDS" => "-",
 		"SET_META_DESCRIPTION" => "N",
@@ -48,7 +51,8 @@ $APPLICATION->SetTitle("detail");
 		"ACTION_VARIABLE" => "action",
 		"PRODUCT_ID_VARIABLE" => "id",
 		"DISPLAY_COMPARE" => "N",
-		"PRICE_CODE" => array(),
+		"PRICE_CODE" => array(
+		),
 		"USE_PRICE_COUNT" => "N",
 		"SHOW_PRICE_COUNT" => "1",
 		"PRICE_VAT_INCLUDE" => "Y",
@@ -58,7 +62,8 @@ $APPLICATION->SetTitle("detail");
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRODUCT_PROPERTIES" => array(),
+		"PRODUCT_PROPERTIES" => array(
+		),
 		"LINK_IBLOCK_TYPE" => "",
 		"LINK_IBLOCK_ID" => "",
 		"LINK_PROPERTY_SID" => "",
@@ -70,6 +75,7 @@ $APPLICATION->SetTitle("detail");
 		"COMPONENT_TEMPLATE" => "kondition_for_spectech",
 		"SET_CANONICAL_URL" => "N",
 		"SHOW_DEACTIVATED" => "N"
-	)
+	),
+	false
 );?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/inc/th_reviews.php");?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
