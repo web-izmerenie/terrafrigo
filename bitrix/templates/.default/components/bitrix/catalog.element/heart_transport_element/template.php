@@ -10,7 +10,8 @@
 /** @var string $templateFolder */
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
-$this->setFrameMode(true);?>
+$this->setFrameMode(true);
+$GLOBALS['SEO_TEXT'] = $arResult['PROPERTIES']['ATT_SEO']['~VALUE']['TEXT'];?>
 <div class="heart_transport">
  <div class="main-slider-wrapper no-controls">
     <ul class="js-main-slider">
@@ -124,7 +125,7 @@ $this->setFrameMode(true);?>
         к менеджерам «Завода ТерраФриго» по телефону:<br />
         +7 (928) 158-04-34
     </div>
-    
+
     <?if($arResult['PROPERTIES']['ATT_ADVENT']['VALUE']){?>
         <?$APPLICATION->IncludeComponent("bitrix:news.list", "adventurage", Array(
             "COMPONENT_TEMPLATE" => ".default",

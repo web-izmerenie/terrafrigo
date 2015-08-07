@@ -10,7 +10,8 @@
 /** @var string $templateFolder */
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
-$this->setFrameMode(true);?>
+$this->setFrameMode(true);
+$GLOBALS['SEO_TEXT'] = $arResult['~UF_SEO_TEXT']?>
 <?if(!empty($arResult['ITEMS'])){?>
 <div class="wrapper series-model-wrap">
     <div class="series-model">

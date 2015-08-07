@@ -1,7 +1,7 @@
 <?require_once($_SERVER['DOCUMENT_ROOT'].'/PHPMailer/class.phpmailer.php');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 
-if($_POST['name_organization'] != 'Название организации *'){
+if($_POST['name_organization'] !== ''){
     $mail_body ='<ul>
                     <li>Название организации: '.$_POST['name_organization'].'</li>
                     <li>Контактное лицо: '.$_POST['contact_name'].'</li>
@@ -32,7 +32,8 @@ if($_POST['name_organization'] != 'Название организации *'){
         $mail = new PHPMailer;
         $mail->From = "no-replay@terrafrigo.ru";
         $mail->FromName = "no-replay";
-        $mail->AddAddress('babalykhiyn.l@terrafrigo.ru,  marketing@terrafrigo.ru');
+        $mail->AddAddress('babalykhiyn.l@terrafrigo.ru');
+        $mail->AddAddress('marketing@terrafrigo.ru');
 
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
