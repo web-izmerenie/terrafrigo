@@ -27,11 +27,11 @@ $this->setFrameMode(true);
                             <option value="<?=$arOkrug;?>"><?=$arOkrug;?></option>
                         <?}?>
                     </select>
-                    <input type="text" name="time" value="Время звонка" class="placeholder-8"/>
+                    <input type="text" name="time" value="Время звонка" maxlength="5" class="placeholder-8"/>
                 </div>
                 <div class="line-send"><input type="submit" value="Отправить" class="btn-type-1" /></div>
             </form>
         </div>
         <div id="sucsess" class="questionnaire_notific wrapper">Спасибо за заявку. Наш менеджер свяжется с вами в ближайшее время</div>
     </div>
-</div>  
+</div>

@@ -20,7 +20,7 @@ $this->setFrameMode(true);
                 <li>
                     <h3><?=$arItem['NAME'];?></h3>
                     <p>Обязанности: <?=$arItem['PREVIEW_TEXT'];?></p>
-                    <div class="hid-text"><?=$arItem['PREVIEW_TEXT'];?></div>
+                    <div class="hid-text"><?=$arItem['DETAIL_TEXT'];?></div>
                 </li>
             <?}?>
         </ul>

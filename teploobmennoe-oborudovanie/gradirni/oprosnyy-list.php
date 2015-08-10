@@ -74,6 +74,6 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle());
         </div>
     </form>
 </div>
-<div id="error" class="questionnaire_notific wrapper">Вы заполнили не все поля. Для корректного и оперативного расчета необходимо учесть все технические параметры и требования к оборудованию. Если вы решите отправить неполную форму, нажмите повторно кнопку "Отправить", для выяснения недостающей информации с вами свяжется менеджер</div>
+<div id="error" class="questionnaire_notific wrapper">Заполните обязательные поля!</div>
 <div id="sucsess" class="questionnaire_notific wrapper">Спасибо за заявку. Наш менеджер свяжется с вами в ближайшее время</div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
