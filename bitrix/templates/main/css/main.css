@@ -3173,8 +3173,8 @@ span.inputBox input {
 }
 .filter_selection .btn-filter-2 .btn-type-2 {
 	width: 314px;
-	height: 110px;
-	line-height: 110px;
+	height: 109px;
+	line-height: 117px;
 }
 .filter_selection.search {
 	padding-bottom: 62px;
@@ -3902,7 +3902,7 @@ span.inputBox.n2 input {
 		position: relative;
 		z-index: 1;
 	}
-	
+
 	.benefit-career {
 		background-position: center -103px;
 	}

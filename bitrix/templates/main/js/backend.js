@@ -1,20 +1,20 @@
 $(function () {
 	'use strict';
-	
+
 	$('a[data-ankor]').attr('href', '/#main');
-	
+
 	function PlayVideo(){
 		var play = $('.production-video > img');
 		var target = $('.production-video > iframe');
 		$(target).attr('src', $(target, parent).attr('src'));
-        
+
 		play.click(function(){
 			$(play).css({'opacity': 0,
                         'z-index': 0});
-			$(target).attr('src', $(target, parent).attr('src') + '?autoplay=1').css('z-index', 1); 
+			$(target).attr('src', $(target, parent).attr('src') + '?autoplay=1').css('z-index', 1);
 		});
 	}
-	
+
 	/*Google Maps*/
 	function GMapsInit(){
 		if($('#gomap').length) {
@@ -80,15 +80,15 @@ $(function () {
 
 		}
 	}
-	
+
 	function toggleTable(){
 		var link = $('.button a');
 		var target = $('.table-model');
-        
+
         link.click(function(e){
             var mainLink = $(this).attr('href');
             e.preventDefault();
-            
+
             if(!$(this).hasClass('active')){
                 link.removeClass();
                 $(this).addClass('active');
@@ -98,27 +98,27 @@ $(function () {
             }
         });
 	}
-	
+
 	function mapsContact(){
         var image = new google.maps.MarkerImage( '/bitrix/templates/main/img/marker.png', // иконка
                 new google.maps.Size(52,73), // размеры иконок
                 new google.maps.Point(0,0),
                 new google.maps.Point(42,56)
         );
-        
+
         $('.adress-map').each(function(){
             var map;
             var coordinat = $(this).data('coordinat');
 			var arrCoordinat = coordinat.split(',');
             var mapSelect = $(this).find('.gomap').attr('id');
-            
+
             map = new GMaps({
                 div: '#'+mapSelect,
                 scrollwheel: false,
                 lat: arrCoordinat[0],
                 lng: arrCoordinat[1]
             });
-			
+
             map.addMarker({
                 lat: arrCoordinat[0],
                 lng: arrCoordinat[1],
@@ -126,26 +126,26 @@ $(function () {
             });
         });
 	}
-    
+
     function filterTabs(){
         var link = $('.filter_selection .tabs');
-        
+
         link.click(function(){
             var target = $(this).data('target');
-            
+
             if(target != $('.tabs-target:visible').attr('id')){
                 $('.tabs-target').hide();
                 $('#'+target).fadeIn();
             }
         });
     }
-    
+
     function tabsBlockFilter(){
         var mainBlock = $('.tabs-block');
         var radio = mainBlock.find('input[type="radio"]');
-        
+
         radio.click(function(){
-			
+
             var inp=$(this);
 			if (inp.is(".theone")) {
 				inp.prop("checked",false).removeClass("theone");
@@ -154,10 +154,10 @@ $(function () {
 				$("input:radio[name='"+inp.prop("name")+"'].theone").removeClass("theone");
 				inp.addClass("theone");
 			}
-            
+
             if(radio.is(':checked')){
 				var currentBlock = $(this).closest('.tabs-block');
-				
+
 				if($(currentBlock).hasClass('active')){
 					return false;
 				}else{
@@ -167,11 +167,11 @@ $(function () {
             }else{
                 mainBlock.fadeIn().removeClass('active');
             }
-            
+
         });
-        
+
     }
-    
+
     function ankorAnimate(){
 		if(location.pathname === '/'){
 			var item = $('a[data-ankor]');
@@ -186,21 +186,30 @@ $(function () {
 			});
 		}
 	}
-	
+
 	function PositionMarkerProduction(){
 		var target = $('.production-map-inr .marker');
 		var className = 'right';
 		var mainBlockWidth = $('.production-map-inr').width();
-		
+
 		target.each(function(){
 			var position = ($(this).position().left / mainBlockWidth) * 100;
 			var bubl = $(this).find('.bubl');
-			
+
 			if(position > 50)
 				$(bubl).addClass('right');
 		});
 	}
-    
+
+	function inputOnlyNumber(target){
+		$(target).bind("change keyup input click", function(){
+			var onlyNumberReg = /[^0-9:]/g;
+			if(this.value.match(onlyNumberReg)){
+				this.value = this.value.replace(onlyNumberReg, '');
+			}
+		});
+	}
+
     //init plugins
     $(".fancybox").fancybox({
         padding : 0,
@@ -210,12 +219,15 @@ $(function () {
             }
         }
     });
-	
+
     window.onload = function() {
         if(document.location.hash == '#main'){
 			$('html, body').animate({ scrollTop: $('#main-category').offset().top - 65}, 1000);
         }
     }
+	inputOnlyNumber('#popup-call input[name="tel"]');
+	inputOnlyNumber('#popup-call input[name="time"]');
+	inputOnlyNumber('#popup-form2 input[name="tel"]');
 	ankorAnimate();
     tabsBlockFilter();
     filterTabs();
