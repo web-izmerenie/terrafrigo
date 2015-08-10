@@ -26,7 +26,7 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle());
             <div class="line">
                 <div class="radio-btn">
                     <div><input type="radio" name="freon" id="gr1-1" value="Фреоновый теплообменник" /><label for="gr1-1">Фреоновый теплообменник</label></div>
-                    <div><input type="radio" name="water" id="gr1-2" value="Водяной теплообменник" /><label for="gr1-2">Водяной теплообменник</label></div>    					
+                    <div><input type="radio" name="water" id="gr1-2" value="Водяной теплообменник" /><label for="gr1-2">Водяной теплообменник</label></div>
                 </div>
                 <div><input name="other_colhead" type="text" class="inputBox s-2 placeholder-11 click_unckeck" value="ДРУГОЙ" /></div>
             </div>
@@ -43,7 +43,7 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle());
                     <div><input type="radio" name="condensator" id="gr2-1" value="Конденсатор" /><label for="gr2-1">Конденсатор</label></div>
                     <div><input type="radio" name="air" id="gr2-2" value="Охладитель воздуха" /><label for="gr2-2">Охладитель воздуха</label></div>
                     <div><input type="radio" name="isparitel" id="gr2-3" value="Испаритель" /><label for="gr2-3">Испаритель</label></div>
-                    <div><input type="radio" name="heat" id="gr2-4" value="Нагреватель воздуха" /><label for="gr2-4">Нагреватель воздуха</label></div>    				    					
+                    <div><input type="radio" name="heat" id="gr2-4" value="Нагреватель воздуха" /><label for="gr2-4">Нагреватель воздуха</label></div>
                 </div>
             </div>
             <div class="title">Габаритные и присоединительные размеры</div>
@@ -167,7 +167,7 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle());
                     <input name="dop_soprot" type="text" />
                     кПа
                 </span>
-            </div>    			
+            </div>
             <div class="line line-label">
                 <label class="wAu">Хладогент <span>Фреон, вода, этиленгликоль, другое</span></label>
                 <input name="hladogent_teplonositel" type="text" class="inputBox placeholder-4 s-3" value="Наименование">
@@ -193,7 +193,7 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle());
                     <input name="condensat_temp" type="text" />
                     °С
                 </span>
-            </div>  
+            </div>
             <div class="title">Для испарителя</div>
             <div class="line line-label">
                 <label class="middle wAu">Температура  кипения</label>
@@ -201,7 +201,7 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle());
                     <input name="isparitel_temp" type="text" />
                     °С
                 </span>
-            </div>  
+            </div>
             <div class="title"></div>
             <div class="line line-label">
                 <label class="middle wAu">Мощность</label>
@@ -219,6 +219,6 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle());
             </div>
         </form>
     </div>
-<div id="error" class="questionnaire_notific wrapper">Вы заполнили не все поля. Для корректного и оперативного расчета необходимо учесть все технические параметры и требования к оборудованию. Если вы решите отправить неполную форму, нажмите повторно кнопку "Отправить", для выяснения недостающей информации с вами свяжется менеджер</div>
+<div id="error" class="questionnaire_notific wrapper">Заполните обязательные поля!</div>
 <div id="sucsess" class="questionnaire_notific wrapper">Спасибо за заявку. Наш менеджер свяжется с вами в ближайшее время</div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
