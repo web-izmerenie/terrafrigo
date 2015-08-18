@@ -10,8 +10,7 @@
 /** @var string $templateFolder */
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
-$this->setFrameMode(true);
-$GLOBALS['SEO_TEXT'] = $arResult['~UF_SEO_TEXT']?>
+$this->setFrameMode(true);?>
 <?if(!empty($arResult['ITEMS'])){?>
     <div class="wrapper translators-wrap">
         <div class="translators">

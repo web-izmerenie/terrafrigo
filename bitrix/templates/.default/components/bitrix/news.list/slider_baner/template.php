@@ -25,7 +25,7 @@ $this->setFrameMode(true);
                                  <div class="inside-title">
                                     <?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?>
                                 </div>
-                                <h1><?$APPLICATION->ShowTitle()?></h1>
+                                <h1><?$APPLICATION->ShowTitle(false)?></h1>
                             </div>
                             <div class="main-slider__overlay">
                                 <div class="wrapper">

@@ -4,14 +4,17 @@ define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("sections");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section",
-	"elements_list",
-	Array(
+	"bitrix:catalog.section", 
+	"elements_list", 
+	array(
 		"IBLOCK_TYPE" => "transport_cold",
 		"IBLOCK_ID" => "17",
 		"SECTION_ID" => "",
 		"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-		"SECTION_USER_FIELDS" => array("UF_SEO_TEXT",""),
+		"SECTION_USER_FIELDS" => array(
+			0 => "UF_SEO_TEXT",
+			1 => "",
+		),
 		"ELEMENT_SORT_FIELD" => "sort",
 		"ELEMENT_SORT_ORDER" => "asc",
 		"ELEMENT_SORT_FIELD2" => "id",
@@ -21,7 +24,10 @@ $APPLICATION->SetTitle("sections");
 		"SHOW_ALL_WO_SECTION" => "Y",
 		"PAGE_ELEMENT_COUNT" => "30",
 		"LINE_ELEMENT_COUNT" => "3",
-		"PROPERTY_CODE" => array("",""),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"OFFERS_LIMIT" => "5",
 		"TEMPLATE_THEME" => "blue",
 		"MESS_BTN_BUY" => "Купить",
@@ -51,7 +57,8 @@ $APPLICATION->SetTitle("sections");
 		"CACHE_FILTER" => "N",
 		"ACTION_VARIABLE" => "action",
 		"PRODUCT_ID_VARIABLE" => "id",
-		"PRICE_CODE" => array(),
+		"PRICE_CODE" => array(
+		),
 		"USE_PRICE_COUNT" => "N",
 		"SHOW_PRICE_COUNT" => "1",
 		"PRICE_VAT_INCLUDE" => "Y",
@@ -60,7 +67,8 @@ $APPLICATION->SetTitle("sections");
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRODUCT_PROPERTIES" => array(),
+		"PRODUCT_PROPERTIES" => array(
+		),
 		"DISPLAY_COMPARE" => "N",
 		"PAGER_TEMPLATE" => ".default",
 		"DISPLAY_TOP_PAGER" => "N",
@@ -76,5 +84,6 @@ $APPLICATION->SetTitle("sections");
 		"COMPONENT_TEMPLATE" => "elements_list",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"PRODUCT_QUANTITY_VARIABLE" => ""
-	)
+	),
+	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
