@@ -188,3 +188,7 @@
 .main-news .main-news__overlay{
     font-size: 16px !important;
 }
+
+.additional-text ul{
+    list-style: outside;
+}
