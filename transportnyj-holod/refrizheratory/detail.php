@@ -3,8 +3,8 @@ define('MODEL', 'Y');
 define('SECTIONS', 'Y');
 define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("keywords", "холодильная установка А10, рефрижераторы, холодильное оборудование для автомобиля");
-$APPLICATION->SetPageProperty("description", "Производство холодильной установки рефрижератора серии А10 осуществляется на заводе TerraFrigo. При покупке рефрижераторов и монтаже у официальных дилеров завода на холодильное оборудование дается гарантия 2 года.");
+$APPLICATION->SetPageProperty("keywords", "холодильная установка A10, рефрижераторы, холодильное оборудование для автомобиля");
+$APPLICATION->SetPageProperty("description", "Производство холодильной установки рефрижератора серии A10 осуществляется на заводе TerraFrigo. При покупке рефрижераторов и монтаже у официальных дилеров завода на холодильное оборудование дается гарантия 2 года.");
 $APPLICATION->SetTitle("detail");
 ?><div class="inside-conent model-page">
 	 <?$APPLICATION->IncludeComponent(

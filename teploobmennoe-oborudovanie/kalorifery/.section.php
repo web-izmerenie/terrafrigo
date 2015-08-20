@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Калориферы";
-$arDirProperties = Array(
+$arDirProperties = array(
 
 );
 ?>

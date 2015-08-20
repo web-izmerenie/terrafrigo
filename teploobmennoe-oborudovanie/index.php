@@ -1,6 +1,7 @@
 <?define('BANER', 'Y');
 define('HEATERS', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Теплообменник. Продажа теплообменников, цены производителя ТерраФриго");
 $APPLICATION->SetPageProperty("keywords", "теплообменник, теплообменник купить, теплообменник цена, продажа теплообменников");
 $APPLICATION->SetPageProperty("description", "Теплообменники для передачи тепловой энергии. Производство и продажа теплообменников осуществляется на заводе ТерраФриго. Выгодно купить теплообменник по лучшим ценам.");
 $APPLICATION->SetTitle("Теплообменное оборудование");

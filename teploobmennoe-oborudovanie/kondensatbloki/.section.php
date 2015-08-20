@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Компрессорно-конденсаторный блок";
-$arDirProperties = Array(
+$arDirProperties = array(
 
 );
 ?>

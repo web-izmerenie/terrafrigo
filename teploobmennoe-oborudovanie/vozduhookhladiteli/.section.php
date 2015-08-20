@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Воздухоохладители";
-$arDirProperties = Array(
+$arDirProperties = array(
 
 );
 ?>

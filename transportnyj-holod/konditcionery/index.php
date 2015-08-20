@@ -2,8 +2,9 @@
 define('BANER', 'Y');
 define('COLD-TRANSPORT', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("keywords", "автокондиционеры, купить автокондиционер, автокондиционеры цена, установка автокондиционеров");
-$APPLICATION->SetPageProperty("description", "Купить автокондиционеры Террафриго по лучшим ценам можно в любом городе РФ. Для Вас осуществляется установка кондиционера в Ростове-на-Дону. Автокондиционеры ТерраФриго -  оптимальная температура внутри автомобиля.");
+$APPLICATION->SetPageProperty("title", "Автокондиционеры для коммерческого транспорта. Производство и продажа автокондиционеров");
+$APPLICATION->SetPageProperty("keywords", "автокондиционеры, автокондиционеры для коммерческого транспорта");
+$APPLICATION->SetPageProperty("description", "Производство автокондиционеров для коммерческого транспорта осуществляется заводом TerraFrigo. Продажа автокондиционеров возможна в регионах РФ");
 $APPLICATION->SetTitle("Кондиционеры для коммерческого транспорта");
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:news.list", "adventurage", Array(

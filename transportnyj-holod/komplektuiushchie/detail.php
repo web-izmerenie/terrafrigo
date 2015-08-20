@@ -3,6 +3,7 @@ define('CERTIFICATE', 'Y');
 define('NO_ITEMS', 'Y');
 define('NO_SEO', "Y");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Холодильная автоматика");
 $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section",

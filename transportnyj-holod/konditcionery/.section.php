@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Кондиционеры для коммерческого транспорта";
-$arDirProperties = Array(
+$arDirProperties = array(
 
 );
 ?>
