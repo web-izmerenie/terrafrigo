@@ -4,8 +4,8 @@ define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("sections");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section", 
-	"elements_list", 
+	"bitrix:catalog.section",
+	"elements_list",
 	array(
 		"IBLOCK_TYPE" => "transport_cold",
 		"IBLOCK_ID" => "17",
@@ -24,10 +24,7 @@ $APPLICATION->SetTitle("sections");
 		"SHOW_ALL_WO_SECTION" => "Y",
 		"PAGE_ELEMENT_COUNT" => "30",
 		"LINE_ELEMENT_COUNT" => "3",
-		"PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
-		),
+		"PROPERTY_CODE" => array("ATT_TEMP","ATT_WEIGHT",""),
 		"OFFERS_LIMIT" => "5",
 		"TEMPLATE_THEME" => "blue",
 		"MESS_BTN_BUY" => "Купить",
