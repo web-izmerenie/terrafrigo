@@ -2,6 +2,7 @@ $(function () {
 	'use strict';
 
 	$('a[data-ankor]').attr('href', '/#main');
+	$('.errortext').remove();
 
 	function PlayVideo(){
 		var play = $('.production-video > img');

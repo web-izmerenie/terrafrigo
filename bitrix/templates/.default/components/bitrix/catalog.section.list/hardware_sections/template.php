@@ -11,7 +11,7 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);?>
-<div class="wrapper">	
+<div class="wrapper">
     		
        <?$APPLICATION->IncludeComponent(
             "bitrix:news.detail",
