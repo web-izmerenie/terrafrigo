@@ -105,7 +105,7 @@ $GLOBALS['SEO_TEXT'] = $arResult['PROPERTIES']['ATT_SEO']['~VALUE']['TEXT'];?>
         <div class="table-characteristics">
             <div class="title wrapper">
                 <h3>Характеристики</h3>
-                <a href="<?=$arResult['DOWNLOAD_CHARSET'];?>" target="_blank" class="btn-down-white">Скачать</a>
+                <!-- <a href="<?=$arResult['DOWNLOAD_CHARSET'];?>" target="_blank" class="btn-down-white">Скачать</a> -->
             </div>
 
             <ul class="table">
