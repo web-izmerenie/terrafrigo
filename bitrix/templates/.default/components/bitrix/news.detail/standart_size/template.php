@@ -22,11 +22,11 @@ $this->setFrameMode(true);?>
             <div class="wrapper">
                 <span class="td1">Типоразмер</span>
                 <span class="td2">Диаметр <br />трубки, мм</span>
-                <span class="td3">Толщина <br />ламели, мм</span>
-                <span class="td4">H min, <br />мм</span>
-                <span class="td5">H max, <br />мм</span>
-                <span class="td6">B max, <br />мм</span>
-                <span class="td7">L max, <br />мм</span>
+                <span class="td3">Геометрия</span>
+                <span class="td4">Толщина <br /> ламели, мм</span>
+                <span class="td5">Шаг ламели <br /> min/max, мм</span>
+                <span class="td6">Глубина max, <br /> мм</span>
+                <span class="td7">Длина max, <br /> мм</span>
                 <span class="td7">Расположение<br />трубок</span>
             </div>
         </li>
