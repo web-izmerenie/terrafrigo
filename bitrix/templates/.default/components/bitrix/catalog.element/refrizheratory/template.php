@@ -75,7 +75,7 @@ $GLOBALS['SEO_TEXT'] = $arResult['PROPERTIES']['ATT_SEO']['~VALUE']['TEXT'];?>
     <ul id="table2" class="table table-model">
         <li>
             <div class="wrapper">
-                <span>Хладаген HFC R-404а</span>
+                <span>Хладагент</span>
                 <span><?=$arResult['PROPERTIES']['TRANPARENT_HLADO']['~VALUE']['TEXT'];?></span>
             </div>
         </li>
