@@ -29,7 +29,7 @@ $arFilter = Array(
     "PROPERTY_FILTER_AIR_VALUE" => $_POST['gr2'],
     "PROPERTY_FILTER_COUNT_VALUE" => $_POST['gr3'],
 );
-$res = CIBlockElement::GetList(Array("NAME"=>"ASC"), $arFilter, false, false, $arSelect);
+$res = CIBlockElement::GetList(Array("SORT"=>"ASC"), $arFilter, false, false, $arSelect);
 while($ob = $res->GetNextElement())
 {
     $arFields[] = $ob->GetFields();
