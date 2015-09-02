@@ -1,6 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
-$count = count($arResult['SECTIONS']) % 5;
+$count = ceil(count($arResult['SECTIONS']) / 5);
 $arResult['COUNTRY_LIST'] = array_chunk($arResult['SECTIONS'], $count);
 
 $items = array();
@@ -22,3 +22,4 @@ foreach($arResult['SECTIONS'] as $k => $arSections){
         }
     }
 }
+print $count;
