@@ -283,90 +283,105 @@ $(function () {
     }
 
 
-    /*Valid form*/
-	function validForm(item){
-		$(item).submit(function(e) {
-			e.preventDefault();
-
-            var sucsess = $('#sucsess');
-			var $noValid = false;
-			var inputFrom = $(this).find('input[type="text"]');
-			var textAreaFrom = $(this).find('textarea');
-
-            if($(this).parent().parent().parent().attr('id') === 'popup-form2'){
-                sucsess = $('#sucsess2');
-            }
-
-			$(this).find('input.valid, textarea.valid, select.valid').each(function(){
-				if($(this).val() == $(this).attr('data-default')) {
-					$noValid = true;
-					$(this).addClass('error');
-					if($(this).hasClass('style-select')) {
-						$(this).next().addClass('error');
-					}
-					if(!$(this).next().hasClass('text-error')) {
-						$(this).after('<label class="text-error">ПОЛЕ ОБЯЗАТЕЛЬНО ДЛЯ ЗАПОЛНЕНИЯ</label>')
-					}
-					sucsess.slideUp();
-					$('#error').slideDown();
-				}
-				else {
-					$noValid = false;
-					$(this).removeClass('error');$(this).after()
-					if($(this).next().hasClass('text-error')) {
-						$(this).next().remove();
-					}
-				}
-			})
-			if($noValid) {
-					e.preventDefault();
-					$(this).addClass('error-submit');
+	/*Valid form*/
+    $(".popup-form form").submit(function() {
+    	var $noValid = false;
+    	$(this).find('input.valid, textarea.valid, select.valid').each(function(){
+			if($(this).val().replace(/\s/g,'') == ''){
+			  $(this).val($(this).attr('data-default'));
 			}
-			else {
-				$(inputFrom).each(function(){
-					if($(this).val() === $(this).data('default')){
-						$(this).val('');
-					}
-				});
-				//Validate is OK;
-				//Some next actions;
-				$.ajax({
-					type: "POST",
-					url: $(this).attr('action'),
-					data: $(this).serialize(),
-				    success: function(){
-					if($('.popup-inner').is(":visible")) {
-						$(this).parent().parent().parent().hide();
-						$('#popup-successful').show();
-						$(this).trigger( 'reset' );
-						$(this).find('.text-error').remove();
-						$(this).find('.error').removeClass('error');
-						$select.refresh();
-					}
-					$('#error').slideUp();
-					sucsess.slideDown();
-					$(inputFrom).each(function(){
-						var valDef = $(this).data('default');
+    		if($(this).val() == $(this).attr('data-default')) {
+    			$noValid = true;
+    			$(this).addClass('error');
+    			if($(this).hasClass('style-select')) {
+    				$(this).next().addClass('error');
+    			}
+    			if(!$(this).next().hasClass('text-error')) {
+    				$(this).after('<label class="text-error">ПОЛЕ ОБЯЗАТЕЛЬНО ДЛЯ ЗАПОЛНЕНИЯ</label>')
+    			}
+    		}
+    		else {
+    			$(this).removeClass('error');$(this).after()
+    			if($(this).next().hasClass('text-error')) {
+    				$(this).next().remove();
+    			}
+    		}
+    	})
+    	if($noValid) {
+    		return false;
+    	}
+    	else {
+    		//Validate is OK;
+    		//Some next actions;
+			$.ajax({
+			  type: "POST",
+			  url: $(this).attr('action'),
+			  data: $(this).serialize(),
+		        error: function(){
+		            alert('error');
+		        }
+			});
 
-						$(this).val(valDef);
-					});
-					$(textAreaFrom).each(function(){
-						var valDef = $(this).data('default');
-
-						$(this).val(valDef);
-					});
-                    },
-                    error: function(){
-                        alert('error');
-                    }
-                });
-				return false;
-			}
-		});
+			if($('.popup-inner').is(":visible")) {
+			$(this).parent().parent().parent().hide();
+			$('#popup-successful').show();
+			$(this).trigger( 'reset' );
+			$(this).find('.text-error').remove();
+			$(this).find('.error').removeClass('error');
+			$select.refresh();
+			return false;
+    	}
 	}
+    });
 
-	validForm('.popup-form form');
-	validForm('.questionnaire-page form');
+	$(".questionnaire-form form").submit(function() {
+    	var $noValid = false;
+    	$(this).find('input.valid, textarea.valid, select.valid').each(function(){
+			if($(this).val().replace(/\s/g,'') == ''){
+			  $(this).val($(this).attr('data-default'));
+			}
+    		if($(this).val() == $(this).attr('data-default')) {
+    			$noValid = true;
+    			$(this).addClass('error');
+    			if($(this).hasClass('style-select')) {
+    				$(this).next().addClass('error');
+    			}
+    			if(!$(this).next().hasClass('text-error')) {
+    				$(this).after('<label class="text-error">ПОЛЕ ОБЯЗАТЕЛЬНО ДЛЯ ЗАПОЛНЕНИЯ</label>')
+    			}
+    		}
+    		else {
+    			$(this).removeClass('error');$(this).after()
+    			if($(this).next().hasClass('text-error')) {
+    				$(this).next().remove();
+    			}
+    		}
+    	})
+    	if($noValid) {
+			$('#sucsess').hide();
+			$('#error').slideDown();
+    		return false;
+    	}
+    	else {
+    		//Validate is OK;
+    		//Some next actions;
+			$.ajax({
+			  type: "POST",
+			  url: $(this).attr('action'),
+			  data: $(this).serialize(),
+		        error: function(){
+		            alert('error');
+		        }
+			});
+			$('#sucsess').slideDown();
+			$('#error').hide();
+			$(this).trigger( 'reset' );
+			$(this).find('.text-error').remove();
+			$(this).find('.error').removeClass('error');
+			$select.refresh();
+			return false;
+		}
+    });
 
 
     $('.valid').focus(function(){
