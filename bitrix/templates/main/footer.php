@@ -161,7 +161,14 @@
         ),
         false
     );?>
-   
+
+    <div class="popup-inner" id="popup-successful">
+        <div class="popup-form">
+            <a href="#" class="close"></a>
+            <div class="text-successful">Спасибо за заявку. <br />Наш менеджер свяжется с вами в ближайшее время</div>
+        </div>
+    </div>
+
     <script src="<?=$tplPath;?>js/plugins.min.js"></script>
     <script src="<?=$tplPath;?>js/jquery-ui.js"></script>
     <script src="<?=$tplPath;?>js/main.js"></script>
