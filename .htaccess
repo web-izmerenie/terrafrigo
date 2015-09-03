@@ -31,4 +31,4 @@ ErrorDocument 404 /404.php
   ExpiresByType application/javascript "access plus 3 day"
 </IfModule>
 
-php_value auto_prepend_file "/home/u442824/new.terrafrigo.ru/www/bitrix/modules/security/tools/start.php" 
+php_value auto_prepend_file "/home/u442824/terrafrigo.ru/www/bitrix/modules/security/tools/start.php" 
