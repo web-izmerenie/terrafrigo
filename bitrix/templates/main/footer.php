@@ -49,7 +49,16 @@
         );?>
         <div class="footer-bottom">
             <div class="footer-bottom__wrapper wrapper clearfix">
-                <div class="footer-bottom__copy">© 2006-2015 ООО «Завод ТерраФриго». Все права защищены.</div>
+                <div class="footer-bottom__copy">
+                    Вся представленная
+                    информация, касающаяся технических
+                    характеристик, наличия на складе,
+                    стоимости товаров, носит информационный
+                    характер, и ни при каких условиях не
+                    является публичной офертой, определяемой
+                    положениями Статьи 437(2) Гражданского
+                    кодекса РФ.
+                </div>
                 <div class="footer-bottom__made-in">
                     <span class="made-in-span">Сделано в</span>
                     <a class="made-in" href="http://web-izmerenie.ru/"></a>

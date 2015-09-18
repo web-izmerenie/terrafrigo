@@ -192,3 +192,11 @@
 .additional-text ul{
     list-style: outside;
 }
+
+.footer-bottom__copy{
+    width: 88%;
+}
+
+.footer-bottom__made-in{
+    margin-top: 7px;
+}
