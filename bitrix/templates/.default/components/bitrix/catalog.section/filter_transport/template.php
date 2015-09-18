@@ -70,9 +70,9 @@ foreach($arFields as $k => $arFiledsItem){
                         </li>
                     <?}?>
                 </ul>
-                <div class="new-search">
+                <!-- <div class="new-search">
                     <a href="/transportnyj-holod/refrizheratory/" class="btn-type-1">Новый поиск</a>
-                </div>
+                </div> -->
             </div>
         </div>
 
