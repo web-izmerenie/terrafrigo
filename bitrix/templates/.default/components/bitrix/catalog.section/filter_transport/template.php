@@ -33,7 +33,7 @@ $arFilter = Array(
     "PROPERTY_FILTER_MODE_VALUE" => $_POST['gr3'],
     "PROPERTY_FILTER_TIP_VALUE" => $_POST['gr4']
 );
-$res = CIBlockElement::GetList(Array("NAME"=>"DESC"), $arFilter, false, false, $arSelect);
+$res = CIBlockElement::GetList(Array("SORT"=>"ASC"), $arFilter, false, false, $arSelect);
 while($ob = $res->GetNextElement())
 {
     $arFields[] = $ob->GetFields();

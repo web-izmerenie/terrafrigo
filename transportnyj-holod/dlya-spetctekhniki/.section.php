@@ -1,5 +1,5 @@
 <?
-$sSectionName = "Кондиционеры для коммерческого транспорта";
+$sSectionName = "Кондиционеры для спецтехники";
 $arDirProperties = Array(
 
 );
