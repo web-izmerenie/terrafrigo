@@ -50,6 +50,7 @@
         <div class="footer-bottom">
             <div class="footer-bottom__wrapper wrapper clearfix">
                 <div class="footer-bottom__copy">
+                    © 2006-2015 ООО «Завод ТерраФриго». Все права защищены.
                     Вся представленная
                     информация, касающаяся технических
                     характеристик, наличия на складе,
