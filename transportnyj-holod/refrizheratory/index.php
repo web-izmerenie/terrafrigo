@@ -66,6 +66,7 @@ $APPLICATION->SetTitle("Рефрижераторы");
 );?>
 <form class="filter_selection search" method="post" action="./filter.php">
     <div class="wrapper">
+<!--
         <div class="title">Подбор рефрижератора</div>
         <div class="group group-search-1 clearfix">
             <div class="group-title ieb icon-f4">Внутренний объем фургона</div>
@@ -150,11 +151,12 @@ $APPLICATION->SetTitle("Рефрижераторы");
         <div class="btn-filter">
             <input type="submit" value="Подобрать" class="btn-type-1" />
         </div>
-
+-->
         <div class="btn-filter-2">
             <a href="./filter.php" class="btn-type-3">Посмотреть все</a>
             <a href="/transportnyj-holod/dilery/" class="btn-type-2">Найти дилера</a>
         </div>
+
     </div>
 </form>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

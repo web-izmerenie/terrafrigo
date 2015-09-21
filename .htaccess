@@ -1,6 +1,78 @@
 Options -Indexes
 ErrorDocument 404 /404.php
 
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+
+Redirect 301 /transportnyj-holod/konditcionery/dlya-spetctekhniki/dlya-traktorov-KHTZ/ http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-traktorov-khtz/
+Redirect 301 /transportnyj-holod/konditcionery/dlya-spetctekhniki/dlya-traktorov-MTZ/ http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-traktorov-mtz/
+Redirect 301 /transportnyj-holod/konditcionery/dlya-spetctekhniki/dlya-kombainov-don-niva/ http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-kombaynov-rostselmash/
+Redirect 301 /transportnyj-holod/konditcionery/dlya-spetctekhniki/dlya-traktorov-kirovec/ http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-traktorov-kirovets/
+Redirect 301 /transportnyj-holod/konditcionery/konditcionery-dlya-avtotransporta/gruzovykh-i-legkovykh/ http://terrafrigo.ru/transportnyj-holod/konditcionery/
+Redirect 301 /transportnyj-holod/konditcionery/konditcionery-dlya-avtotransporta/dlya-kommercheskogo-transporta/ http://terrafrigo.ru/transportnyj-holod/konditcionery/
+Redirect 301 /transportnyj-holod/konditcionery/dlya-spetctekhniki/dlya-buldozerov-spetctekhniki/ http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-drugikh-vidov-spetstekhniki/
+Redirect 301 /o-zavode/Zavod-TerraFrigo-v-regionah/ http://terrafrigo.ru/o-zavode/
+Redirect 301 /o-zavode/missiya-i-strategiya/ http://terrafrigo.ru/o-zavode/
+Redirect 301 /transportnyj-holod/foto/ http://terrafrigo.ru/transportnyj-holod/
+Redirect 301 /teploobmennoe-oborudovanie/foto/ http://terrafrigo.ru/teploobmennoe-oborudovanie/
+Redirect 301 /transportnyj-holod/komplektuiushchie/kompressory-Sanden/avtomobilnye-kompressory-Sanden/ http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/kompressory/
+Redirect 301 /transportnyj-holod/komplektuiushchie/kompressory-Sanden/proverit-podlinnost-kompressora/ http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/kompressory/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-A/A10/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-a/model-a10/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-A/A20/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-a/model-a20/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-S/S30/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s30/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-S/S10/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s10/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-S/S50/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s50/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-S/S20/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-S20/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-S/S40/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s40/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-SP/S10P/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s10p/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-SP/S50P/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s50p/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-SP/S20P/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s20p/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-SP/S40P/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s40p/
+Redirect 301 /transportnyj-holod/refrizheratory/seriya-SP/S30P/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s30p/
+Redirect 301 /transportnyj-holod/konditcionery/v-shtatnuiu-sistemu-otopleniya-avtomobilya/ http://terrafrigo.ru/transportnyj-holod/konditcionery/shtatnye-modeli-konditsionerov/
+Redirect 301 /transportnyj-holod/konditcionery/ekonom/ http://terrafrigo.ru/transportnyj-holod/konditcionery/model-ekonom/
+Redirect 301 /transportnyj-holod/konditcionery/standart/ http://terrafrigo.ru/transportnyj-holod/konditcionery/model-standart/
+Redirect 301 /transportnyj-holod/konditcionery/komfort/ http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort/
+Redirect 301 /transportnyj-holod/konditcionery/Komfort-0703/ http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort-0703/
+Redirect 301 /transportnyj-holod/konditcionery/Komfor-SPLITt/ekonom/ http://terrafrigo.ru/transportnyj-holod/konditcionery/model-ekonom/
+Redirect 301 /transportnyj-holod/konditcionery/Komfor-SPLITt/komfort/ http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort/
+Redirect 301 /transportnyj-holod/konditcionery/Komfor-SPLITt/Komfort-0703/ http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort-0703/
+Redirect 301 /transportnyj-holod/konditcionery/Komfor-SPLIT/ http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort-split/
+Redirect 301 /transportnyj-holod/konditcionery/Komfor-SPLIT/ http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort-split/
+Redirect 301 /akcii/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /newslist.php?page=2 http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /newslist.php?page=3 http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/98/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/69/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/81/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/86/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/94/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/83/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/88/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/95/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/87/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/89/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/106/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/90/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/92/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/101/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/97/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/93/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/96/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/82/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/100/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/102/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/105/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/104/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/84/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/85/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /news/91/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /servis/ http://terrafrigo.ru/o-zavode/news/
+Redirect 301 /transportnyj-holod/zapravka-avtokonditcionerov/ http://terrafrigo.ru/transportnyj-holod/konditcionery/
+Redirect 301 /transportnyj-holod/remont-refrizheratorov/ http://terrafrigo.ru/transportnyj-holod/refrizheratory/
+Redirect 301 /transportnyj-holod/remont-i-obsluzhivanie-avtokonditcionerov/ http://terrafrigo.ru/transportnyj-holod/konditcionery/
+Redirect 301 /transportnyj-holod/diagnostika-avtokonditcionerov/ http://terrafrigo.ru/transportnyj-holod/konditcionery/
+
 <IfModule mod_php5.c>
   php_flag session.use_trans_sid off
   php_value display_errors 1
