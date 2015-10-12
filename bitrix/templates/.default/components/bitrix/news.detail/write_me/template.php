@@ -11,6 +11,7 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+require($_SERVER["DOCUMENT_ROOT"]."/ajax/captcha.php");
 ?>
 <div class="popup-inner" id="popup-form2">
     <div class="popup-form">
@@ -45,6 +46,13 @@ $this->setFrameMode(true);
                 <div class="line line-textarea">
                     <textarea name="message" class="placeholder-10 valid" data-default="Сообщение *">Сообщение *</textarea>
                 </div>
+                <div class="captcha-form">
+                    <input name="captcha_code_write" id="captcha_sid" value="<?=htmlspecialchars($cpt->GetCodeCrypt());?>" type="hidden">
+                    <input id="captcha_word" class="inputBox s-2"
+                    placeholder="Символы с картинки" name="captcha_word_write" type="text">
+                    <img class="captcha_img" src="/bitrix/tools/captcha.php?captcha_code=<?=htmlspecialchars($cpt->GetCodeCrypt());?>">
+                </div>
+                <div id="error_capthca" class="questionnaire_notific wrapper alert-form">Введеные символы не свопадают с картинкой!</div>
                 <div class="line-send"><input type="submit" value="Отправить" class="btn-type-1" /></div>
             </form>
         </div>

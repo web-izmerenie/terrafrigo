@@ -67,6 +67,12 @@
     display: none;
 }
 
+.captcha_img{float: right;}
+
+.alert-form{
+    display: none;
+}
+
 .model-page #table2{
     display: none;
 }
@@ -199,4 +205,14 @@
 
 .footer-bottom__made-in{
     margin-top: 7px;
+}
+
+.popup-form .captcha-form input{
+    width: 250px;
+}
+
+.popup-form #error_capthca{
+    min-width: auto;
+    width: 100%;
+    padding: 10px 0px 0px;
 }

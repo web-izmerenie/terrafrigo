@@ -197,8 +197,10 @@ $(function () {
 		$(this).parent().find('form').trigger( 'reset' );
 		$(this).parent().find('.text-error').remove();
 		$(this).parent().find('.error').removeClass('error');
+		$(this).parent().find('#error_capthca').hide();
 		$select.refresh();
 		event.preventDefault();
+		captchaReload();
 	})
 
 	/*UI radiobutton*/
@@ -285,7 +287,9 @@ $(function () {
 
 	/*Valid form*/
     $(".popup-form form").submit(function() {
+		var $thisForm = $(this);
     	var $noValid = false;
+		$('#error_capthca').hide();
     	$(this).find('input.valid, textarea.valid, select.valid').each(function(){
 			if($(this).val().replace(/\s/g,'') == ''){
 			  $(this).val($(this).attr('data-default'));
@@ -317,25 +321,32 @@ $(function () {
 			  type: "POST",
 			  url: $(this).attr('action'),
 			  data: $(this).serialize(),
+			  	success: function(html){
+					captchaReload();
+					if(html === 'false'){
+						$thisForm.find('#error_capthca').slideDown();
+					}else{
+						if($('.popup-inner').is(":visible")) {
+							$thisForm.parent().parent().parent().hide();
+							$('#popup-successful').show();
+							$thisForm.trigger( 'reset' );
+							$thisForm.find('.text-error').remove();
+							$thisForm.find('.error').removeClass('error');
+							$select.refresh();
+			    		}
+					}
+				},
 		        error: function(){
 		            alert('error');
 		        }
 			});
-
-			if($('.popup-inner').is(":visible")) {
-			$(this).parent().parent().parent().hide();
-			$('#popup-successful').show();
-			$(this).trigger( 'reset' );
-			$(this).find('.text-error').remove();
-			$(this).find('.error').removeClass('error');
-			$select.refresh();
 			return false;
-    	}
-	}
+		}
     });
 
 	$(".questionnaire-form form").submit(function() {
     	var $noValid = false;
+		$('.alert-form').hide();
     	$(this).find('input.valid, textarea.valid, select.valid').each(function(){
 			if($(this).val().replace(/\s/g,'') == ''){
 			  $(this).val($(this).attr('data-default'));
@@ -358,7 +369,6 @@ $(function () {
     		}
     	})
     	if($noValid) {
-			$('#sucsess').hide();
 			$('#error').slideDown();
     		return false;
     	}
@@ -369,20 +379,25 @@ $(function () {
 			  type: "POST",
 			  url: $(this).attr('action'),
 			  data: $(this).serialize(),
+			  	success: function(html){
+					captchaReload();
+					if(html === 'false'){
+						$('#error_capthca').slideDown();
+					}else{
+						$('#sucsess').slideDown();
+						$('.questionnaire-form form').trigger('reset');
+						$('.questionnaire-form form').find('.text-error').remove();
+						$('.questionnaire-form form').find('.error').removeClass('error');
+						$select.refresh();
+					}
+				},
 		        error: function(){
 		            alert('error');
 		        }
 			});
-			$('#sucsess').slideDown();
-			$('#error').hide();
-			$(this).trigger( 'reset' );
-			$(this).find('.text-error').remove();
-			$(this).find('.error').removeClass('error');
-			$select.refresh();
 			return false;
 		}
     });
-
 
     $('.valid').focus(function(){
     	if($(this).hasClass('error')) {
@@ -431,5 +446,13 @@ $(function () {
         e.preventDefault();
         return false;
     });
+
+	//captchaReload
+	function captchaReload(){
+		$.get('/ajax/captcha_refresh.php', function(data) {
+			$('.captcha_img').attr('src','/bitrix/tools/captcha.php?captcha_sid='+data);
+			$('#captcha_sid').val(data);
+		});
+	}
 
 });

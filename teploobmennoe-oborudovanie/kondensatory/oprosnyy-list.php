@@ -1,5 +1,6 @@
 <?define('QUESTIONNAIRE', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+require($_SERVER["DOCUMENT_ROOT"]."/ajax/captcha.php");
 $APPLICATION->SetTitle("Опросный лист");
 $APPLICATION->AddChainItem($APPLICATION->GetTitle());
 ?>
@@ -61,11 +62,19 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle());
         <div class="line">
             <textarea name="other" class="inputBox placeholder-5">Здесь вы можете указать информацию об ограничении габаритов, уровня шума и пр.</textarea>
         </div>
+        <div class="title">CAPTCHA</div>
+        <div class="line">
+            <input name="captcha_code" id="captcha_sid" value="<?=htmlspecialchars($cpt->GetCodeCrypt());?>" type="hidden">
+            <input id="captcha_word" class="inputBox s-2"
+            placeholder="Символы с картинки" name="captcha_word" type="text">
+            <img class="captcha_img" src="/bitrix/tools/captcha.php?captcha_code=<?=htmlspecialchars($cpt->GetCodeCrypt());?>">
+        </div>
         <div class="line-send">
             <input type="submit" value="Отправить" class="btn-type-1" />
         </div>
     </form>
 </div>
-<div id="error" class="questionnaire_notific wrapper">Заполните обязательные поля!</div>
-<div id="sucsess" class="questionnaire_notific wrapper">Спасибо за заявку. Наш менеджер свяжется с вами в ближайшее время</div>
+<div id="error" class="questionnaire_notific wrapper alert-form">Заполните обязательные поля!</div>
+<div id="sucsess" class="questionnaire_notific wrapper alert-form">Спасибо за заявку. Наш менеджер свяжется с вами в ближайшее время</div>
+<div id="error_capthca" class="questionnaire_notific wrapper alert-form">Введеные символы не свопадают с картинкой!</div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
