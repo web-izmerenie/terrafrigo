@@ -1,560 +1,553 @@
-<urlset>
-  <url>
-    <loc>http://terrafrigo.ru/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/proizvodstvo/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/sertifikaty/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/karera/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/otzyvy/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/kontakty/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-a/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-a/model-a10/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-a/model-a20/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s10/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-S20/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s30/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s40/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s50/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s10p/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s20p/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s30p/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s40p/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s50p/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/shtatnye-modeli-konditsionerov/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-ekonom/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-standart/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-standart-split/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort-split/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort-0703/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-traktorov-mtz/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-traktorov-khtz/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-traktorov-kirovets/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-kombaynov-rostselmash/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-drugikh-vidov-spetstekhniki/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/ispariteli/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/kondensatory/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/kompressory/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/ventilyatory/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/kholodilnaya-avtomatika/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/filtry-resivery-osushiteli/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/shlangi-fitingi/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/freon-masla/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/oborudovanie-dlya-servisa/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/dilery/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/kalorifery/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/kondensatory/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/kondensatbloki/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/gradirni/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/vozduhookhladiteli/</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/gradirni/oprosnyy-list.php</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/kondensatbloki/oprosnyy-list.php</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/kondensatory/oprosnyy-list.php</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/oprosnyy-list.php</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/filter.php</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/filter.php</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/otzyvy/otzyvy2.php</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/?year=2012</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/?year=2013</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/?year=2014</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/?year=2015</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/terrafrigo-na-strazhe-kachestva-produktov-dlya-detskikh-sadov-i-meduchrezhdeniy.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/moskovskiy-partner-terrafrigo-kompaniya-krossi-predstavlyaet-unikalnoe-reshenie-dlya-lada-largus.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/kompaniya-td-avtokomponent-diler-terrafrigo-v-respublike-tatarstan-prinyala-uchastie-v-vystavke-mezh.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/zavod-terrafrigo-provel-dilerskuyu-konferentsiyu-v-rostove-na-donu2.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/s-nastupayushchim-novym-godom-.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/gradirnya-terrafrigo-uspeshno-ustanovlena-na-zavode-donkabel-v-g-proletarske.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/pozdravlyaem-ivana-sedova-direktora-kompanii-dartekh-i-komandu-gaz-za-rulem-sport-s-titulom-luchsheg.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/otkryto-mezhsezonnoe-obsluzhivanie.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/na-zavode-dostignuty-rekordnye-tempy-rosta-proizvodstva.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/krupnaya-set-avtosalonov-kazakhstana-novyy-diler-zavoda.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/terrafrigo-znachitelno-rasshiril-geografiyu-dilerov.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/zavod-terrafrigo-prezentoval-posetitelyam-mira-klimata-svoi-noveyshie-razrabotki.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/zavod-terrafrigo-eksklyuzivnyy-postavshchik-oem-kompressorov-sanden-dlya-vsekh-vidov-tekhniki.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/vse-novinki-zavoda-budut-predstavleny-v-moskve-na-vystavke-mir-klimata-.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/zapushchena-v-proizvodstvo-lineyka-kompressorno-kondensatornykh-blokov-dlya-sistem-konditsionirovani.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/pozdravlyaem-vas-s-nastupayushchim-novym-godom.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/kholodilnoe-oborudovanie-terrafrigo-pomogaet-obespechivat-selyan-belorussii-svezhimi-produktami.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/novogodnie-neveroyatnye-skidki-uzhe-seychas.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/komplekt-konditsionera-na-gazel-next-otlichno-proshel-vse-testy-i-zapushchen-v-massovoe-proizvodstvo.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/zavershen-proekt-po-sozdaniyu-gradirni-dlya-gazoporshnevykh-elektrostantsiy.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/10-14-sentyabrya-2013-g-produktsiya-zavoda-terrafrigo-budet-predstavlena-na-mezhdunarodnoy-vystavke-.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/avto-konditsionery-terrafrigo-na-universiade-v-kazani.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/sistema-menedzhmenta-kachestva-zavoda-terrafrigo-byla-sertifitsirovana-po-sisteme-iso-9001-2008.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/sezonnaya-aktsiya-zavoda-terrafrigo-.html</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/?PAGEN_1=1</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://terrafrigo.ru/o-zavode/news/?PAGEN_1=2</loc>
-    <lastmod>2015-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://terrafrigo.ru/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/kontakty/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/ishchete-vygodnoe-reshenie-dlya-biznesa-gorodskoy-furgon-s-refrizheratorom.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/terrafrigo-na-strazhe-kachestva-produktov-dlya-detskikh-sadov-i-meduchrezhdeniy.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/moskovskiy-partner-terrafrigo-kompaniya-krossi-predstavlyaet-unikalnoe-reshenie-dlya-lada-largus.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/kompaniya-td-avtokomponent-diler-terrafrigo-v-respublike-tatarstan-prinyala-uchastie-v-vystavke-mezh.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/zavod-terrafrigo-provel-dilerskuyu-konferentsiyu-v-rostove-na-donu2.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/s-nastupayushchim-novym-godom-.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/proizvodstvo/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/sertifikaty/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/karera/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/otzyvy/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/dilery/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/kalorifery/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/kondensatory/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/kondensatbloki/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/gradirni/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/vozduhookhladiteli/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/oprosnyy-list.php</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/cff/i_g_i_.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/?year=2015</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s10p/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-S20/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/?year=2014</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/?year=2012</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/?year=2013</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/gradirnya-terrafrigo-uspeshno-ustanovlena-na-zavode-donkabel-v-g-proletarske.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/pozdravlyaem-ivana-sedova-direktora-kompanii-dartekh-i-komandu-gaz-za-rulem-sport-s-titulom-luchsheg.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/otkryto-mezhsezonnoe-obsluzhivanie.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/na-zavode-dostignuty-rekordnye-tempy-rosta-proizvodstva.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/krupnaya-set-avtosalonov-kazakhstana-novyy-diler-zavoda.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/terrafrigo-znachitelno-rasshiril-geografiyu-dilerov.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/?PAGEN_1=1</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/?PAGEN_1=2</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/?PAGEN_1=3</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/otzyvy/otzyvy2.php</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-a/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/filter.php</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/shtatnye-modeli-konditsionerov/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-ekonom/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-standart/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-standart-split/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort-split/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/model-komfort-0703/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/konditcionery/filter.php</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-traktorov-mtz/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-traktorov-khtz/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-traktorov-kirovets/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-kombaynov-rostselmash/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/dlya-spetctekhniki/konditsionery-dlya-drugikh-vidov-spetstekhniki/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/ispariteli/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/kondensatory/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/kompressory/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/ventilyatory/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/kholodilnaya-avtomatika/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/filtry-resivery-osushiteli/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/shlangi-fitingi/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/freon-masla/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/komplektuiushchie/oborudovanie-dlya-servisa/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/80e/_i_g_i_.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/c6a/_.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/314/booklet_kondensatory.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/537/kondensatory-serii-tf.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/kondensatory/oprosnyy-list.php</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/576/teploobmennoe_oborudovanie.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/c62/kkb.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/kondensatbloki/oprosnyy-list.php</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/d36/teploobmennoe_oborudovanie.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/ede/gradirni.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/teploobmennoe-oborudovanie/gradirni/oprosnyy-list.php</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/e20/_i_g_i_.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/4d6/_g_g_.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s20p/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s30p/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s40p/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-sp/model-s50p/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/590/seriya-sp.-tekhnicheskiy-pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/68b/seriya-sp.-garantiynye-obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s10/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s30/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s40/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-s/model-s50/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/153/seriya-s.-tekhnicheskiy-pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/ff8/seriya-s.-garantiynye-obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/zavod-terrafrigo-prezentoval-posetitelyam-mira-klimata-svoi-noveyshie-razrabotki.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/zavod-terrafrigo-eksklyuzivnyy-postavshchik-oem-kompressorov-sanden-dlya-vsekh-vidov-tekhniki.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/vse-novinki-zavoda-budut-predstavleny-v-moskve-na-vystavke-mir-klimata-.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/zapushchena-v-proizvodstvo-lineyka-kompressorno-kondensatornykh-blokov-dlya-sistem-konditsionirovani.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/sezonnaya-aktsiya-zavoda-terrafrigo-.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/pozdravlyaem-vas-s-nastupayushchim-novym-godom.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/kholodilnoe-oborudovanie-terrafrigo-pomogaet-obespechivat-selyan-belorussii-svezhimi-produktami.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/novogodnie-neveroyatnye-skidki-uzhe-seychas.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/komplekt-konditsionera-na-gazel-next-otlichno-proshel-vse-testy-i-zapushchen-v-massovoe-proizvodstvo.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/zavershen-proekt-po-sozdaniyu-gradirni-dlya-gazoporshnevykh-elektrostantsiy.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/10-14-sentyabrya-2013-g-produktsiya-zavoda-terrafrigo-budet-predstavlena-na-mezhdunarodnoy-vystavke-.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/avto-konditsionery-terrafrigo-na-universiade-v-kazani.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/o-zavode/news/sistema-menedzhmenta-kachestva-zavoda-terrafrigo-byla-sertifitsirovana-po-sisteme-iso-9001-2008.html</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-a/model-a10/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/transportnyj-holod/refrizheratory/seriya-a/model-a20/</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/b69/avtomobilnye_konditsionery.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/609/avtomobilnye_konditsionery.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/ce7/konditsionery_dlya_spetstekhniki.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/0fb/_g_g_i_.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/310/konditsionery_dlya_spetstekhniki.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/597/konditsionery_dlya_spetstekhniki.pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/84f/seriya-sp.-tekhnicheskiy-pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/97d/seriya-sp.-garantiynye-obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/ae3/seriya_sp._tekhnicheskiy_pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/203/seriya_sp._garantiynye_obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/31d/seriya_sp._tekhnicheskiy_pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/ea5/seriya_sp._garantiynye_obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/61d/seriya_sp._tekhnicheskiy_pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/fc4/seriya_sp._garantiynye_obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/977/seriya-s.-tekhnicheskiy-pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/d5e/seriya-s.-garantiynye-obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/e05/seriya_s._tekhnicheskiy_pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/97f/seriya_s._garantiynye_obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/442/seriya_s._tekhnicheskiy_pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/532/seriya_s._garantiynye_obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/13b/seriya_s._tekhnicheskiy_pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/3e5/seriya_s._garantiynye_obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/e16/seriya-a.-tekhnicheskiy-pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/c19/seriya-a.-garantiynye-obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/5af/seriya-a.-tekhnicheskiy-pasport..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://terrafrigo.ru/upload/iblock/70c/seriya-a.-garantiynye-obyazatelstva..pdf</loc>
+  <lastmod>2015-10-09T09:53:26+00:00</lastmod>
+</url>
 </urlset>
