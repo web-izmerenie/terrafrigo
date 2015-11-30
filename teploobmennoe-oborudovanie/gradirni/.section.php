@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Градирни";
-$arDirProperties = Array(
+$arDirProperties = array(
 
 );
 ?>

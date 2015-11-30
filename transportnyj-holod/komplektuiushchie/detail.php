@@ -3,6 +3,7 @@ define('CERTIFICATE', 'Y');
 define('NO_ITEMS', 'Y');
 define('NO_SEO', "Y");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Испарители и испарительные блоки для кондиционера автомобиля, холодильного оборудования");
 $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section", 

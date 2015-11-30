@@ -2,6 +2,8 @@
 define('SECTIONS', 'Y');
 define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "рефрижератор серии SP, холодильная установка SP, рефрижераторы, холодильное оборудование для автомобиля");
+$APPLICATION->SetPageProperty("description", "Производство рефрижераторов для автомобилей серии SP осуществляется на заводе TerraFrigo. При покупке рефрижераторов и монтаже у официальных дилеров завода на холодильное оборудование дается гарантия два года.");
 $APPLICATION->SetTitle("sections");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section",

@@ -1,6 +1,8 @@
 <?define('BANER', 'Y');
 define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "промышленные градирниградирня цена, градирня купить, сухая градирня, вентиляторные градирни, драйкуллер");
+$APPLICATION->SetPageProperty("description", "Промышленная сухая градирня (Драйкуллер) производства завода ТерраФриго. Купить вентиляторные градирни в Москве, Ростове-на-Дону, Нижнем Новгороде, России по цене производителя.");
 $APPLICATION->SetTitle("Градирни");
 ?>
 <?$APPLICATION->IncludeComponent(

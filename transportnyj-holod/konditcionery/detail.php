@@ -2,6 +2,8 @@
 define('MODEL', 'Y');
 define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("description", "Модель Комфорт 0703");
+$APPLICATION->SetPageProperty("keywords", "Модель Комфорт 0703");
 $APPLICATION->SetTitle("detail");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.element",

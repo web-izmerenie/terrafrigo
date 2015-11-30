@@ -1,6 +1,8 @@
 <?define('BANER', 'Y');
 define('NO_SEO', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "водяной калорифер, водяной калорифер для вентиляции, водяные калориферы купить");
+$APPLICATION->SetPageProperty("description", "Производство водяных калориферов – завод Террафриго. Продажа водяного калорифера в Москве, Ростове-на-Дону, Нижнем Новгороде, России. Выгодные цены в каталоге от производителя.");
 $APPLICATION->SetTitle("Калориферы");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.element",

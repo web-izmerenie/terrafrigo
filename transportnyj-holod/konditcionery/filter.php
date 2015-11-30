@@ -1,19 +1,18 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle(" Кондиционеры для коммерческого транспорта");
-?><?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section", 
-	"filter_kondishion_result", 
-	array(
+?><br>
+<br>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section",
+	"filter_kondishion_result",
+	Array(
 		"COMPONENT_TEMPLATE" => "filter_kondishion_result",
 		"IBLOCK_TYPE" => "transport_cold",
 		"IBLOCK_ID" => "19",
 		"SECTION_ID" => $_REQUEST["SECTION_ID"],
 		"SECTION_CODE" => "",
-		"SECTION_USER_FIELDS" => array(
-			0 => "",
-			1 => "",
-		),
+		"SECTION_USER_FIELDS" => array(0=>"",1=>"",),
 		"ELEMENT_SORT_FIELD" => "sort",
 		"ELEMENT_SORT_ORDER" => "asc",
 		"ELEMENT_SORT_FIELD2" => "id",
@@ -23,10 +22,7 @@ $APPLICATION->SetTitle(" Кондиционеры для коммерческо�
 		"SHOW_ALL_WO_SECTION" => "Y",
 		"PAGE_ELEMENT_COUNT" => "30",
 		"LINE_ELEMENT_COUNT" => "3",
-		"PROPERTY_CODE" => array(
-			0 => "FILTER_WEIGHT",
-			1 => "",
-		),
+		"PROPERTY_CODE" => array(0=>"FILTER_WEIGHT",1=>"",),
 		"OFFERS_LIMIT" => "5",
 		"TEMPLATE_THEME" => "blue",
 		"MESS_BTN_BUY" => "Купить",
@@ -57,8 +53,7 @@ $APPLICATION->SetTitle(" Кондиционеры для коммерческо�
 		"CACHE_FILTER" => "N",
 		"ACTION_VARIABLE" => "action",
 		"PRODUCT_ID_VARIABLE" => "id",
-		"PRICE_CODE" => array(
-		),
+		"PRICE_CODE" => array(),
 		"USE_PRICE_COUNT" => "N",
 		"SHOW_PRICE_COUNT" => "1",
 		"PRICE_VAT_INCLUDE" => "Y",
@@ -68,8 +63,7 @@ $APPLICATION->SetTitle(" Кондиционеры для коммерческо�
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRODUCT_PROPERTIES" => array(
-		),
+		"PRODUCT_PROPERTIES" => array(),
 		"DISPLAY_COMPARE" => "N",
 		"PAGER_TEMPLATE" => ".default",
 		"DISPLAY_TOP_PAGER" => "N",
@@ -82,6 +76,5 @@ $APPLICATION->SetTitle(" Кондиционеры для коммерческо�
 		"MESS_BTN_COMPARE" => "Сравнить",
 		"ADD_PICT_PROP" => "-",
 		"LABEL_PROP" => "-"
-	),
-	false
+	)
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

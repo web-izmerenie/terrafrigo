@@ -1,6 +1,9 @@
 <?define('BANER', 'Y');
 define('COLD-TRANSPORT', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Холодильные установки на автомобиль. Установка холодильного оборудования на авто");
+$APPLICATION->SetPageProperty("keywords", "холодильные установки авто, холодильные установки на автомобиль, установка холодильного оборудования на автомобиль");
+$APPLICATION->SetPageProperty("description", "Купить холодильные установки на автомобиль в Ростове-на-Дону, Москве, Нижнем Новгороде.  Продажа и установка холодильного оборудования на авто. Выгодные цены производителя на холодильные установки.");
 $APPLICATION->SetTitle("Транспортный холод");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:menu",

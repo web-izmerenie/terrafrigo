@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Сертификаты";
-$arDirProperties = Array(
+$arDirProperties = array(
 
 );
 ?>

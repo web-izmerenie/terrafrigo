@@ -1,5 +1,8 @@
 <?define('DEALERS', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("description", "Дилеры завода Terrafrigo. Продажа холодильного оборудования в городах России: Ростов-на-Дону, Москва, Нижний Новгород.");
+$APPLICATION->SetPageProperty("keywords", "дилеры, дилеры Terrafrigo");
+$APPLICATION->SetPageProperty("title", "Дилеры завода Terrafrigo");
 $APPLICATION->SetTitle("Дилеры");
 ?>
 <div class="inside-conent dealers-page">

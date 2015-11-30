@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Рефрижераторы";
-$arDirProperties = Array(
+$arDirProperties = array(
 
 );
 ?>

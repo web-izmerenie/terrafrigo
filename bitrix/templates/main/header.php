@@ -142,7 +142,7 @@ global $tplPath;?>
             );?>
             <div class="inside-conent <?=$main_classes;?>">
         <?}else{?>
-                <?if(!defined('MODEL') && !defined('DEALERS') && !defined('NEWS')){?>
+                <?if(!defined('MODEL') && !defined('DEALERS') && !defined('NEWS') && !defined('FAQ')){?>
                     <div class="inside-conent <?=$main_classes;?>">
                         <div class="inside-title wrapper">
                             <?require($_SERVER['DOCUMENT_ROOT'].'/inc/module_path.php');?>

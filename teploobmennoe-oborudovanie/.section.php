@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Теплообменное оборудование";
-$arDirProperties = Array(
+$arDirProperties = array(
 
 );
 ?>
