@@ -80,8 +80,16 @@ global $tplPath;?>
                     </li>
                 </ul>
                 <div class="header-line__right-block clearfix">
-                    <a href="#popup-call" class="header-line__right-link header-line__right-link_blue1 popup-open">Заказать звонок</a>
-                    <a href="#popup-form2" class="header-line__right-link header-line__right-link_blue2 popup-open">Написать нам</a>
+                    <a href="#popup-call"
+                    class="header-line__right-link header-line__right-link_blue1 popup-open"
+                    onclick="yaCounter22161481.reachGoal('CALL-BUTTON'); return true;">
+                        Заказать звонок
+                    </a>
+                    <a href="#popup-form2"
+                    class="header-line__right-link header-line__right-link_blue2 popup-open"
+                    onclick="yaCounter22161481.reachGoal('WRITE-BUTTON'); return true;">
+                        Написать нам
+                    </a>
                 </div>
             </div>
         </div>

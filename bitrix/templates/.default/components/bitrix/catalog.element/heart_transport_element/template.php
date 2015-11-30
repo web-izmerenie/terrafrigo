@@ -43,7 +43,11 @@ $GLOBALS['SEO_TEXT'] = $arResult['PROPERTIES']['ATT_SEO']['~VALUE']['TEXT'];?>
     </ul>
 </div>
 <?if($arResult['PROPERTIES']['ATT_QUSTIONARIE']['VALUE']){?>
-    <a href="<?=$APPLICATION->GetCurPage();?>oprosnyy-list.php" class="btn-blue">Опросный лист</a>
+    <a href="<?=$APPLICATION->GetCurPage();?>oprosnyy-list.php"
+        class="btn-blue"
+        onclick="yaCounter22161481.reachGoal('OPROS-BUTTON-<?=$arResult['ID'];?>'); return true;">
+        Опросный лист
+    </a>
 <?}?>
 <div class="inside-conent heaters-page">
     <?if($arResult['PROPERTIES']['ATT_DESCRIPTION']['VALUE']){?>

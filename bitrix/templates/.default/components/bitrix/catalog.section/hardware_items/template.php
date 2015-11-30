@@ -22,7 +22,11 @@ $this->setFrameMode(true);?>
                     </div>
                     <div class="series-model-element_text">
                         <p><?=$arItem['PREVIEW_TEXT'];?></p>
-                        <a href="#popup-form2" class = "btn-price popup-open">Узнать стоимость</a>
+                        <a href="#popup-form2"
+                        class = "btn-price popup-open"
+                        onclick="yaCounter22161481.reachGoal('PRICE-HARDWARE'); return true;">
+                            Узнать стоимость
+                        </a>
                     </div>
                 </div>
             <?}?>

@@ -28,8 +28,16 @@ $GLOBALS['SEO_TEXT'] = $arResult['PROPERTIES']['ATT_SEO']['~VALUE']['TEXT'];?>
                             <div class="wrapper">
                                 <div class="main-slider__slider-description"><?=$arResult['PREVIEW_TEXT'];?></div>
                                 <div class="double-button">
-                                    <a href="#popup-form2" class="btn-1 popup-open">Узнать стоимость</a>
-                                    <a href="/transportnyj-holod/dilery/" class="btn-2">Найти дилера</a>
+                                    <a href="#popup-form2"
+                                    class="btn-1 popup-open"
+                                    onclick="yaCounter22161481.reachGoal('PRICE-SH'); return true;">
+                                        Узнать стоимость
+                                    </a>
+                                    <a href="/transportnyj-holod/dilery/"
+                                    class="btn-2"
+                                    onclick="yaCounter22161481.reachGoal('FIND-DILER'); return true;">
+                                        Найти дилера
+                                    </a>
                                 </div>
                             </div>
                         </div>

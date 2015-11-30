@@ -12,6 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 require($_SERVER["DOCUMENT_ROOT"]."/ajax/captcha.php");
+$dir = $_SERVER['REAL_FILE_PATH'];
 ?>
 <div class="popup-inner" id="popup-form2">
     <div class="popup-form">
@@ -53,7 +54,27 @@ require($_SERVER["DOCUMENT_ROOT"]."/ajax/captcha.php");
                     <img class="captcha_img" src="/bitrix/tools/captcha.php?captcha_code=<?=htmlspecialchars($cpt->GetCodeCrypt());?>">
                 </div>
                 <div id="error_capthca" class="questionnaire_notific wrapper alert-form">Введеные символы не свопадают с картинкой!</div>
-                <div class="line-send"><input type="submit" value="Отправить" class="btn-type-1" /></div>
+                <div class="line-send">
+                    <input type="submit" value="Отправить" class="btn-type-1"
+                    <?switch ($dir) {
+                        case '/transportnyj-holod/refrizheratory/detail.php':
+                            ?>onclick="yaCounter22161481.reachGoal('REFRESHERATOR-SUBMIT'); return true;"<?
+                            break;
+                        case '/transportnyj-holod/konditcionery/detail.php':
+                            ?>onclick="yaCounter22161481.reachGoal('KONDICIONER-SUBMIT'); return true;"<?
+                            break;
+                        case '/transportnyj-holod/dlya-spetctekhniki/detail.php':
+                            ?>onclick="yaCounter22161481.reachGoal('SH-SUBMIT'); return true;"<?
+                            break;
+                        case '/transportnyj-holod/komplektuiushchie/detail.php':
+                            ?>onclick="yaCounter22161481.reachGoal('HARDWARE-SUBMIT'); return true;"<?
+                            break;
+                        default:
+                            ?>onclick="yaCounter22161481.reachGoal('WRITE-SUBMIT'); return true;"<?
+                            break;
+                    }?>
+                    />
+                </div>
             </form>
         </div>
         <div id="sucsess2" class="questionnaire_notific wrapper">Спасибо за заявку. Наш менеджер свяжется с вами в ближайшее время</div>

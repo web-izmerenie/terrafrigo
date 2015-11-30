@@ -62,7 +62,7 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle());
             <img class="captcha_img" src="/bitrix/tools/captcha.php?captcha_code=<?=htmlspecialchars($cpt->GetCodeCrypt());?>">
         </div>
         <div class="line-send">
-            <input type="submit" value="Отправить" class="btn-type-1" />
+            <input type="submit" value="Отправить" class="btn-type-1" onclick="yaCounter22161481.reachGoal('OPROS-SUBMIT-455'); return true;"/>
         </div>
     </form>
 </div>

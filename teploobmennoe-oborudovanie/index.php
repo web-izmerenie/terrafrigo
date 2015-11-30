@@ -5,7 +5,12 @@ $APPLICATION->SetPageProperty("title", "Теплообменное оборуд�
 $APPLICATION->SetPageProperty("keywords", "теплообменное оборудование, теплообменное оборудование производство, завод теплообменного оборудования");
 $APPLICATION->SetPageProperty("description", "Производство теплообменного оборудования – завод Террафриго. Продажа промышленного холодильного теплообменного оборудования в Москве, Ростове-на-Дону, Нижнем Новгороде, России. Выгодные ценам от производителя.");
 $APPLICATION->SetTitle("Теплообменное оборудование");
-?><a href="<?=$APPLICATION->GetCurPage();?>oprosnyy-list.php" class="btn-blue">Опросный лист</a><?$APPLICATION->IncludeComponent(
+?>
+<a href="<?=$APPLICATION->GetCurPage();?>oprosnyy-list.php"
+	class="btn-blue" onclick="yaCounter22161481.reachGoal('TH-OPROS-BUTTON'); return true;">
+	Опросный лист
+</a>
+<?$APPLICATION->IncludeComponent(
 	"bitrix:menu",
 	"catalog_menu",
 	Array(
@@ -72,8 +77,8 @@ $APPLICATION->SetTitle("Теплообменное оборудование");
 	)
 );?>
 <?$APPLICATION->IncludeComponent(
-	"bitrix:news.detail", 
-	"standart_size", 
+	"bitrix:news.detail",
+	"standart_size",
 	array(
 		"COMPONENT_TEMPLATE" => "standart_size",
 		"IBLOCK_TYPE" => "service",

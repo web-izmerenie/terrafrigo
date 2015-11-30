@@ -37,7 +37,9 @@ require($_SERVER["DOCUMENT_ROOT"]."/ajax/captcha.php");
                     <img class="captcha_img" src="/bitrix/tools/captcha.php?captcha_code=<?=htmlspecialchars($cpt->GetCodeCrypt());?>">
                 </div>
                 <div id="error_capthca" class="questionnaire_notific wrapper alert-form">Введеные символы не свопадают с картинкой!</div>
-                <div class="line-send"><input type="submit" value="Отправить" class="btn-type-1" /></div>
+                <div class="line-send">
+                    <input type="submit" value="Отправить" class="btn-type-1" onclick="yaCounter22161481.reachGoal('CALL-SUBMIT'); return true;"/>
+                </div>
             </form>
         </div>
         <div id="sucsess" class="questionnaire_notific wrapper">Спасибо за заявку. Наш менеджер свяжется с вами в ближайшее время</div>

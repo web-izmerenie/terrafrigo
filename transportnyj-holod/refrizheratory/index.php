@@ -154,7 +154,11 @@ $APPLICATION->SetTitle("Рефрижераторы");
 -->
         <div class="btn-filter-2">
             <a href="./filter.php" class="btn-type-3">Посмотреть все</a>
-            <a href="/transportnyj-holod/dilery/" class="btn-type-2">Найти дилера</a>
+            <a href="/transportnyj-holod/dilery/"
+			class="btn-type-2"
+			onclick="yaCounter22161481.reachGoal('FIND-DILER'); return true;">
+				Найти дилера
+			</a>
         </div>
 
     </div>
