@@ -103,4 +103,4 @@ Redirect 301 /transportnyj-holod/diagnostika-avtokonditcionerov/ http://terrafri
   ExpiresByType application/javascript "access plus 3 day"
 </IfModule>
 
-php_value auto_prepend_file "/var/www/webizm/data/www/terrafrigo.web-izmerenie.ru/bitrix/modules/security/tools/start.php" 
+php_value auto_prepend_file "/home/u442824/terrafrigo.ru/www/bitrix/modules/security/tools/start.php"
